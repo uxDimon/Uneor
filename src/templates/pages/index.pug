@@ -1,9 +1,14 @@
 extends ../template
 
 block variables
-    - var title = 'Главная'
+    - var title = 'Навигация'
     - var contactForm = true
 
 block content
     main
-        h1 sborkaOtVasyana
+        ul 
+            li 
+                a(href="main-page.html") Главная
+
+            li 
+                a(href="ui.html") UI  
