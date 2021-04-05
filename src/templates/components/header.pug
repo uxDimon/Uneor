@@ -1,1 +1,111 @@
-header
+header.header
+    .cont-block__wrap.header__head-wrap
+        .cont-block.header__head
+            .location-choice(data-location-choice).header__head--location-choice
+                button(data-location-button='spb').location-choice__mimic
+                    svg(width="20" height="20").location-choice__icon-piont
+                        use(xlink:href="./assets/images/sprite.svg#map-marker")
+
+                    .location-choice__text Санкт-Петербург
+
+                    svg(width="12" height="12").location-choice__icon-arrow
+                        use(xlink:href="./assets/images/sprite.svg#arrow-smal")
+
+                ul(data-location-option-list).location-choice__option
+                    li(data-location-option='spb').location-choice__item 
+                        label.location-choice__button 
+                            input(type="radio", name="location-choice", value="spb", checked)
+                            | Санкт-Петербург
+                    li(data-location-option='msk').location-choice__item 
+                        label.location-choice__button 
+                            input(type="radio", name="location-choice", value="msk")
+                            | Москва
+                    li(data-location-option='ekb').location-choice__item 
+                        label.location-choice__button 
+                            input(type="radio", name="location-choice", value="ekb")
+                            | Екатеринбург
+
+            a(href="#").header__head-basket
+                svg(width="20" height="20")
+                    use(xlink:href="./assets/images/sprite.svg#wheelbarrow")
+                | Корзина
+            
+            nav.header__head--header-menu
+                ul.header-menu 
+                    li.header-menu__item.header-menu__item_burder
+                        a(href="#").header-menu__licn Каталог
+                    li.header-menu__item.header-menu__item_burder
+                        a(href="#").header-menu__licn О компании
+                    li.header-menu__item.header-menu__item_burder
+                        a(href="#").header-menu__licn Наши бренды
+                    li.header-menu__item.header-menu__item_burder
+                        a(href="#").header-menu__licn Дилеры
+                    li.header-menu__item.header-menu__item_burder
+                        a(href="#").header-menu__licn Техническая информация
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Наши возможности
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Новости
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Карьера
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Контакты
+
+
+            ul.header__head-tel 
+                li.head-tel.head-tel_choice
+                    a(href="tel:+78007008351").head-tel__tel 8 (800) 700-83-51
+                    .head-tel__name Звонки по России бесплатно
+                li.head-tel
+                    a(href="tel:+78124498350" data-size-viseble='spb').head-tel__tel 8 (812) 449-83-50
+                    .head-tel__name Санкт-Петербург
+                li.head-tel
+                    a(href="tel:+74952589274" data-size-viseble='msk').head-tel__tel 8 (495) 258-92-74
+                    .head-tel__name Москва
+                li.head-tel
+                    a(href="tel:+73433453774" data-size-viseble='ekb').head-tel__tel 8 (343) 345-37-74
+                    .head-tel__name Екатеринбург
+
+    .cont-block__wrap.header__body-wrap
+        .cont-block.header__body
+            a(href="/").header__body-logo
+                svg(width="130" height="60").location-choice__icon-piont
+                    use(xlink:href="./assets/images/sprite.svg#main-logo")
+            
+            nav.header__body--header-menu
+                ul.header-menu 
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn 
+                            svg(width="35" height="35").location-choice__icon-piont
+                                use(xlink:href="./assets/images/sprite.svg#square-arrey")
+                            | Каталог
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn О компании
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Наши бренды
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Дилеры
+                    li.header-menu__item 
+                        a(href="#").header-menu__licn Техническая информация
+
+            .header__body-user-wrap 
+                label.header__body--header-search.header-search
+                    svg(width="20" height="20").location-choice__icon-piont
+                        use(xlink:href="./assets/images/sprite.svg#search-alt")
+                    input(type="search", name="header-search").header-search__input 
+                    button.header-search__clear
+                        svg(width="17" height="17")
+                            use(xlink:href="./assets/images/sprite.svg#plus-minus")
+
+                button(data-login-control).header__body-login
+                    svg(width="20" height="20")
+                        use(xlink:href="./assets/images/sprite.svg#user")
+                    | Вход / Регистрация
+                
+                a(href="#").header__body-basket
+                    svg(width="20" height="20")
+                        use(xlink:href="./assets/images/sprite.svg#wheelbarrow")
+                    | Корзина
+
+
+

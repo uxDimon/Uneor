@@ -1,0 +1,119 @@
+// Размеры
+$content-max-weight: 1170px;
+$content-padding: 0 15px;
+
+// Шрифт
+$font-primary: "Open Sans", sans-serif;
+
+// Цвета
+$color-dark-grey: #252525;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+
+// header__head
+.header__head-wrap {
+	background-color: $color-Blue_3;
+}
+
+.header__head {
+	min-height: 60px;
+	padding: 10px 0;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// location-choice
+.location-choice {
+	position: relative;
+}
+
+.location-choice__mimic {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+
+	&:hover > .location-choice__text {
+		color: $color-Blue_1;
+	}
+}
+
+.location-choice__icon-piont {
+	margin-right: 10px;
+	display: block;
+	flex-shrink: 0;
+}
+
+.location-choice__text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+	color: $color-dark-grey;
+}
+
+.location-choice__icon-arrow {
+	display: block;
+	margin-left: 10px;
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.location-choice__option {
+	display: grid;
+	grid-row-gap: 8px;
+	position: absolute;
+	top: calc(100% + 8px);
+	left: 20px;
+	padding: 10px;
+	min-width: calc(100% - 40px);
+	box-sizing: content-box;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	background-color: $color-White;
+	z-index: 1;
+
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-40px);
+	transition: 150ms ease-in-out 0ms;
+	transition-property: transform, opacity, visibility;
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: all;
+		transform: translateY(0);
+	}
+}
+
+.location-choice__button {
+	display: block;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+	color: $color-dark-grey;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-Blue_1;
+	}
+
+	input {
+		display: none;
+	}
+}

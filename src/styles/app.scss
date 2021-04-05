@@ -9,6 +9,7 @@ $font-primary: "Open Sans", sans-serif;
 $color-dark-grey: #252525;
 $color-Silver: #e4e4e4;
 $color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
 $color-Orange: #f7941e;
 $color-Red: #ed1a3b;
 $color-Green: #7c9640;
@@ -58,6 +59,13 @@ button {
 	font-family: $font-primary;
 }
 
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
@@ -77,6 +85,59 @@ button {
 	> *:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.cont-block__header {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cont-block__h {
+	--item-main-color: #{$color-Blue_1};
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 140%;
+	margin: 0;
+	color: $color-dark-grey;
+	display: flex;
+	align-items: stretch;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 10px;
+		height: auto;
+		background-color: var(--item-main-color);
+		margin-right: 20px;
+		flex-shrink: 0;
+		margin-top: 4px;
+	}
+}
+
+// linc-arrow
+.linc-arrow {
+	--item-main-color: #{$color-Blue_1};
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+	color: var(--item-main-color);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.linc-arrow__icont {
+	display: block;
+	margin-left: 8px;
+	transform: rotate(-90deg);
+	--icon-color: var(--item-main-color);
+	--icon-width: 2;
 }
 
 // subscribe-news
@@ -128,6 +189,23 @@ button {
 @import "./common/header.scss";
 @import "./pages/index.scss";
 @import "./common/footer.scss";
+
+// main-color
+.main-color_green {
+	--item-main-color: #{$color-Green};
+}
+.main-color_yellow {
+	--item-main-color: #{$color-Yellow};
+}
+.main-color_red {
+	--item-main-color: #{$color-Red};
+}
+.main-color_orange {
+	--item-main-color: #{$color-Orange};
+}
+.main-color_blue_2 {
+	--item-main-color: #{$color-Blue_2};
+}
 
 // @media screen and (max-width: 1274px) {
 

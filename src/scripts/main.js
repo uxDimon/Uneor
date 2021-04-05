@@ -1,6 +1,3 @@
-let text = "Привет Васян";
-console.log(text);
-
 const activeClass = "active";
 
 // Переключение табов
@@ -36,3 +33,12 @@ if (tabIdList) {
 		}
 	}
 }
+
+// Выбор региона location-choice
+
+document.querySelectorAll("[data-location-choice]").forEach((choice) => {
+	const button = choice.querySelector('button[data-location-button]'),
+		 buttonText = button.querySelector('.location-choice__text'),
+		optionsLis = choice.querySelector('[data-location-option-list]')
+		
+});
