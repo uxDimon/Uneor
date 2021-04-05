@@ -35,10 +35,50 @@ if (tabIdList) {
 }
 
 // Выбор региона location-choice
-
 document.querySelectorAll("[data-location-choice]").forEach((choice) => {
-	const button = choice.querySelector('button[data-location-button]'),
-		 buttonText = button.querySelector('.location-choice__text'),
-		optionsLis = choice.querySelector('[data-location-option-list]')
-		
+	const button = choice.querySelector("button[data-location-button]"),
+		buttonText = button.querySelector(".location-choice__text"),
+		optionsLisWrap = choice.querySelector("[data-location-option-list]"),
+		telSize = {
+			list: [],
+			create: function () {
+				for (const telItem of document.querySelectorAll("[data-size-viseble]")) {
+					const telItemId = telItem.dataset.sizeViseble;
+					this.list.push(telItem);
+					if (telItemId) telSize[telItemId] = telItem;
+				}
+			},
+		};
+	telSize.create();
+
+	function telSizeClass(telSize, input) {
+		if (input.checked) {
+			for (const telItem of telSize.list) telItem.classList.remove("head-tel_choice");
+			telSize[input.value].classList.add("head-tel_choice");
+		}
+	}
+
+	document.addEventListener("click", (event) => {
+		if (event.target.closest("[data-location-choice]") === null && button.classList.contains(activeClass)) {
+			optionsLisWrap.classList.toggle(activeClass);
+			button.classList.toggle(activeClass);
+		}
+	});
+
+	for (const input of optionsLisWrap.querySelectorAll("input")) {
+		input.addEventListener("change", () => {
+			buttonText.innerText = input.dataset.name;
+			optionsLisWrap.classList.toggle(activeClass);
+			button.classList.toggle(activeClass);
+			telSizeClass(telSize, input);
+		});
+		telSizeClass(telSize, input);
+	}
+
+	button.addEventListener("click", () => {
+		optionsLisWrap.classList.toggle(activeClass);
+		button.classList.toggle(activeClass);
+	});
+
+	optionsLisWrap.style.width = optionsLisWrap.scrollWidth + "px";
 });
