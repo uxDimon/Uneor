@@ -41,11 +41,11 @@ document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 		optionsLisWrap = choice.querySelector("[data-location-option-list]"),
 		telSize = {
 			list: [],
-			create: function () {
+			create() {
 				for (const telItem of document.querySelectorAll("[data-size-viseble]")) {
 					const telItemId = telItem.dataset.sizeViseble;
 					this.list.push(telItem);
-					if (telItemId) telSize[telItemId] = telItem;
+					if (telItemId) this[telItemId] = telItem;
 				}
 			},
 		};
@@ -59,7 +59,7 @@ document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 	}
 
 	document.addEventListener("click", (event) => {
-		if (event.target.closest("[data-location-choice]") === null && button.classList.contains(activeClass)) {
+		if (button.classList.contains(activeClass) && event.target.closest("[data-location-choice]") === null) {
 			optionsLisWrap.classList.toggle(activeClass);
 			button.classList.toggle(activeClass);
 		}
@@ -82,3 +82,19 @@ document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 
 	optionsLisWrap.style.width = optionsLisWrap.scrollWidth + "px";
 });
+
+// header-search
+for (const searchWrap of document.querySelectorAll(".header-search")) {
+	const input = searchWrap.querySelector(".header-search__input"),
+		cancel = searchWrap.querySelector(".header-search__clear");
+
+	input.addEventListener("input", () => {
+		input.value ? cancel.classList.add(activeClass) : cancel.classList.remove(activeClass);
+	});
+
+	cancel.addEventListener("click", () => {
+		input.value = "";
+		input.focus();
+		cancel.classList.remove(activeClass);
+	});
+}
