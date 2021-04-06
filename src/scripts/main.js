@@ -34,6 +34,23 @@ if (tabIdList) {
 	}
 }
 
+// data-active
+for (const activeBlock of document.querySelectorAll("[data-active-block]")) {
+	const activeControlList = document.querySelectorAll(`[data-active-control="${activeBlock.dataset.activeBlock}"]`);
+	for (const activeControl of activeControlList) {
+		activeControl.addEventListener("click", () => {
+			for (const activeControlItem of activeControlList) activeControlItem.classList.toggle(activeClass);
+			activeBlock.classList.toggle(activeClass);
+		});
+	}
+	document.addEventListener("click", (event) => {
+		if (activeBlock.classList.contains(activeClass) && event.target.closest("[data-active-block]") === null && event.target.closest("[data-active-control]") === null) {
+			for (const activeControlItem of activeControlList) activeControlItem.classList.toggle(activeClass);
+			activeBlock.classList.toggle(activeClass);
+		}
+	});
+}
+
 // Выбор региона location-choice
 document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 	const button = choice.querySelector("button[data-location-button]"),
