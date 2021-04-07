@@ -274,9 +274,9 @@ button {
 }
 .main-color_yellow {
 	--main-color: #{$color-Yellow};
-	--main-color_hover: #{darken($color-Yellow, 10%)};
-	--text-color: #{$color-White};
-	--text-color_hover: #{$color-White};
+	--main-color_hover: #{darken($color-Yellow, 6%)};
+	--text-color: #{$color-dark-grey};
+	--text-color_hover: #{$color-dark-grey};
 }
 .main-color_red {
 	--main-color: #{$color-Red};
