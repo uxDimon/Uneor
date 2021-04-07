@@ -43,6 +43,7 @@ $color-Text-grey: #616161;
 .location-choice {
 	position: relative;
 	min-width: 190px;
+	z-index: 2;
 }
 
 .location-choice__mimic {
@@ -483,7 +484,7 @@ $color-Text-grey: #616161;
 	.header-search__input {
 		&:not(:placeholder-shown),
 		&:focus {
-			width: calc(100vw - 340px);
+			width: calc(100vw - 360px);
 		}
 	}
 }
@@ -505,7 +506,7 @@ $color-Text-grey: #616161;
 	.header-search__input {
 		&:not(:placeholder-shown),
 		&:focus {
-			width: calc(100vw - 270px);
+			width: calc(100vw - 290px);
 		}
 	}
 }

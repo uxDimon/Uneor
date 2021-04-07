@@ -65,10 +65,18 @@ document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 					if (telItemId) this[telItemId] = telItem;
 				}
 			},
+		},
+		inputs = {
+			list: {},
+			create() {
+				for (const input of optionsLisWrap.querySelectorAll("input")) this.list[input.value] = input;
+			},
 		};
 	telSize.create();
+	inputs.create();
 
 	function telSizeClass(telSize, input) {
+		// Добавляет класс к телефону выборного региона
 		if (input.checked) {
 			for (const telItem of telSize.list) telItem.classList.remove("head-tel_choice");
 			telSize[input.value].classList.add("head-tel_choice");
@@ -76,27 +84,35 @@ document.querySelectorAll("[data-location-choice]").forEach((choice) => {
 	}
 
 	document.addEventListener("click", (event) => {
+		// Закрывает модалку
 		if (button.classList.contains(activeClass) && event.target.closest("[data-location-choice]") === null) {
-			optionsLisWrap.classList.toggle(activeClass);
-			button.classList.toggle(activeClass);
+			optionsLisWrap.classList.remove(activeClass);
+			button.classList.remove(activeClass);
 		}
 	});
 
-	for (const input of optionsLisWrap.querySelectorAll("input")) {
-		input.addEventListener("change", () => {
-			buttonText.innerText = input.dataset.name;
-			optionsLisWrap.classList.toggle(activeClass);
-			button.classList.toggle(activeClass);
+	for (const key in inputs.list) {
+		if (Object.hasOwnProperty.call(inputs.list, key)) {
+			const input = inputs.list[key];
+			// Выбор региона
+			input.addEventListener("change", () => {
+				buttonText.innerText = input.dataset.name;
+				optionsLisWrap.classList.remove(activeClass);
+				button.classList.remove(activeClass);
+				telSizeClass(telSize, input);
+				localStorage.locationChoice = input.value;
+			});
 			telSizeClass(telSize, input);
-		});
-		telSizeClass(telSize, input);
+		}
 	}
 
 	button.addEventListener("click", () => {
+		// Открытие модалку
 		optionsLisWrap.classList.toggle(activeClass);
 		button.classList.toggle(activeClass);
 	});
 
+	if (localStorage.locationChoice) inputs.list[localStorage.locationChoice].click();
 	optionsLisWrap.style.width = optionsLisWrap.scrollWidth + "px";
 });
 
