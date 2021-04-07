@@ -19,6 +19,7 @@ $color-Black: #000000;
 $color-White: #ffffff;
 $color-Gray-plus: #b4b4b4;
 $color-Text-grey: #616161;
+$color-grey: #7D7D7D;
 
 @import "./common/fonts.scss";
 
@@ -121,6 +122,10 @@ button {
 	margin-right: 20px;
 }
 
+.cont-block--mb95 {
+	margin-bottom: 95px;
+}
+
 @media screen and (max-width: 768px) {
 	.cont-block__header {
 		flex-wrap: wrap;
@@ -212,6 +217,9 @@ button {
 @import "./common/header.scss";
 @import "./pages/index.scss";
 @import "./common/footer.scss";
+
+@import "./common/main-news.scss";
+@import "./common/main-catalog.scss";
 
 // main-color
 .main-color_green {
