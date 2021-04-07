@@ -169,22 +169,24 @@ block content
                                 img.catalog-list__img(src="assets/images/main-catalog/catalog-12-min.png", alt="")
                 .cont-block__addition.catalog-addition
                     .catalog-addition__top
-                        svg(width="451" height="54")
-                            use(xlink:href="assets/images/sprite.svg#logo-bike-tools")
-                        p.catalog-addition__text Инструменты для велосипедов высшего уровня
-                        a.catalog-addition__btn(href="#") Подробнее 
-                        img(src="", alt="")
+                        .catalog-addition__left
+                            svg(width="451" height="54")
+                                use(xlink:href="assets/images/sprite.svg#logo-bike-tools")
+                            p.catalog-addition__text Инструменты для велосипедов высшего уровня
+                            a.catalog-addition__btn.button.main-color_yellow(href="#") Подробнее
+                        .catalog-addition__right 
+                            img(src="assets/images/unior-bike-tools-min.jpg", alt="")
                     ul.catalog-addition__bot
                         li.catalog-addition__item
                             .catalog-addition__img-wrap
                                 img(src="assets/images/catalog-addition-1-min.png", alt="")
                             .catalog-addition__text-wrap
                                 .catalog-addition__caption Акции
-                                a.catalog-addition__link(href="#") Смотреть все
+                                a.catalog-addition__link.button(href="#") Смотреть все
                         li.catalog-addition__item
                             .catalog-addition__img-wrap
                                 img(src="assets/images/catalog-addition-2-min.png", alt="")
                             .catalog-addition__text-wrap
                                 .catalog-addition__caption Новинки 2021
-                                a.catalog-addition__link(href="#") Смотреть все
+                                a.catalog-addition__link.button(href="#") Смотреть все
 
