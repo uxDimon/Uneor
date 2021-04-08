@@ -2,11 +2,6 @@ header.header
     .cont-block__wrap.header__head-wrap
         .cont-block
             .header__head(data-active-block="mainBurger")
-                //- button(data-active-control="mainBurger").burger-close
-                    svg(width="17" height="17").burger-close__icon
-                        use(xlink:href="./assets/images/sprite.svg#plus-minus")
-
-
                 .location-choice(data-location-choice).header__head--location-choice
                     button(data-location-button='spb').location-choice__mimic
                         svg(width="20" height="20").location-choice__icon-piont
@@ -114,6 +109,26 @@ header.header
                     svg(width="20" height="20")
                         use(xlink:href="./assets/images/sprite.svg#user")
                     span.header__body-login-text Вход / Регистрация
+
+                //- .header__body-login-popup.login-popup
+                    form.login-popup__form
+                        label.input.login-popup__form--input
+                            input(type="text", name="name" placeholder="Лгин" required).input__input
+                            .input__name Лгин
+                            .input__error Поле введено не верно
+                        
+                        label.input.login-popup__form--input
+                            input(type="password", name="name" placeholder="Лгин").input__input
+                            .input__name Лгин
+                            .input__error Поле введено не верно
+
+                        label.input-radio
+                            input(type="radio", name="radio").input-radio__input
+                            .input-radio__text Запомнить меня
+                        
+                        label.input-checkbox
+                            input(type="checkbox", name="checkbox").input-checkbox__input
+                            .input-checkbox__text Запомнить меня
                 
                 a(href="#").basket-button.header__body--basket-button
                     .basket-button__icon-wrap

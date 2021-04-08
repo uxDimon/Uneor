@@ -148,7 +148,7 @@ button {
 .button__wrap {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin: -10px;
 
@@ -212,6 +212,167 @@ button {
 	--icon-width: 2;
 }
 
+// input
+.input {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.input__input {
+	margin: 0;
+	padding: 5px 15px;
+	min-height: 40px;
+	border: 1px solid $color-Gray-plus;
+	border-radius: 5px;
+	background-color: transparent;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	color: $color-dark-grey;
+	order: 2;
+
+	&::placeholder {
+		color: $color-Gray-plus;
+	}
+
+	&:required {
+		~ .input__name::after {
+			content: " *";
+			color: $color-Red;
+		}
+	}
+
+	&:focus {
+		border-color: $color-dark-grey;
+		outline: none;
+	}
+}
+
+.input__name {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	color: $color-dark-grey;
+	margin-bottom: 10px;
+	order: 1;
+}
+
+.input__error {
+	display: none;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 140%;
+	color: red;
+	margin-top: 4px;
+	order: 3;
+}
+
+.input__input.error {
+	border-color: $color-Red;
+
+	&:focus {
+		box-shadow: 0px 0px 0px 1px $color-dark-grey;
+	}
+
+	~ .input__error {
+		display: block;
+	}
+}
+
+// input-switch
+.input-switch {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.input-switch__input {
+	position: absolute;
+	opacity: 0;
+}
+
+.input-switch__mimic {
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	border: 1px solid $color-Gray-plus;
+	background-color: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.input-switch__text {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	color: $color-dark-grey;
+	cursor: pointer;
+}
+
+.input-switch__input {
+	&[type="radio"] {
+		~ .input-switch__mimic {
+			border-radius: 12px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				width: 4px;
+				height: 4px;
+				border-radius: 6px;
+				background-color: $color-White;
+				opacity: 0;
+			}
+		}
+	}
+
+	&[type="checkbox"] {
+		~ .input-switch__mimic {
+			border-radius: 2px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' xmlns:v='https://vecta.io/nano'%3E%3Cpath d='M2 6l3 3 6-6' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				opacity: 0;
+			}
+		}
+	}
+
+	&:checked {
+		~ .input-switch__mimic {
+			border-color: $color-Blue_1;
+			background-color: $color-Blue_1;
+
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:disabled {
+		cursor: default;
+
+		~ .input-switch__mimic,
+		~ .input-switch__text {
+			cursor: default;
+			color: $color-Gray-plus;
+		}
+	}
+}
+
 // subscribe-news
 .subscribe-news {
 	display: flex;
@@ -227,8 +388,8 @@ button {
 	border-right: none;
 	border-radius: 5px 0 0 5px;
 	padding: 10px 20px 10px 50px;
-	background-image: url("../images/sprite.svg#email");
-	background-position: 20px center;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' xmlns:v='https://vecta.io/nano'%3E%3Cpath d='M17.5 3.75h-15A1.25 1.25 0 0 0 1.25 5v10a1.25 1.25 0 0 0 1.25 1.25h15A1.25 1.25 0 0 0 18.75 15V5a1.25 1.25 0 0 0-1.25-1.25zM16.125 5L10 9.238 3.875 5h12.25zM2.5 15V5.569l7.144 4.944c.105.073.229.112.356.112s.252-.039.356-.112L17.5 5.569V15h-15z' fill='%23808080' /%3E%3C/svg%3E");
+	background-position: 16px center;
 	background-size: 20px;
 	background-repeat: no-repeat;
 
