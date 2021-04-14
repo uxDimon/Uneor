@@ -282,9 +282,13 @@ button {
 
 // input-switch
 .input-switch {
+	position: relative;
+	display: inline-block;
+}
+.input-switch__wrap {
 	display: flex;
 	align-items: center;
-	position: relative;
+	outline-offset: 2px;
 }
 
 .input-switch__input {
@@ -312,7 +316,7 @@ button {
 
 .input-switch__input {
 	&[type="radio"] {
-		~ .input-switch__mimic {
+		~ .input-switch__wrap .input-switch__mimic {
 			border-radius: 12px;
 
 			&::before {
@@ -331,7 +335,7 @@ button {
 	}
 
 	&[type="checkbox"] {
-		~ .input-switch__mimic {
+		~ .input-switch__wrap .input-switch__mimic {
 			border-radius: 2px;
 
 			&::before {
@@ -351,24 +355,33 @@ button {
 		}
 	}
 
-	&:checked {
-		~ .input-switch__mimic {
-			border-color: $color-Blue_1;
-			background-color: $color-Blue_1;
+	&.focus-visible {
+		~ .input-switch__wrap {
+			outline: auto;
+		}
+	}
 
-			&::before {
-				opacity: 1;
+	&:checked {
+		~ .input-switch__wrap {
+			.input-switch__mimic {
+				border-color: $color-Blue_1;
+				background-color: $color-Blue_1;
+
+				&::before {
+					opacity: 1;
+				}
 			}
 		}
 	}
 
 	&:disabled {
 		cursor: default;
-
-		~ .input-switch__mimic,
-		~ .input-switch__text {
-			cursor: default;
-			color: $color-Gray-plus;
+		~ .input-switch__wrap {
+			.input-switch__mimic,
+			.input-switch__text {
+				cursor: default;
+				color: $color-Gray-plus;
+			}
 		}
 	}
 }
