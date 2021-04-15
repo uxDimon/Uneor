@@ -85,6 +85,19 @@ a {
 	outline: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .cont-block__wrap {
 	display: flex;
 	flex-direction: column;
@@ -452,6 +465,7 @@ a {
 @import "./common/main-catalog.scss";
 @import "./common/manufacturer-block.scss";
 @import "./common/abilities.scss";
+@import "./common/video-block.scss";
 
 // main-color
 .main-color_green {
@@ -475,6 +489,12 @@ a {
 .main-color_orange {
 	--main-color: #{$color-Orange};
 	--main-color_hover: #{darken($color-Orange, 10%)};
+	--text-color: #{$color-White};
+	--text-color_hover: #{$color-White};
+}
+.main-color_blue-1 {
+	--main-color: #{$color-Blue_1};
+	--main-color_hover: #{darken($color-Blue_1, 10%)};
 	--text-color: #{$color-White};
 	--text-color_hover: #{$color-White};
 }
