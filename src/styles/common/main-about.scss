@@ -1,0 +1,15 @@
+.about__text-wrap {
+    column-count: 2;
+    column-gap: 31px;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about__text-wrap {
+        column-count: 1;
+    }
+}
