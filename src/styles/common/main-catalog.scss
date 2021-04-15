@@ -19,23 +19,7 @@ $color-grey: #7d7d7d;
 	column-gap: 30px;
 	row-gap: 30px;
 }
-.catalog-list__item {
-	&:last-of-type {
-		.catalog-list__link {
-			background-color: $color-Yellow;
-		}
-		.catalog-list__img-wrap {
-			height: 168px;
-		}
-		.catalog-list__text-wrap {
-			padding: 40px;
-			padding-bottom: 15px;
-		}
-		.catalog-list__caption {
-			color: $color-Black;
-		}
-	}
-}
+
 .catalog-list__link {
 	display: flex;
 	flex-direction: column;
@@ -48,6 +32,7 @@ $color-grey: #7d7d7d;
 	transition: 150ms ease-in-out 0ms;
 	transition-property: box-shadow, color;
 	overflow: hidden;
+	order: 1;
 
 	&:hover {
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
@@ -69,18 +54,35 @@ $color-grey: #7d7d7d;
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
 		color: $color-Blue_1;
 	}
+}
 
-	&:last-of-type {
-		.catalog-list__img-wrap {
-			height: 168px;
-		}
-		.catalog-list__text-wrap {
-			padding: 40px;
-			padding-bottom: 15px;
-		}
-		.catalog-list__caption {
-			color: $color-Black;
-		}
+.catalog-list__item_catalog {
+	order: 3;
+
+	.catalog-list__link {
+		background-color: $color-Yellow;
+	}
+
+	.catalog-list__img-wrap {
+		height: 168px;
+	}
+
+	.catalog-list__text-wrap {
+		padding: 40px;
+		padding-bottom: 15px;
+		justify-content: flex-start;
+	}
+
+	.catalog-list__icon-arrow {
+		margin-left: 10px;
+	}
+
+	.catalog-list__caption {
+		color: $color-Black;
+	}
+
+	.catalog-list__img {
+		object-position: bottom left;
 	}
 }
 
@@ -103,7 +105,8 @@ $color-grey: #7d7d7d;
 	img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
+		object-position: top right;
 	}
 }
 .catalog-list__text-wrap {
@@ -128,7 +131,7 @@ $color-grey: #7d7d7d;
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 	color: $color-White;
 	background-color: $color-dark-grey;
 	border-radius: 10px;
@@ -138,12 +141,29 @@ $color-grey: #7d7d7d;
 .catalog-addition__left {
 	padding: 20px;
 	padding-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	background-image: url("../images/addition-bac.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
 
 	svg {
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 	}
 }
+
+.catalog-list__buttom-more {
+	display: none;
+	order: 2;
+
+	> .button input {
+		display: none;
+	}
+}
+
 .catalog-addition__text {
 	font-weight: 600;
 	font-size: 18px;
@@ -155,8 +175,8 @@ $color-grey: #7d7d7d;
 }
 
 .catalog-addition__right {
-	max-width: 569px;
 	height: 100%;
+	width: 50%;
 
 	img {
 		display: block;
@@ -173,8 +193,6 @@ $color-grey: #7d7d7d;
 .catalog-addition__item {
 	display: flex;
 	justify-content: space-between;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	color: $color-White;
 	padding-right: 100px;
@@ -183,6 +201,7 @@ $color-grey: #7d7d7d;
 		background-color: $color-Orange;
 		border-radius: 10px;
 	}
+
 	&:nth-of-type(2) {
 		background-color: $color-Blue_1;
 		border-radius: 10px;
@@ -207,17 +226,11 @@ $color-grey: #7d7d7d;
 	color: $color-dark-grey;
 	border-color: $color-White;
 
-	&:first-of-type {
-		background-color: $color-Orange;
-		border-radius: 10px;
+	&:hover {
+		background-color: $color-Silver;
+		color: $color-dark-grey;
+		border-color: $color-Silver;
 	}
-	&:nth-of-type(2) {
-		background-color: $color-Blue_1;
-		border-radius: 10px;
-	}
-}
-.catalog-list__btn {
-	display: none;
 }
 
 @media screen and (max-width: 1023px) {
@@ -249,6 +262,7 @@ $color-grey: #7d7d7d;
 	}
 	.catalog-addition__left {
 		min-height: 300px;
+		width: 100%;
 		padding: 30px 20px;
 	}
 	.catalog-addition__text {
@@ -263,6 +277,13 @@ $color-grey: #7d7d7d;
 		&:first-of-type {
 			.catalog-addition__img-wrap {
 				align-self: flex-end;
+				margin-right: 0;
+				display: flex;
+				justify-content: flex-end;
+
+				> img {
+					transform: rotate(180deg);
+				}
 			}
 		}
 		&:last-of-type {
@@ -284,5 +305,9 @@ $color-grey: #7d7d7d;
 	}
 	.catalog-list__btn {
 		display: flex;
+	}
+
+	.catalog-list__buttom-more {
+		display: block;
 	}
 }

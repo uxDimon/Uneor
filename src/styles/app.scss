@@ -187,7 +187,7 @@ a {
 	--main-color_hover: #{darken($color-Blue_1, 10%)};
 	--text-color: #{$color-White};
 	--text-color_hover: #{$color-White};
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	padding: 6px 20px;
 	border-radius: 5px;

@@ -195,7 +195,13 @@ block content
                                 img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Наши возможности")
                             .catalog-list__text-wrap
                                 .catalog-list__caption Наши<br> возможности
-                    li.catalog-list__item
+
+                    li.catalog-list__buttom-more
+                        label.button.main-color_yellow 
+                            span Показать больше
+                            input(type="checkbox" name="buttom-more")(data-catalog-list-more) 
+
+                    li.catalog-list__item.catalog-list__item_catalog
                         a.catalog-list__link(href="#")
                             .catalog-list__text-wrap
                                 .catalog-list__caption Перейти в каталог
