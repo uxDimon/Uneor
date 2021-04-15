@@ -20,6 +20,7 @@ $color-grey: #7d7d7d;
 	row-gap: 30px;
 }
 .catalog-list__item {
+<<<<<<< HEAD
 	&:last-of-type {
 		.catalog-list__link {
 			background-color: $color-Yellow;
@@ -53,6 +54,39 @@ $color-grey: #7d7d7d;
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
 		color: $color-Blue_1;
 	}
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: $color-White;
+    border-radius: 10px;
+    color: $color-Text-grey;
+    text-decoration: none;
+    transition: 150ms ease-in-out 0ms;
+    transition-property: box-shadow, color;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+        color: $color-Blue_1;
+    }
+
+    &:last-of-type {
+        background-color: $color-Yellow;
+
+        .catalog-list__img-wrap {
+            height: 168px;
+        }
+        .catalog-list__text-wrap {
+            padding: 40px;
+            padding-bottom: 15px;
+        }
+        .catalog-list__caption {
+            color: $color-Black;
+        }
+    }
+>>>>>>> origin/kate2
 }
 
 .catalog-list__ex {
@@ -94,9 +128,50 @@ $color-grey: #7d7d7d;
 }
 
 .catalog-addition__top {
+<<<<<<< HEAD
 	background-color: $color-dark-grey;
 	border-radius: 10px;
 	margin-bottom: 40px;
+=======
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-White;
+    background-color: $color-dark-grey;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+.catalog-addition__left {
+    padding: 20px;
+    padding-left: 40px;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+.catalog-addition__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 30px 0 50px;
+}
+.catalog-addition__btn {
+    width: max-content;
+}
+
+.catalog-addition__right {
+    max-width: 569px;
+    height: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+>>>>>>> origin/kate2
 }
 .catalog-addition__bot {
 	display: grid;
@@ -104,8 +179,44 @@ $color-grey: #7d7d7d;
 	column-gap: 40px;
 }
 .catalog-addition__item {
+<<<<<<< HEAD
 	display: flex;
 	justify-content: space-between;
+=======
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-White;
+    padding-right: 100px;
+
+    &:first-of-type {
+        background-color: $color-Orange;
+        border-radius: 10px;
+    }
+    &:nth-of-type(2) {
+        background-color: $color-Blue_1;
+        border-radius: 10px;
+    }
+}
+.catalog-addition__img-wrap {
+    display: flex;
+
+    img {
+        display: block;
+    }
+}
+.catalog-addition__caption {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+.catalog-addition__link {
+    width: max-content;
+    background-color: $color-White;
+    color: $color-dark-grey;
+    border-color: $color-White;
+>>>>>>> origin/kate2
 
 	&:first-of-type {
 		background-color: $color-Orange;
@@ -116,3 +227,76 @@ $color-grey: #7d7d7d;
 		border-radius: 10px;
 	}
 }
+<<<<<<< HEAD
+=======
+.catalog-list__btn {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .catalog-list {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .catalog-addition__bot {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-list {
+        grid-template-columns: 1fr;
+    }
+    .catalog-list__img-wrap {
+        height: 120px;
+    }
+    .catalog-addition__top {
+        flex-direction: column-reverse;
+    }
+    .catalog-addition__right {
+        max-width: 100%;
+        width: 100%;
+        height: 183px;
+    }
+    .catalog-addition__left {
+        min-height: 300px;
+        padding: 30px 20px;
+    }
+    .catalog-addition__text {
+        font-size: 14px;
+        margin: 28px 0 40px;
+    }
+    .catalog-addition__item {
+        flex-direction: column;
+        padding-right: 0;
+        padding-bottom: 27px;
+
+        &:first-of-type {
+            .catalog-addition__img-wrap {
+                align-self: flex-end;
+            }
+        }
+        &:last-of-type {
+            .catalog-addition__img-wrap {
+                align-self: flex-start;
+            }
+        }
+    }
+    .catalog-addition__img-wrap {
+        height: 165px;
+    }
+    .catalog-addition__text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog-addition__caption {
+        margin-bottom: 15px;
+    }
+    .catalog-list__btn {
+        display: flex;
+    }
+}
+>>>>>>> origin/kate2
