@@ -2,11 +2,6 @@ header.header
     .cont-block__wrap.header__head-wrap
         .cont-block
             .header__head(data-active-block="mainBurger")
-                //- button(data-active-control="mainBurger").burger-close
-                    svg(width="17" height="17").burger-close__icon
-                        use(xlink:href="./assets/images/sprite.svg#plus-minus")
-
-
                 .location-choice(data-location-choice).header__head--location-choice
                     button(data-location-button='spb').location-choice__mimic
                         svg(width="20" height="20").location-choice__icon-piont
@@ -20,15 +15,15 @@ header.header
                     ul(data-location-option-list).location-choice__option
                         li.location-choice__item 
                             label.location-choice__button
-                                input(type="radio", name="location-choice", value="spb", checked, data-name='Санкт-Петербург')
+                                input(type="radio" name="location-choice" value="spb", checked, data-name='Санкт-Петербург')
                                 | Санкт-Петербург
                         li.location-choice__item 
                             label.location-choice__button
-                                input(type="radio", name="location-choice", value="msk", data-name='Москва')
+                                input(type="radio" name="location-choice" value="msk" data-name='Москва')
                                 | Москва
                         li.location-choice__item 
                             label.location-choice__button
-                                input(type="radio", name="location-choice", value="ekb", data-name='Екатеринбург')
+                                input(type="radio" name="location-choice" value="ekb" data-name='Екатеринбург')
                                 | Екатеринбург
 
                 a(href="#").basket-button.header__head--basket-button
@@ -42,7 +37,7 @@ header.header
                     svg(width="20" height="20")
                         use(xlink:href="./assets/images/sprite.svg#wheelbarrow")
                     | Корзина
-                
+
                 nav.header__head--header-menu
                     ul.header-menu 
                         li.header-menu__item.header-menu__item_burder
@@ -83,7 +78,7 @@ header.header
             a(href="/").header__body-logo
                 svg(width="130" height="60")
                     use(xlink:href="./assets/images/sprite.svg#main-logo")
-            
+
             nav.header__body--header-menu
                 ul.header-menu 
                     li.header-menu__item 
@@ -105,23 +100,48 @@ header.header
                     label.header-search
                         svg(width="20" height="20").header-search__icon-search
                             use(xlink:href="./assets/images/sprite.svg#search-alt")
-                        input(type="search", name="header-search" placeholder='Поиск').header-search__input 
+                        input(type="search" name="header-search" placeholder='Поиск').header-search__input 
                         button(type="button").header-search__clear
                             svg(width="17" height="17")
                                 use(xlink:href="./assets/images/sprite.svg#plus-minus")
 
-                button(data-login-control).header__body-login
+                button(data-login-control data-active-control='login1').header__body-login
                     svg(width="20" height="20")
                         use(xlink:href="./assets/images/sprite.svg#user")
                     span.header__body-login-text Вход / Регистрация
-                
+
+                .header__body-login-popup.login-popup(data-login-block data-active-block='login1')
+                    .login-popup__error-text Неверный логин или пароль
+
+                    form.login-popup__form
+                        label.input.login-popup__form--input
+                            input(type="text" name="name" placeholder="Лгин" required).input__input
+                            //- .input__name Лгин
+                            .input__error Поле введено не верно
+
+                        label.input.login-popup__form--input
+                            input(type="password" name="name" placeholder="Пароль" required).input__input
+                            //- .input__name Пароль
+                            .input__error Поле введено не верно
+
+                        label.input-switch.login-popup__form--input-switch
+                            input(type="checkbox" name="checkbox").input-switch__input
+                            .input-switch__wrap
+                                .input-switch__mimic           
+                                .input-switch__text Запомнить меня            
+
+                        .button__wrap.login-popup__form--button__wrap
+                            button(type="submit").button Войти
+
+                    a(href="").login-popup__a Забыли пароль?
+
                 a(href="#").basket-button.header__body--basket-button
                     .basket-button__icon-wrap
                         .basket-button__number 2
                         svg(width="20" height="20").basket-button__icon
                             use(xlink:href="./assets/images/sprite.svg#wheelbarrow")
                     span.basket-button-trxt Корзина
-            
+
                 button(data-active-control="mainBurger").burger-button__wrap
                     .burger-button
                         .burger-button__border
