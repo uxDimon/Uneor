@@ -135,3 +135,21 @@ for (const searchWrap of document.querySelectorAll(".header-search")) {
 		cancel.classList.remove(activeClass);
 	});
 }
+
+// catalog-list
+for (const catalog of document.querySelectorAll(".catalog-list")) {
+	const list = catalog.querySelectorAll(".catalog-list__item:nth-child(1n + 5):not(.catalog-list__item_catalog)"),
+		button = catalog.querySelector("[data-catalog-list-more]");
+	function hideItems() {
+		for (const item of list) item.style.display = document.documentElement.clientWidth <= 767 && !button.checked ? "none" : "block";
+	}
+	hideItems();
+
+	window.addEventListener("resize", function () {
+		hideItems();
+	});
+	button.addEventListener("change", () => {
+		for (const item of list) item.style.display = !button.checked ? "none" : "block";
+		button.parentElement.querySelector("span").innerText = button.checked ? "Скрыть" : "Показать больше";
+	});
+}
