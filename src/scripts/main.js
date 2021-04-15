@@ -44,7 +44,11 @@ for (const activeBlock of document.querySelectorAll("[data-active-block]")) {
 		});
 	}
 	document.addEventListener("click", (event) => {
-		if (activeBlock.classList.contains(activeClass) && event.target.closest("[data-active-block]") === null && event.target.closest("[data-active-control]") === null) {
+		if (
+			activeBlock.classList.contains(activeClass) &&
+			event.target.closest(`[data-active-block="${activeBlock.dataset.activeBlock}"]`) === null &&
+			event.target.closest(`[data-active-control="${activeBlock.dataset.activeBlock}"]`) === null
+		) {
 			for (const activeControlItem of activeControlList) activeControlItem.classList.toggle(activeClass);
 			activeBlock.classList.toggle(activeClass);
 		}

@@ -68,6 +68,17 @@ button {
 	background: transparent;
 }
 
+a {
+	--main-color: #{$color-Blue_1};
+	--main-color_hover: #{darken($color-Blue_1, 10%)};
+	color: var(--main-color);
+	text-decoration: underline;
+
+	&:hover {
+		color: var(--main-color_hover);
+	}
+}
+
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
