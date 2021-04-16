@@ -153,3 +153,35 @@ for (const catalog of document.querySelectorAll(".catalog-list")) {
 		button.parentElement.querySelector("span").innerText = button.checked ? "Скрыть" : "Показать больше";
 	});
 }
+
+//cooperation slider
+if (document.querySelector(".cooperation__slider")) {
+	let styleProjects;
+	let sliderOn = false;
+
+	function initSlider() {
+		if (document.body.clientWidth >= 768 && sliderOn) {
+			styleProjects.destroy();
+			sliderOn = false;
+		}
+		if (document.body.clientWidth < 768 && !sliderOn) {
+			styleProjects = new Swiper(".cooperation__slider .swiper-container", {
+				slidesPerView: 1,
+				spaceBetween: 20,
+
+				// Navigation arrows
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+			sliderOn = true;
+		}
+	}
+
+	window.onresize = function () {
+		initSlider();
+	};
+
+	initSlider();
+}
