@@ -213,6 +213,17 @@ a {
 	color: $color-dark-grey;
 }
 
+.button_more {
+	display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 140%;
+
+	svg {
+		margin-left: 11px;
+	}
+}
+
 // linc-arrow
 .linc-arrow {
 	--main-color: #{$color-Blue_1};
@@ -468,6 +479,7 @@ a {
 @import "./common/video-block.scss";
 @import "./common/main-about.scss";
 @import "./common/about-company.scss";
+@import "./common/subsidiary.scss";
 
 // main-color
 .main-color_green {

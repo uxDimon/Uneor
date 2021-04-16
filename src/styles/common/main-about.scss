@@ -7,9 +7,16 @@
         margin-bottom: 10px;
     }
 }
+.about__text-btn {
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
     .about__text-wrap {
         column-count: 1;
     }
+    .about__text-btn {
+        display: flex;
+        margin: 20px 0;
+    }    
 }
