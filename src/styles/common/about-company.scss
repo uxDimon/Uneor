@@ -1,0 +1,133 @@
+// Цвета
+$color-dark-grey: #252525;
+$color-dark-grey-2: #222325;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+
+.about-company {
+    display: flex;
+
+    b {
+        font-weight: 600;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+.about-company__left {
+    max-width: 470px;
+    color: $color-White;
+    background-color: $color-Blue_1;
+    border-radius: 10px 0px 0px 10px;
+    padding: 30px;
+}
+.about-company__right {
+    color: $color-Text-grey;
+    background-color: $color-White;
+    border-radius: 0px 10px 10px 0px;
+    padding: 30px 40px 36px 50px;
+
+    .about-company__img {
+        float: left;
+        margin-right: 31px;
+        margin-top: 13px;
+    }
+}
+.about-company__caption {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    &::before {
+        display: none;
+    }
+}
+.about-company__img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.about-company__btn {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .about-company__right {
+        .about-company__img {
+            float: none;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about-company {
+        flex-direction: column;
+    }
+    .about-company__left {
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+        padding-bottom: 30px;
+
+        .about-company__btn {
+            color: $color-White;
+
+            svg {
+                --icon-color: #{$color-White};
+            }
+        }
+    }
+    .about-company__right {
+        border-radius: 0px 0px 10px 10px;
+        padding: 30px 20px;
+
+        .about-company__btn {
+            color: $color-Blue_1;
+        }
+        .about-company__img {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        .about-company__caption {
+            position: relative;
+            left: -20px;
+    
+            &::before {
+                display: block;
+                margin-top: 0;
+            }
+        }
+    }
+    .about-company__btn {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 140%;
+        margin: 20px 0;
+        
+        svg {
+            margin-left: 11px;
+        }
+    }
+    .about-company__img {
+        max-width: 230px;
+    }
+    .about-company__caption {
+        font-size: 16px;
+    }
+}
