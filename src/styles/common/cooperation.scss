@@ -71,6 +71,12 @@ $color-grey: #7d7d7d;
     }
     .swiper-button-prev, .swiper-button-next {
         display: none;
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 22px;
+        }
     }
 }
 .cooperation__slider-img {

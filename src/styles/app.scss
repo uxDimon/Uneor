@@ -318,6 +318,13 @@ img {
 		--long-arrow: #{$color-White};
 	}
 }
+.swiper-button_orange {
+	background-color: $color-Orange;
+
+	svg {
+		--long-arrow: #{$color-White};
+	}
+}
 
 @media screen and (max-width: 960px) {
 	.swiper-button-prev, .swiper-button-next {

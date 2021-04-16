@@ -78,6 +78,9 @@ $color-grey: #7d7d7d;
 }
 
 @media screen and (max-width: 767px) {
+    .cont-block__wrap_career {
+        overflow-x: hidden;
+    }
     .career-slider__subtitle {
         margin-bottom: 40px;
     }

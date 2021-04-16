@@ -108,6 +108,13 @@ block content
                     .swiper-button-next.swiper-button_green
                         svg(width="22" height="22")
                             use(xlink:href="assets/images/sprite.svg#long-arrow")
+                .swiper-btn-wrap
+                    .swiper-button-prev.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
 
         //- main news block
         section.cont-block__wrap.cont-block_mb95
@@ -552,7 +559,7 @@ block content
                     img(src="assets/images/career-banner.jpg", alt="")
 
         //- career блок работа в компании
-        section.cont-block__wrap.cont-block_mb95(style="overflow-x: hidden;")
+        section.cont-block__wrap.cont-block__wrap_career.cont-block_mb95
             .cont-block.cont-block_small
                 .cont-block__header
                     h1.cont-block__h.main-color_red Работа в компании UNIOR
