@@ -1,0 +1,113 @@
+// Цвета
+$color-dark-grey: #252525;
+$color-dark-grey-2: #222325;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+
+.career-slider__subtitle {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.career-slider__slider-wrap {
+    position: relative;
+
+    .swiper-button-prev {
+        left: -70px;
+    }
+    .swiper-button-next {
+        right: -70px;
+    }
+}
+.career-slider__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.career-slider__video-wrap {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.career-slider__text-wrap {
+    color: $color-Text-grey;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+.career-slider__caption {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: $color-dark-grey;
+}
+.career-slider__desc {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .career-slider__slider-wrap {
+        .swiper-button-prev {
+            left: -10px;
+        }
+        .swiper-button-next {
+            right: -10px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .career-slider__subtitle {
+        margin-bottom: 40px;
+    }
+    .career-slider__slider-wrap {
+        .swiper-container {
+            overflow: visible;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+    .career-slider__item {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .career-slider__video-wrap {
+        img {
+            height: 280px;
+        }
+    }
+    .career-slider__caption {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .career-slider__video-wrap {
+        img {
+            height: 180px;
+        }
+    }
+}

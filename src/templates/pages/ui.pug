@@ -6,6 +6,7 @@ block variables
 
 block content
     main
+        //- ui inputs
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -44,7 +45,7 @@ block content
                         .input-switch__mimic           
                         .input-switch__text Запомнить меня            
 
-
+        //- ui buttons
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -85,8 +86,30 @@ block content
                     a(href="#").button.button_ghost.main-color_orange Ссылка 
 
                     button.button.button_ghost.main-color_blue-2 Кнопка
-                    a(href="#").button.button_ghost.main-color_blue-2 Ссылка 
+                    a(href="#").button.button_ghost.main-color_blue-2 Ссылка
+                .swiper-btn-wrap
+                    .swiper-button-prev
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                .swiper-btn-wrap
+                    .swiper-button-prev.swiper-button_blue
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next.swiper-button_blue
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                .swiper-btn-wrap
+                    .swiper-button-prev.swiper-button_green
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next.swiper-button_green
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
 
+        //- main news block
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -121,6 +144,7 @@ block content
                                 h3.news-list__caption Интервью с руководителем коммерческого департамента
                                 p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
 
+        //- main catalog block
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -232,6 +256,7 @@ block content
                                 .catalog-addition__caption Новинки 2021
                                 a.catalog-addition__link.button(href="#") Смотреть все
 
+        //- main block производитель
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -246,31 +271,33 @@ block content
 
                         a.manufact__btn.button.main-color_red(href="#" download) Скачать каталог
 
+        //- main block наши возможности
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
                     h2.cont-block__h.main-color_yellow Наши возможности
-                
+
                 .abilities-list
                     .abilities-list__item
-                        img.abilities-list__img(src="assets/images/options-1.jpg", alt="")
+                        img.abilities-list__img(src="assets/images/options-1.jpg" alt="")
                         .abilities__text-wrap
                             h3.abilities__caption Проектирование рабочего пространства
                             p Создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.
                         a.abilities__btn.button(href="#") Подробнее
                     .abilities-list__item
-                        img.abilities-list__img(src="assets/images/options-2.jpg", alt="")
+                        img.abilities-list__img(src="assets/images/options-2.jpg" alt="")
                         .abilities__text-wrap
                             h3.abilities__caption Сервис
                             p Наша компания предоставляет широкий спектр услуг по созданию модульных систем, систем хранения, а также 3D-моделированию. Также мы занимаемся обслуживанием и ремонтом поставляемого оборудования.
                         a.abilities__btn.button(href="#") Подробнее
                     .abilities-list__item
-                        img.abilities-list__img(src="assets/images/options-3.jpg", alt="")
+                        img.abilities-list__img(src="assets/images/options-3.jpg" alt="")
                         .abilities__text-wrap
                             h3.abilities__caption Гарантия
                             p UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент. В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.
                         a.abilities__btn.button(href="#") Подробнее
 
+        //- main block video list
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -282,12 +309,12 @@ block content
                     label.video-nav__item
                         input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="tabId1" data-tab-control="tab2")
                         span Видео о нас
-                
+
 
                 .video-list(data-tab-id="tabId1" data-tab-block="tab1")
                     .video-list__item
                         .video-list__wrap
-                            img(src="assets/images/video-cover.jpg", alt="")
+                            img(src="assets/images/video-cover.jpg" alt="")
                             button.video-list__btn(aria-label="Play")
                                 <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
@@ -295,7 +322,7 @@ block content
                         span.video-list__caption Правильный выбор инструмента, советы от профессионалов
                     .video-list__item
                         .video-list__wrap
-                            img(src="assets/images/video-cover.jpg", alt="")
+                            img(src="assets/images/video-cover.jpg" alt="")
                             button.video-list__btn(aria-label="Play")
                                 <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
@@ -303,7 +330,7 @@ block content
                         span.video-list__caption Правильный выбор инструмента, советы от профессионалов
                     .video-list__item
                         .video-list__wrap
-                            img(src="assets/images/video-cover.jpg", alt="")
+                            img(src="assets/images/video-cover.jpg" alt="")
                             button.video-list__btn(aria-label="Play")
                                 <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
@@ -313,7 +340,7 @@ block content
                 .video-list(data-tab-id="tabId1" data-tab-block="tab2")
                     .video-list__item
                         .video-list__wrap
-                            img(src="assets/images/video-cover.jpg", alt="")
+                            img(src="assets/images/video-cover.jpg" alt="")
                             button.video-list__btn(aria-label="Play")
                                 <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
@@ -321,7 +348,7 @@ block content
                         span.video-list__caption Правильный выбор инструмента, советы от профессионалов
                     .video-list__item
                         .video-list__wrap
-                            img(src="assets/images/video-cover.jpg", alt="")
+                            img(src="assets/images/video-cover.jpg" alt="")
                             button.video-list__btn(aria-label="Play")
                                 <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
@@ -330,6 +357,7 @@ block content
 
                 button.video-btn_more.button Показать больше
 
+        //- block с текстом в 2 колонки
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .about__text-wrap
@@ -340,6 +368,7 @@ block content
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
 
+        //- about company блок о компании
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
@@ -348,7 +377,7 @@ block content
                 .about-company
                     .about-company__left
                         .about-company__caption UNIOR d.d.
-                        img.about-company__img(src="assets/images/logo-white.png", alt="")
+                        img.about-company__img(src="assets/images/logo-white.png" alt="")
                         p Акционерное общество UNIOR основано в 1919 году и находится в Словении (территория бывшей Югославии). Компания UNIOR берет начало из региона Похорье, который широко известен своими традициями ковки. Помимо головного предприятия в Зрече, компания включает в себя производственные и коммерческие предприятия по всему миру.
                         button.about-company__btn.button_more
                             span Показать полностью
@@ -357,7 +386,7 @@ block content
                         p Компания UNIOR широко известна как производитель профессионального ручного инструмента, кованых изделий, изделий порошковой металлургии и специальных металлообрабатывающих станков.
                     .about-company__right
                         .cont-block__h.about-company__caption UNIOR в России
-                        img.about-company__img(src="assets/images/logo-blue.png", alt="")
+                        img.about-company__img(src="assets/images/logo-blue.png" alt="")
                         p ООО "Униор Профешнл Тулз" – дочернее предприятие и официальное представительство компании UNIOR d.d. в России и странах СНГ с головным офисом и центральным складом в Санкт-Петербурге, а также представительствами и складами в Москве и Екатеринбурге.
                         button.about-company__btn.button_more
                             span Показать полностью
@@ -366,11 +395,12 @@ block content
                         p Основная задача нашей компании – <b>обеспечение поддержки предприятий в реализации их производственных, эксплуатационных и ремонтных задач с помощью поставки качественного профессионального ручного инструмента.</b> Мы не просто осуществляем поставки – мы помогаем в решении ряда вопросов, связанных со снижением затрат и повышением качества и безопасности проводимых работ.
                         p Свою цель мы видим в том, чтобы помочь каждому клиенту в выборе того инструмента, который необходим именно ему.
 
+        //- about company филиалы
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
-                    h1.cont-block__h.main-color_blue-1 Филиалы UNIOR в России
-                
+                    h2.cont-block__h.main-color_blue-1 Филиалы UNIOR в России
+
                 .subsidiary-wrap
                     ul.subsidiary-list
                         li.subsidiary-list__item
@@ -389,12 +419,13 @@ block content
                             address.subsidiary-list__address 117574, Москва, проезд Одоевского, д.2А
                             a.subsidiary-list__number(href="tel:+74952589274") (495) 258-92-74
                             a.subsidiary-list__mail(href="mailto:unior@unior.ru") moscow@unior.ru
-    
+
+        //- about company отраслевые решения
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
-                    h1.cont-block__h.main-color_blue-1 Отраслевые решения
-                
+                    h2.cont-block__h.main-color_blue-1 Отраслевые решения
+
                 .about__text-wrap
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
@@ -409,15 +440,16 @@ block content
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
                     p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
 
+        //- about company блок карьера
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
-                    h1.cont-block__h.main-color_red Карьера
-                
+                    h2.cont-block__h.main-color_red Карьера
+
                 .cont-block__text-wrap
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
                     p Ullamcorper massa dolor, in vel phasellus purus, dictum. Feugiat elementum elit imperdiet eros in. Consequat, ridiculus amet, velit sit malesuada duis duis fermentum et.
-                
+
                 ul.career-advantages
                     li.career-advantages__item
                         svg.career-advantages__icon(width="50" height="50")
@@ -461,11 +493,12 @@ block content
                                 svg(width="20" height="20")
                                     use(xlink:href="assets/images/sprite.svg#arrow")
 
+        //- about company стать партнером
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .cont-block__header
-                    h1.cont-block__h.main-color_blue-1 Стать нашим партнером
-                
+                    h2.cont-block__h.main-color_blue-1 Стать нашим партнером
+
                 .cooperation
                     .cooperation__text-wrap
                         p Миссия компании UNIOR в России – сделать качественный инструмент доступным любому пользователю. Для этого мы создали и развиваем региональную партнерскую сеть, которая помогает нашим клиентам облегчить и ускорить выбор и получение нужного им инструмента. 
@@ -476,10 +509,10 @@ block content
                             .swiper-wrapper
                                 .swiper-slide
                                     .cooperation__slider-img
-                                        img(src="assets/images/cooperation-1.jpg", alt="")
+                                        img(src="assets/images/cooperation-1.jpg" alt="")
                                 .swiper-slide
                                     .cooperation__slider-img
-                                        img(src="assets/images/cooperation-2.jpg", alt="")
+                                        img(src="assets/images/cooperation-2.jpg" alt="")
                             .swiper-button-prev
                                 svg(width="22" height="22")
                                     use(xlink:href="assets/images/sprite.svg#long-arrow")
@@ -511,5 +544,60 @@ block content
                             h3.cooperation__subtitle Как это работает?
                             p Если Вам интересно развивать свой бизнес вместе с компанией UNIOR и заниматься поставками высококачественного профессионального инструмента, свяжитесь с нами, и мы подробнее познакомим Вас с нашими возможностями и условиями сотрудничества.
                             button.cooperation__btn.button Заполнить заявку
-                        
-                    
+
+        //- career banner
+        section.cont-block__wrap.cont-block_mb95
+            .cont-block
+                .banner-wrap
+                    img(src="assets/images/career-banner.jpg", alt="")
+
+        //- career блок работа в компании
+        section.cont-block__wrap.cont-block_mb95(style="overflow-x: hidden;")
+            .cont-block.cont-block_small
+                .cont-block__header
+                    h1.cont-block__h.main-color_red Работа в компании UNIOR
+
+                .cont-block__text-wrap
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+
+                    p Ullamcorper massa dolor, in vel phasellus purus, dictum. Feugiat elementum elit imperdiet eros in. Consequat, ridiculus amet, velit sit malesuada duis duis fermentum et.
+
+                .career-slider
+                    h3.career-slider__subtitle.subtitle Истории успеха от нашей команды
+
+                    .career-slider__slider-wrap
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .career-slider__item
+                                        .career-slider__video-wrap
+                                            img(src="assets/images/career.jpg" alt="")
+                                            button.video-list__btn(aria-label="Play")
+                                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                                </svg>
+                                        .career-slider__text-wrap
+                                            .career-slider__caption Иванов Иван Иванович
+                                            span.career-slider__desc Руководитель отдела продаж
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .swiper-slide
+                                    .career-slider__item
+                                        .career-slider__video-wrap
+                                            img(src="assets/images/career.jpg" alt="")
+                                            button.video-list__btn(aria-label="Play")
+                                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                                </svg>
+                                        .career-slider__text-wrap
+                                            .career-slider__caption Иванов Иван Иванович
+                                            span.career-slider__desc Руководитель отдела продаж
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+
+                        .swiper-button-prev.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")
+                        .swiper-button-next.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")

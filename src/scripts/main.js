@@ -185,3 +185,28 @@ if (document.querySelector(".cooperation__slider")) {
 
 	initSlider();
 }
+
+if (document.querySelector('.career-slider__slider-wrap')) {
+	const swiper = new Swiper('.career-slider__slider-wrap .swiper-container', {
+		// Optional parameters
+		slidesPerView: 1,
+		spaceBetween: 20,
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1.15,
+			},
+			768: {
+				slidesPerView: 1,
+			}
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+}
+
+

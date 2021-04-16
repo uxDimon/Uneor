@@ -1,5 +1,6 @@
 // Размеры
 $content-max-weight: 1170px;
+$content-max-width: 770px;
 $content-padding: 0 15px;
 
 // Шрифт
@@ -80,9 +81,17 @@ a {
 	}
 }
 
+img {
+	max-width: 100%;
+}
+
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
+}
+
+.subtitle {
+	font-size: 24px;
 }
 
 .visually-hidden {
@@ -114,11 +123,28 @@ a {
 	}
 }
 
+.cont-block_small {
+	max-width: $content-max-width;
+}
+
 .cont-block__header {
 	margin-bottom: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.cont-block__text-wrap {
+	margin-bottom: 50px;
+
+	p {
+		margin: 0;
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .cont-block__h {
@@ -246,6 +272,62 @@ a {
 	transform: rotate(-90deg);
 	--icon-color: var(--main-color);
 	--icon-width: 2;
+}
+
+//swiper btn
+.cont-block .swiper-btn-wrap {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	margin: 10px 0;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+	display: none;
+}
+.swiper-button-prev, .swiper-button-next {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	background-color: $color-White;
+	border-radius: 50%;
+	cursor: pointer;
+
+	svg {
+		--long-arrow: #{$color-Blue_1};
+	}
+}
+.swiper-button-prev {
+	transform: rotate(180deg);
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+	opacity: 1;
+}
+.swiper-button_blue {
+	background-color: $color-Blue_1;
+
+	svg {
+		--long-arrow: #{$color-White};
+	}
+}
+.swiper-button_green {
+	background-color: $color-Green;
+
+	svg {
+		--long-arrow: #{$color-White};
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.swiper-button-prev, .swiper-button-next {
+		width: 25px;
+		height: 25px;
+
+		svg {
+			width: 12px;
+		}
+	}
 }
 
 // input
@@ -482,6 +564,7 @@ a {
 @import "./common/subsidiary.scss";
 @import "./common/career-advantages.scss";
 @import "./common/cooperation.scss";
+@import "./common/career-slider.scss";
 
 // main-color
 .main-color_green {
@@ -529,6 +612,8 @@ a {
 
 // }
 
-// @media screen and (max-width: 768px) {
-
-// }
+@media screen and (max-width: 767px) {
+	.subtitle {
+		font-size: 16px;
+	}
+}
