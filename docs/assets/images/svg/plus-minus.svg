@@ -1,0 +1,6 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 8.5H15" stroke="var(--icon-color, #252525)" stroke-width="var(--icon-width, 1)"
+        stroke-linecap="var(--icon-linecap, none)" />
+    <path d="M8.5 2L8.5 15" stroke="var(--icon-color-2, #252525)" stroke-width="var(--icon-width, 1)"
+        stroke-linecap="var(--icon-linecap, none)" />
+</svg>
