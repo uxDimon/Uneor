@@ -210,6 +210,46 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 	});
 }
 
+//goods slider
+if(document.querySelectorAll('.goods-list')) {
+	let styleProjects;
+	let sliderOn = false;
+
+	function initSlider() {
+		if (document.body.clientWidth < 768 && sliderOn) {
+			styleProjects.destroy();
+			sliderOn = false;
+		}
+		if (document.body.clientWidth >= 768 && !sliderOn) {
+			styleProjects = new Swiper(".goods-list .swiper-container", {
+				
+				spaceBetween: 30,
+				breakpoints: {
+					1240: {
+						slidesPerView: 4,
+					},
+					768: {
+						slidesPerView: 3,
+					}
+				},
+
+				// Navigation arrows
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+			sliderOn = true;
+		}
+	}
+
+	window.onresize = function () {
+		initSlider();
+	};
+
+	initSlider();
+}
+
 // input_file
 for (const wrap of document.querySelectorAll(".input_file")) {
 	const input = wrap.querySelector('input[type="file"]'),

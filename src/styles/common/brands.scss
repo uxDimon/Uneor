@@ -1,0 +1,43 @@
+.brands-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.brands-list__item {
+    background-color: $color-White;
+    border-radius: 10px;
+    padding: 30px 20px;
+    padding-top: 10px;
+
+    p {
+        margin: 0;
+    }
+}
+.brands-list__img-wrap {
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1279px) {
+    .brands-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .brands-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .brands-list {
+        grid-template-columns: 1fr;
+    }
+}
