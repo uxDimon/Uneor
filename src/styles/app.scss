@@ -219,7 +219,6 @@ a {
 .linc-arrow__icont {
 	display: block;
 	margin-left: 8px;
-	transform: rotate(-90deg);
 	--icon-color: var(--main-color);
 	--icon-width: 2;
 }
@@ -261,6 +260,13 @@ a {
 	}
 }
 
+textarea.input__input {
+	height: 90px;
+	min-height: 40px;
+	max-height: 200px;
+	resize: vertical;
+}
+
 .input__name {
 	font-weight: normal;
 	font-size: 14px;
@@ -292,8 +298,36 @@ a {
 	}
 }
 
+// input_file
+.input_file {
+	display: flex;
+	align-items: flex-start;
+	cursor: pointer;
+}
+
+.input_file__input {
+	display: none;
+}
+
+.input_file__icont {
+	display: block;
+	margin-right: 10px;
+}
+
+.input_file__name {
+	display: grid;
+	grid-row-gap: 4px;
+
+	li {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
 // input-switch
 .input-switch {
+	--main-color: #{$color-Blue_1};
 	position: relative;
 	display: inline-block;
 }
@@ -376,8 +410,8 @@ a {
 	&:checked {
 		~ .input-switch__wrap {
 			.input-switch__mimic {
-				border-color: $color-Blue_1;
-				background-color: $color-Blue_1;
+				border-color: var(--main-color);
+				background-color: var(--main-color);
 
 				&::before {
 					opacity: 1;

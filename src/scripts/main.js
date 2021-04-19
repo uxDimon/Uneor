@@ -153,3 +153,24 @@ for (const catalog of document.querySelectorAll(".catalog-list")) {
 		button.parentElement.querySelector("span").innerText = button.checked ? "Скрыть" : "Показать больше";
 	});
 }
+
+// input_file
+for (const wrap of document.querySelectorAll(".input_file")) {
+	const input = wrap.querySelector('input[type="file"]'),
+		listNme = wrap.querySelector(".input_file__name");
+
+	function html(name) {
+		return `<li>${name}</li>`;
+	}
+
+	input.addEventListener("change", () => {
+		listNme.innerHTML = "";
+		if (input.files.length >= 1) {
+			for (const fileName of input.files) {
+				listNme.insertAdjacentHTML("beforeend", html(fileName.name));
+			}
+		} else {
+			listNme.insertAdjacentHTML("beforeend", html("Прикрепить файл"));
+		}
+	});
+}
