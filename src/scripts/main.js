@@ -209,4 +209,4 @@ if (document.querySelector('.career-slider__slider-wrap')) {
 	});
 }
 
-
+new Accordion('.vacancy-ac');

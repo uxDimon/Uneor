@@ -22,6 +22,7 @@ $color-White: #ffffff;
 $color-Gray-plus: #b4b4b4;
 $color-Text-grey: #616161;
 $color-grey: #7d7d7d;
+$color-b-grey: #868686;
 
 @import "./common/fonts.scss";
 
@@ -572,6 +573,7 @@ img {
 @import "./common/career-advantages.scss";
 @import "./common/cooperation.scss";
 @import "./common/career-slider.scss";
+@import "./common/vacancy-ac.scss";
 
 // main-color
 .main-color_green {
