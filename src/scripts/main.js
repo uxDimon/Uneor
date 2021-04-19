@@ -231,3 +231,41 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 		}
 	});
 }
+
+// contact-map
+ymaps.ready(function () {
+	for (const mapWrap of document.querySelectorAll(".contact-map")) {
+		items = {
+			map: mapWrap.querySelector(".contact-map"),
+			list: [],
+			created() {
+				for (const item of mapWrap.querySelectorAll("[data-coordinates]")) {
+					this.list.push({
+						button: item,
+						coord: "",
+					});
+				}
+			},
+		};
+		items.created();
+		console.log(items);
+
+		let myMap = new ymaps.Map(items.map, {
+			// Создаёт карту
+			center: obektyMapIcon.offes.coordinates,
+			zoom: 15,
+			controls: [],
+		});
+		myMap.controls.add("zoomControl", {
+			// Кнопки зума на карту
+			size: "small",
+			position: {
+				left: "auto",
+				top: "auto",
+				bottom: optionSize.zoomControlBottom,
+				right: 20,
+			},
+		});
+		myMap.behaviors.disable("scrollZoom");
+	}
+});

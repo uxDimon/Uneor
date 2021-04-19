@@ -1,0 +1,144 @@
+$color-dark-grey: #252525;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+
+// contact-map
+.contact-map {
+	display: grid;
+	grid-template-columns: 370px 1fr;
+	border-radius: 10px;
+	height: 620px;
+}
+
+.contact-map__map {
+	width: 100%;
+	height: inherit;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+.contact-map__nav {
+	height: inherit;
+	border-top-left-radius: inherit;
+	border-bottom-left-radius: inherit;
+	border: 1px solid $color-Silver;
+	border-right: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-map__main-adres {
+	padding: 20px 30px;
+	border-bottom: inherit;
+
+	> .contact-map__org {
+		margin: 10px 0;
+	}
+
+	> .contact-map__tel {
+		margin: 5px 0;
+	}
+}
+
+.contact-map__tel {
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	color: $color-dark-grey;
+}
+
+.contact-map__org {
+	font-weight: 600;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+
+	> svg {
+		display: block;
+		margin-right: 10px;
+	}
+}
+
+.contact-map__adres {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.contact-map__city {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.contact-map__adres-list-wrap {
+	overflow-y: auto;
+	margin: 4px 4px 4px 0;
+
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+		border-radius: 6px;
+		background-color: #f2f2f1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 6px;
+		background-color: $color-Blue_1;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		border-radius: 6px;
+		background-color: darken($color-Blue_1, 10%);
+	}
+}
+
+.contact-map__adres-list {
+	padding: 26px 24px 26px 30px;
+	display: grid;
+	grid-row-gap: 40px;
+}
+
+.contact-map__adres-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	cursor: pointer;
+
+	.contact-map__city {
+		margin: 0 0 15px;
+	}
+	.contact-map__adres {
+		margin-bottom: 10px;
+	}
+	.contact-map__tel {
+		margin-bottom: 5px;
+	}
+}
+
+.contact-map__scheme {
+	--main-color: #{$color-Blue_1};
+	--main-color_hover: #{darken($color-Blue_1, 10%)};
+	display: flex;
+	align-items: center;
+	color: var(--main-color);
+	text-decoration: underline;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--main-color_hover);
+	}
+
+	> svg {
+		display: block;
+		margin-right: 10px;
+	}
+}
