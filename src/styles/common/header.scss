@@ -54,13 +54,17 @@ $color-grey: #7d7d7d;
 	position: relative;
 	z-index: 2;
 
+	.location-choice__icon-arrow {
+		transform: rotate(90deg);
+	}
+
 	&:hover > .location-choice__text {
 		color: $color-Blue_1;
 	}
 
 	&.active {
 		.location-choice__icon-arrow {
-			transform: rotate(-180deg);
+			transform: rotate(-90deg);
 		}
 	}
 }
@@ -526,9 +530,15 @@ $color-grey: #7d7d7d;
 	margin: 10px 0 20px;
 }
 
-.login-popup__a {
-	display: inline-block;
+.login-popup__linc-wrap {
 	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.login-popup__linc {
+	display: inline-block;
 	font-weight: normal;
 	font-size: 12px;
 }
