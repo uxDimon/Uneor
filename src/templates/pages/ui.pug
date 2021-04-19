@@ -309,11 +309,11 @@ block content
             .cont-block
                 .cont-block__header
                     h2.cont-block__h.main-color_blue-1 Видео
-                .video-nav
-                    label.video-nav__item
+                .video-nav.tab-nav
+                    label.tab-nav__item
                         input.visually-hidden(type="radio" name="sort-video" value="learn" checked data-tab-id="tabId1" data-tab-control="tab1")
                         span Обучающее видео
-                    label.video-nav__item
+                    label.tab-nav__item
                         input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="tabId1" data-tab-control="tab2")
                         span Видео о нас
 
@@ -825,3 +825,57 @@ block content
                             svg(width="20" height="20").linc-arrow__icont
                                 use(xlink:href="./assets/images/sprite.svg#arrow")
 
+        //- Презентации,  каталоги продукции
+        section.cont-block__wrap.cont-block_mb95
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_yellow Презентации,  каталоги продукции
+                
+                .files-top.tab-top
+                    .files-nav.tab-nav
+                        label.tab-nav__item.tab-nav__item_orange
+                            input.visually-hidden(type="radio" name="files" value="presentation" checked data-tab-id="tabId2" data-tab-control="tab1")
+                            span Презентации
+                        label.tab-nav__item.tab-nav__item_orange
+                            input.visually-hidden(type="radio" name="files" value="catalog" data-tab-id="tabId2" data-tab-control="tab2")
+                            span Каталоги продукции
+                
+                ul.files-list(data-tab-id="tabId2" data-tab-block="tab1")
+                    li.files-list__item.files-list__item_head
+                        span.files-list__head Наименование
+                        span.files-list__head Файл / формат
+                    li.files-list__item
+                        span.files-list__caption О компании Униор Профешнл Тулз
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Ножницы FELCO
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Искробезопасный инструмент METALMINOTTI
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Динамометрический инструмент TECNOGI
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Технические чемоданы HEPCO & BECKER
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Абразивные круги «SwatyComet»
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Тележка с набором инструментов из 94 предметов
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Тележка с набором инструментов из 187 предметов
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    
+                ul.files-list(data-tab-id="tabId2" data-tab-block="tab2")
+                    li.files-list__item.files-list__item_head
+                        span.files-list__head Наименование
+                        span.files-list__head Файл / формат
+                    li.files-list__item
+                        span.files-list__caption Каталог Униор Профешнл Тулз
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Каталог Униор Профешнл Тулз
+                        a.files-list__link(href="#" download) Загрузить (PDF, 11.40 Мб)

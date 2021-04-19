@@ -16,30 +16,8 @@ $color-Text-grey: #616161;
 $color-grey: #7d7d7d;
 
 .video-nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    column-gap: 50px;
-    width: max-content;
-    border-bottom: 3px solid $color-Silver;
     margin-top: 22px;
     margin-bottom: 59px;
-}
-.video-nav__item {
-    position: relative;
-    display: block;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 140%;
-    padding-bottom: 10px;
-    cursor: pointer;
-
-    span {
-        padding-bottom: 11px;
-    }
-    input:checked + span {
-        border-bottom: 3px solid $color-Blue_1;
-    }
 }
 
 .video-list {

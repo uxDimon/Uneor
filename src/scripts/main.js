@@ -1,3 +1,4 @@
+new Accordion(".vacancy-ac");
 const activeClass = "active";
 
 // Переключение табов
@@ -208,8 +209,6 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 		},
 	});
 }
-
-new Accordion(".vacancy-ac");
 
 // input_file
 for (const wrap of document.querySelectorAll(".input_file")) {
