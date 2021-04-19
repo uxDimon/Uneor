@@ -242,9 +242,9 @@ img {
 
 .button_more {
 	display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 140%;
+	align-items: center;
+	font-size: 14px;
+	line-height: 140%;
 
 	svg {
 		margin-left: 11px;
@@ -270,7 +270,6 @@ img {
 .linc-arrow__icont {
 	display: block;
 	margin-left: 8px;
-	transform: rotate(-90deg);
 	--icon-color: var(--main-color);
 	--icon-width: 2;
 }
@@ -283,10 +282,12 @@ img {
 	height: 50px;
 	margin: 10px 0;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
 	display: none;
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
 	display: flex;
 	width: 40px;
 	height: 40px;
@@ -328,7 +329,8 @@ img {
 }
 
 @media screen and (max-width: 960px) {
-	.swiper-button-prev, .swiper-button-next {
+	.swiper-button-prev,
+	.swiper-button-next {
 		width: 25px;
 		height: 25px;
 
@@ -375,6 +377,13 @@ img {
 	}
 }
 
+textarea.input__input {
+	height: 90px;
+	min-height: 40px;
+	max-height: 200px;
+	resize: vertical;
+}
+
 .input__name {
 	font-weight: normal;
 	font-size: 14px;
@@ -406,8 +415,36 @@ img {
 	}
 }
 
+// input_file
+.input_file {
+	display: flex;
+	align-items: flex-start;
+	cursor: pointer;
+}
+
+.input_file__input {
+	display: none;
+}
+
+.input_file__icont {
+	display: block;
+	margin-right: 10px;
+}
+
+.input_file__name {
+	display: grid;
+	grid-row-gap: 4px;
+
+	li {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
 // input-switch
 .input-switch {
+	--main-color: #{$color-Blue_1};
 	position: relative;
 	display: inline-block;
 }
@@ -490,8 +527,8 @@ img {
 	&:checked {
 		~ .input-switch__wrap {
 			.input-switch__mimic {
-				border-color: $color-Blue_1;
-				background-color: $color-Blue_1;
+				border-color: var(--main-color);
+				background-color: var(--main-color);
 
 				&::before {
 					opacity: 1;
@@ -574,6 +611,7 @@ img {
 @import "./common/cooperation.scss";
 @import "./common/career-slider.scss";
 @import "./common/vacancy-ac.scss";
+@import "./common/main-form.scss";
 
 // main-color
 .main-color_green {

@@ -171,8 +171,8 @@ if (document.querySelector(".cooperation__slider")) {
 
 				// Navigation arrows
 				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
 				},
 			});
 			sliderOn = true;
@@ -186,8 +186,8 @@ if (document.querySelector(".cooperation__slider")) {
 	initSlider();
 }
 
-if (document.querySelector('.career-slider__slider-wrap')) {
-	const swiper = new Swiper('.career-slider__slider-wrap .swiper-container', {
+if (document.querySelector(".career-slider__slider-wrap")) {
+	const swiper = new Swiper(".career-slider__slider-wrap .swiper-container", {
 		// Optional parameters
 		slidesPerView: 1,
 		spaceBetween: 20,
@@ -198,15 +198,36 @@ if (document.querySelector('.career-slider__slider-wrap')) {
 			},
 			768: {
 				slidesPerView: 1,
-			}
+			},
 		},
 
 		// Navigation arrows
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
 	});
 }
 
-new Accordion('.vacancy-ac');
+new Accordion(".vacancy-ac");
+
+// input_file
+for (const wrap of document.querySelectorAll(".input_file")) {
+	const input = wrap.querySelector('input[type="file"]'),
+		listNme = wrap.querySelector(".input_file__name");
+
+	function html(name) {
+		return `<li>${name}</li>`;
+	}
+
+	input.addEventListener("change", () => {
+		listNme.innerHTML = "";
+		if (input.files.length >= 1) {
+			for (const fileName of input.files) {
+				listNme.insertAdjacentHTML("beforeend", html(fileName.name));
+			}
+		} else {
+			listNme.insertAdjacentHTML("beforeend", html("Прикрепить файл"));
+		}
+	});
+}

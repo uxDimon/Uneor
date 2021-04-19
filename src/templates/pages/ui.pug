@@ -556,7 +556,7 @@ block content
         section.cont-block__wrap.cont-block_mb95
             .cont-block
                 .banner-wrap
-                    img(src="assets/images/career-banner.jpg", alt="")
+                    img(src="assets/images/career-banner.jpg" alt="")
 
         //- career блок работа в компании
         section.cont-block__wrap.cont-block__wrap_career.cont-block_mb95
@@ -614,7 +614,7 @@ block content
             .cont-block.cont-block_small
                 .cont-block__header
                     h1.cont-block__h.main-color_red Вакансии
-                
+
                 .vacancy-ac
                     .ac
                         .ac-header
@@ -693,7 +693,7 @@ block content
                     li.contacts-list__item 
                         .contacts-list__top Представительство компании UNIOR d.d. в России и странах СНГ:
                         .contacts-list__com
-                            img(src="assets/images/logo-blue.png", alt="")
+                            img(src="assets/images/logo-blue.png" alt="")
                             span ООО «Униор Профешнл Тулз»
                         .contacts-list__bot 
                             span Звонки по России:
@@ -710,3 +710,96 @@ block content
                             svg(width="16" height="16")
                                 use(xlink:href="assets/images/sprite.svg#map")
                             span Схема проезда
+        //- Наши партнеры
+        section.cont-block__wrap.cont-block_mb95
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_red Наши партнеры
+
+                ul.partners-list.cont-block_mb95
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+
+                .main-form
+                    .main-form__block.main-form-quest
+                        h3.main-form__h Задайте нам вопрос
+                        p.main-form__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. Ultrices arcu nec scelerisque convallis eu. Tellus sed vel sem vel vestibulum nunc tincidunt. 
+
+                        form.main-form-quest__form
+                            label.input
+                                input(type="text" name="name" placeholder="Ваше имя").input__input
+                                //- .input__name Логин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                input(type="tel" name="name" placeholder="Ваш телефон").input__input
+                                //- .input__name Логин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                textarea(name="name" placeholder="Введите сообщение").input__input
+                                //- .input__name Логин
+
+                            label.input_file
+                                input(type="file" multiple name="name" placeholder="Ваш телефон").input_file__input
+
+                                svg(width="20" height="20").input_file__icont
+                                    use(xlink:href="./assets/images/sprite.svg#clip")                                
+                                ul.input_file__name
+                                    li Прикрепить файл
+                                .input__error Поле введено не верно
+
+                            .button__wrap 
+                                button(type="submit").button Отправить
+
+                    .main-form__block.main-form-reg
+                        h3.main-form__h Войти в личный кабинет
+
+                        form.main-form-reg__form
+                            label.input
+                                input(type="text" name="name" placeholder="Лгин" required).input__input
+                                //- .input__name Лгин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                input(type="password" name="name" placeholder="Пароль" required).input__input
+                                //- .input__name Пароль
+                                .input__error Поле введено не верно
+
+                            // label.input-switch.main-color_red
+                                input(type="checkbox" name="checkbox").input-switch__input
+                                .input-switch__wrap
+                                    .input-switch__mimic           
+                                    .input-switch__text Запомнить меня            
+
+                            .button__wrap
+                                button(type="submit").button.main-color_red Войти
+
+                        .login-popup__linc-wrap
+                            a(href="").login-popup__linc.main-color_red Забыли пароль?
+                            a(href="").login-popup__linc.main-color_red Зарегистрироваться
+
+
+                    .main-form__block.main-form-download
+                        h3.main-form__h Задайте нам вопрос
+                        p.main-form__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. 
+
+                        a(href="#").linc-arrow.main-color_orange
+                            | Смотреть все
+                            svg(width="20" height="20").linc-arrow__icont
+                                use(xlink:href="./assets/images/sprite.svg#arrow")
+
