@@ -1,0 +1,32 @@
+.cont-block_middle {
+    .cont-block__header {
+        min-width: 870px;
+    }
+}
+.brand-production__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.brand-production__item {
+    min-width: 270px;
+}
+
+@media screen and (max-width: 1023px) {
+    .cont-block_middle {
+        .cont-block__header {
+            min-width: auto;
+        }
+    }
+    .brand-production__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .brand-production__list {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}

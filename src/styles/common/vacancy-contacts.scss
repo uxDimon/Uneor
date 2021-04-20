@@ -18,7 +18,7 @@ $color-b-grey: #868686;
 
 .contacts-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
     column-gap: 30px;
 }
 .contacts-list__item {
@@ -90,12 +90,18 @@ $color-b-grey: #868686;
 
 @media screen and (max-width: 1023px) {
     .vacancy-contacts {
-        overflow-x: scroll;
         margin: 0 -15px;
     }
     .contacts-list {
-        column-gap: 20px;
+        position: relative;
+        column-gap: 15px;
+        overflow-x: scroll;
         padding: 0 15px;
+
+        &::after {
+            content: '';
+            padding-right: 1px;
+        }
     }
     .contacts-list__caption {
         font-size: 14px;

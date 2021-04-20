@@ -17,7 +17,7 @@ $color-grey: #7d7d7d;
 
 .subsidiary-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
     column-gap: 30px;
 }
 .subsidiary-list__item {
@@ -58,10 +58,16 @@ $color-grey: #7d7d7d;
         margin: 0 -15px;
     }
     .subsidiary-list {
-        column-gap: 18px;
+        position: relative;
+        column-gap: 15px;
         padding: 0 15px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         overflow-x: scroll;
+
+        &::after {
+            content: '';
+            padding-right: 1px;
+        }
 
         &__item {
             min-width: 214px;

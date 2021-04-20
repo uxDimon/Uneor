@@ -195,6 +195,13 @@ img {
 		justify-self: flex-end;
 	}
 }
+@media screen and (max-width: 500px) {
+	.cont-block__header {
+		.button {
+			margin-top: 38px;
+		}
+	}
+}
 
 // button
 .button__wrap {
@@ -667,6 +674,8 @@ textarea.input__input {
 @import "./common/files.scss";
 @import "./common/goods-slider.scss";
 @import "./common/brands.scss";
+@import "./common/about-brand.scss";
+@import "./common/brand-production.scss";
 
 // main-color
 .main-color_green {
