@@ -17,6 +17,7 @@ $color-grey: #7D7D7D;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    row-gap: 70px;
 }
 .news-list__link {
     text-decoration: none;
@@ -51,6 +52,11 @@ $color-grey: #7D7D7D;
     line-height: 140%;
     color: $color-Text-grey;
     margin: 0;
+}
+.news-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 960px) {

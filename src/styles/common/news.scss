@@ -1,0 +1,28 @@
+.news-sort {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 60px;
+}
+.news-sort__select-wrap {
+    position: relative;
+    width: 100px;
+
+    select {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 15px;
+        cursor: pointer;
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%) rotate(90deg);
+        --icon-color: #{$color-Green};
+    }
+}

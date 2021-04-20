@@ -1,0 +1,32 @@
+.pagination-list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+}
+.pagination-list__item_next {
+    padding-left: 20px;
+    border-left: 1px solid $color-Silver;
+
+    svg {
+        --icon-color: #{$color-Green};
+    }
+}
+.pagination-list__link {
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-dark-grey;
+    text-decoration: none;
+    
+    &:hover {
+        color: inherit;
+    }
+}
+.pagination-list__link_current {
+    color: $color-White;
+    background-color: $color-Green;
+    padding: 0 6px;
+
+    &:hover {
+        color: $color-White;
+    }
+}
