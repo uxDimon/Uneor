@@ -92,6 +92,7 @@ img {
 }
 
 .subtitle {
+	font-weight: 600;
 	font-size: 24px;
 }
 
@@ -676,6 +677,8 @@ textarea.input__input {
 @import "./common/brands.scss";
 @import "./common/about-brand.scss";
 @import "./common/brand-production.scss";
+@import "./common/tech-information.scss";
+@import "./common/warranty.scss";
 
 // main-color
 .main-color_green {

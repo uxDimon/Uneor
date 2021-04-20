@@ -270,3 +270,37 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 		}
 	});
 }
+
+//zoom
+mediumZoom(document.querySelectorAll('[data-zoomable]'));
+
+//sert slider
+if (document.querySelector(".tech-information__slider")) {
+	const swiper = new Swiper(".tech-information__slider .swiper-container", {
+		// Optional parameters
+		slidesPerView: 6,
+		spaceBetween: 30,
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1.5,
+				spaceBetween: 20,
+			},
+			500: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 4,
+			},
+			1024: {
+				slidesPerView: 6,
+			},
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
