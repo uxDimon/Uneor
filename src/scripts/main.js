@@ -304,3 +304,23 @@ if (document.querySelector(".tech-information__slider")) {
 		},
 	});
 }
+
+//news-item slider
+if (document.querySelector(".news-item__slider")) {
+	const swiper = new Swiper(".news-item__slider .swiper-container", {
+		// Optional parameters
+		slidesPerView: 1,
+		spaceBetween: 30,
+
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}

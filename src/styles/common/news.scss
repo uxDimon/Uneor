@@ -24,5 +24,21 @@
         right: 15px;
         transform: translateY(-50%) rotate(90deg);
         --icon-color: #{$color-Green};
+        pointer-events: none;
+    }
+}
+
+.news-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .news-sort {
+        margin-bottom: 44px;
+    }
+    .news-pagination {
+        margin-top: 30px;
     }
 }

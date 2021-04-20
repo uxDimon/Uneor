@@ -53,11 +53,6 @@ $color-grey: #7D7D7D;
     color: $color-Text-grey;
     margin: 0;
 }
-.news-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 @media screen and (max-width: 960px) {
     .news-list {
