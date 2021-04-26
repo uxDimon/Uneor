@@ -324,3 +324,16 @@ if (document.querySelector(".news-item__slider")) {
 		},
 	});
 }
+
+//popup close
+if(document.querySelectorAll('.popup').length) {
+	let popups = document.querySelectorAll('.popup');
+
+	popups.forEach((item) => {
+		item.querySelectorAll('[data-close-popup]').forEach((closeBtn) => {
+			closeBtn.addEventListener('click', function(){
+				item.style.display = 'none';
+			});
+		});
+	})
+}

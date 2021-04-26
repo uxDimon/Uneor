@@ -76,7 +76,7 @@ $color-b-grey: #614343;
     margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .order-place {
         grid-template-columns: 1fr;
         row-gap: 40px;

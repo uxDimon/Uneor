@@ -95,6 +95,7 @@ img {
 .subtitle {
 	font-weight: 600;
 	font-size: 24px;
+	margin: 0;
 }
 
 .visually-hidden {
@@ -685,6 +686,10 @@ textarea.input__input {
 @import "./common/news-item.scss";
 @import "./common/cart.scss";
 @import "./common/order-place.scss";
+@import "./common/capacity.scss";
+
+@import "./common/popup-callapp.scss";
+@import "./common/404.scss";
 
 // main-color
 .main-color_green {

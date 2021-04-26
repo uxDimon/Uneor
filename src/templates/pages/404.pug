@@ -1,0 +1,18 @@
+extends ../template
+
+block variables
+    - var title = '404'
+    - var contactForm = false
+
+block content
+    main
+        section.error-page
+            .cont-block
+                h1.error-page__title Ошибка
+                .error-page__wrap
+                    span.error-page__num 4
+                    img.error-page__img(src="assets/images/404.png", alt="Страница не найдена")
+                    span.error-page__num 4
+                span.error-page__desc Страница не найдена
+
+                button.error-page__btn.button Вернуться на главную

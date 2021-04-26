@@ -1,0 +1,41 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 113px 0 138px;
+    color: $color-Blue_1;
+
+    .cont-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.error-page__title {
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.error-page__wrap {
+    display: flex;
+    align-items: center;
+}
+.error-page__num {
+    font-weight: 600;
+    font-size: 144px;
+    line-height: 140%;
+}
+.error-page__desc {
+    font-weight: 600;
+    font-size: 16px;
+}
+.error-page__btn {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .error-page__num {
+        font-size: 132px;
+    }
+}
