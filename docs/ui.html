@@ -460,11 +460,11 @@
           <div class="cont-block__header">
             <h2 class="cont-block__h main-color_blue-1">Видео</h2>
           </div>
-          <div class="video-nav">
-            <label class="video-nav__item">
+          <div class="video-nav tab-nav">
+            <label class="tab-nav__item">
               <input class="visually-hidden" type="radio" name="sort-video" value="learn" checked data-tab-id="tabId1" data-tab-control="tab1"><span>Обучающее видео</span>
             </label>
-            <label class="video-nav__item">
+            <label class="tab-nav__item">
               <input class="visually-hidden" type="radio" name="sort-video" value="about" data-tab-id="tabId1" data-tab-control="tab2"><span>Видео о нас</span>
             </label>
           </div>
@@ -912,21 +912,39 @@
           <div class="cont-block__header">
             <h2 class="cont-block__h main-color_blue-2">Контакты</h2>
           </div>
-          <ul class="contacts-list">
-            <li class="contacts-list__item"> 
-              <div class="contacts-list__top">Представительство компании UNIOR d.d. в России и странах СНГ:</div>
-              <div class="contacts-list__com"><img src="assets/images/logo-blue.png" alt=""><span>ООО «Униор Профешнл Тулз»</span></div>
-              <div class="contacts-list__bot"> <span>Звонки по России:</span><a href="tel:8-800-700-83-51">8-800-700-83-51</a><span>[звонок бесплатный]</span></div>
-            </li>
-            <li class="contacts-list__item"> 
-              <div class="contacts-list__caption">Санкт-Петербург</div>
-              <address class="contacts-list__address">196105, Санкт-Петербург, ул. Благодатная, д. 63, корпус 1, литера Д</address>
-              <div class="contacts-list__wrap"><a class="contacts-list__tel" href="tel:+78124498350">(812) 449-83-50</a><a class="contacts-list__tel" href="tel:+78124498351">(812) 449-83-51</a><a class="contacts-list__mail" href="mailto:"></a></div><a class="contacts-list__link" href=""> 
-                <svg width="16" height="16">
-                  <use xlink:href="assets/images/sprite.svg#map"></use>
-                </svg><span>Схема проезда</span></a>
-            </li>
-          </ul>
+          <div class="vacancy-contacts">
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <div class="contacts-list__top">Представительство компании UNIOR d.d. в России и странах СНГ:</div>
+                <div class="contacts-list__mid"><img class="contacts-list__logo" src="assets/images/logo-blue.png" width="44" height="20" alt=""><span>ООО «Униор Профешнл Тулз»</span></div>
+                <div class="contacts-list__bot"><span>Звонки по России:</span><a class="contacts-list__tel" href="tel:8-800-700-83-51">8-800-700-83-51</a><span>[звонок бесплатный]</span></div>
+              </li>
+              <li class="contacts-list__item"> 
+                <div class="contacts-list__caption">Санкт-Петербург</div>
+                <address class="contacts-list__address">196105, Санкт-Петербург, ул. Благодатная, д. 63, корпус 1, литера Д</address>
+                <div class="contacts-list__wrap"><a class="contacts-list__tel" href="tel:+78124498350">(812) 449-83-50</a><a class="contacts-list__tel" href="tel:+78124498351">(812) 449-83-51</a><a class="contacts-list__mail" href="mailto:unior@unior.ru">unior@unior.ru</a></div><a class="contacts-list__link" href="#"> 
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/images/sprite.svg#map"></use>
+                  </svg><span>Схема проезда</span></a>
+              </li>
+              <li class="contacts-list__item"> 
+                <div class="contacts-list__caption">Екатеринбург</div>
+                <address class="contacts-list__address">620049, Екатеринбург, переулок Автоматики,    д. 1, литера Б</address>
+                <div class="contacts-list__wrap"><a class="contacts-list__tel" href="tel:+73433453774">(343) 345-37-74</a><a class="contacts-list__mail" href="mailto:ekb@unior.ru">ekb@unior.ru</a></div><a class="contacts-list__link" href="#"> 
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/images/sprite.svg#map"></use>
+                  </svg><span>Схема проезда</span></a>
+              </li>
+              <li class="contacts-list__item"> 
+                <div class="contacts-list__caption">Москва</div>
+                <address class="contacts-list__address">117574, Москва, проезд Одоевского, д.2А</address>
+                <div class="contacts-list__wrap"><a class="contacts-list__tel" href="tel:+74952589274">(495) 258-92-74</a><a class="contacts-list__mail" href="mailto:msk@unior.ru">msk@unior.ru</a></div><a class="contacts-list__link" href="#"> 
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/images/sprite.svg#map"></use>
+                  </svg><span>Схема проезда</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="cont-block__wrap cont-block_mb95">
@@ -1009,6 +1027,719 @@
           </div>
         </div>
       </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_yellow">Презентации,  каталоги продукции</h2>
+          </div>
+          <div class="files-top tab-top">
+            <div class="files-nav tab-nav">
+              <label class="tab-nav__item tab-nav__item_orange">
+                <input class="visually-hidden" type="radio" name="files" value="presentation" checked data-tab-id="tabId2" data-tab-control="tab1"><span>Презентации</span>
+              </label>
+              <label class="tab-nav__item tab-nav__item_orange">
+                <input class="visually-hidden" type="radio" name="files" value="catalog" data-tab-id="tabId2" data-tab-control="tab2"><span>Каталоги продукции</span>
+              </label>
+            </div>
+          </div>
+          <ul class="files-list" data-tab-id="tabId2" data-tab-block="tab1">
+            <li class="files-list__item files-list__item_head"><span class="files-list__head">Наименование</span><span class="files-list__head">Файл / формат</span></li>
+            <li class="files-list__item"><span class="files-list__caption">О компании Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Ножницы FELCO</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Искробезопасный инструмент METALMINOTTI</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Динамометрический инструмент TECNOGI</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Технические чемоданы HEPCO & BECKER</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Абразивные круги «SwatyComet»</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Тележка с набором инструментов из 94 предметов</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Тележка с набором инструментов из 187 предметов</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+          </ul>
+          <ul class="files-list" data-tab-id="tabId2" data-tab-block="tab2">
+            <li class="files-list__item files-list__item_head"><span class="files-list__head">Наименование</span><span class="files-list__head">Файл / формат</span></li>
+            <li class="files-list__item"><span class="files-list__caption">Каталог Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+            <li class="files-list__item"><span class="files-list__caption">Каталог Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h">Сопутствующие товары</h2>
+          </div>
+          <div class="goods-list">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Наши бренды</h1>
+          </div>
+          <ul class="brands-list">
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+            <li class="brands-list__item"><a class="brands-list__link" href="#">
+                <div class="brands-list__img-wrap"><img src="assets/images/brand-unior.png" alt=""></div>
+                <p class="brands-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ut porta turpis consectetur. Mi orci, dui sit nunc et amet.</p></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Felco</h1>
+          </div>
+          <div class="brand-banner"><img src="assets/images/felco-banner.jpg" alt=""></div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block__wrap_career cont-block_mb95">
+        <div class="cont-block cont-block_small">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_red">О бренде</h2>
+          </div>
+          <div class="about-brand">
+            <div class="about-brand__text-wrap">
+              <p>Компания FELCO всегда стремилась и будет стремиться к тому, чтобы представить на профессиональные рынки режущих инструментов новаторские и долговечные решения. Несмотря на то, что мы в основном ориентируемся на профессиональный рынок, мы не забываем об инструментах для бытового использования: все, кому небезразличен результат их работы, должны иметь возможность пользоваться самыми лучшими режущими инструментами.</p>
+              <p>Компания FELCO всегда стремилась и будет стремиться к тому, чтобы представить на профессиональные рынки режущих инструментов новаторские и долговечные решения. Несмотря на то, что мы в основном ориентируемся на профессиональный рынок, мы не забываем об инструментах для бытового использования: все, кому небезразличен результат их работы, должны иметь возможность пользоваться самыми лучшими режущими инструментами.</p>
+            </div>
+            <div class="about-brand__img-wrap">
+              <ul class="about-brand__img-list">
+                <li class="about-brand__img-item"><img src="assets/images/brand-1.jpg" alt=""></li>
+                <li class="about-brand__img-item"><img src="assets/images/brand-2.jpg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block__wrap_career cont-block_mb95">
+        <div class="cont-block cont-block_small cont-block_middle">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_red">Продукция бренда</h2><a class="button main-color_red" href="#">Скачать каталог продукции</a>
+          </div>
+          <ul class="brand-production__list">
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></li>
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></li>
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы<br> обжимные, съёмники изоляции</span></a></li>
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></li>
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></li>
+            <li class="brand-production__item"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block__wrap_career cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_blue-1">Техническая информация</h1>
+          </div>
+          <div class="tech-information">
+            <div class="tech-information__text">
+              <h3 class="tech-information__subtitle subtitle">Наша продукция</h3>
+              <p>Вся продукция, поставляемая нашей компанией, имеет все необходимые сертификаты, декларации и прочие разрешения на применение инструмента.</p>
+            </div>
+            <div class="tech-information__slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tech-information__item"><img src="assets/images/sertificate.jpg" data-zoom-src="assets/images/sertificate.jpg" alt="">
+                      <div class="tech-information__hover">
+                        <p>Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)</p>
+                        <svg width="30" height="30">
+                          <use xlink:href="assets/images/sprite.svg#ant-zoom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-button_blue">
+                <svg width="22" height="22">
+                  <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next swiper-button_blue">
+                <svg width="22" height="22">
+                  <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block__wrap_career cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_blue-1">Гарантийные обязательства</h1>
+          </div>
+          <div class="warranty">
+            <div class="warranty__text-wrap">
+              <p>Весь ассортимент инструмента UNIOR предназначен для профессионального использования и <span>удовлетворяет требованиям международных стандартов ISO и немецких стандартов DIN.</span></p>
+              <div class="warranty__desc">
+                <p>UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент.</p>
+                <p>В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.</p>
+              </div>
+              <div class="warranty__list-wrap">
+                <p>Бессрочная гарантия <span>не распространяется:</span></p>
+                <ul class="warranty__list">
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На инструмент, утративший свою работоспособность в результате естественного износа;</p>
+                  </li>
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На инструмент, получивший механические повреждения в результате его использования не по назначению;</p>
+                  </li>
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На инструмент, подвергшийся воздействию ударных нагрузок (для инструмента, не рассчитанного на такие нагрузки);</p>
+                  </li>
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На пневматический инструмент (см. специальные гарантийные обязательства);</p>
+                  </li>
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На динамометрический и реверсивный инструмент (см. специальные гарантийные обязательства);</p>
+                  </li>
+                  <li class="warranty__item">
+                    <svg class="warranty__icon" width="20" height="20">
+                      <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
+                    </svg>
+                    <p>На инструментальную мебель и средства хранения инструмента.</p>
+                  </li>
+                </ul>
+                <p>Подробно с гарантийными обязательствами UNIOR можно ознакомиться <a href="#">здесь.</a></p>
+              </div>
+            </div>
+            <ul class="warranty__img-wrap">
+              <li class="warranty__img-item"><img src="assets/images/iso-logo.png" alt=""></li>
+              <li class="warranty__img-item"><img src="assets/images/din-logo.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_green">Новости</h2><a class="linc-arrow cont-block--linc-arrow main-color_green" href="#">Архив новостей
+              <svg class="linc-arrow__icont" width="12" height="12">
+                <use xlink:href="./assets/images/sprite.svg#arrow-smal"></use>
+              </svg></a>
+          </div>
+          <div class="news">
+            <div class="news-sort"><span class="news-sort__desc">Выбрать год:</span>
+              <div class="news-sort__select-wrap">
+                <select name="years">
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                </select>
+                <svg width="15" height="15">
+                  <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="cont-block__list news-list">
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-1-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-2-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-3-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-1-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-2-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-3-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-1-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-2-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+              <li class="news-list__item"><a class="news-list__link" href="#">
+                  <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-3-min.jpg" alt=""></div>
+                  <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                    <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                    <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                  </div></a></li>
+            </ul>
+          </div>
+          <div class="news-pagination">
+            <ul class="pagination-list">
+              <li class="pagination-list__item"><span class="pagination-list__link pagination-list__link_current">1</span></li>
+              <li class="pagination-list__item"><a class="pagination-list__link" href="#">2</a></li>
+              <li class="pagination-list__item"><span class="pagination-list__link">...</span></li>
+              <li class="pagination-list__item"><a class="pagination-list__link" href="#">15</a></li>
+              <li class="pagination-list__item pagination-list__item_next"><a class="pagination-list__link" href="#"> 
+                  <svg width="14" height="14">
+                    <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block cont-block_small">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_green">Интервью с руководителем коммерческого департамента</h2>
+          </div>
+          <div class="cont-block__text-wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            <p>Ullamcorper massa dolor, in vel phasellus purus, dictum. Feugiat elementum elit imperdiet eros in. Consequat, ridiculus amet, velit sit malesuada duis duis fermentum et.</p>
+          </div>
+          <div class="news-item__text-wrap">
+            <h3 class="news-item__subtitle subtitle">О чем речь</h3>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+          </div>
+          <div class="news-item__text-wrap">
+            <h3 class="news-item__subtitle subtitle">Какой результат</h3>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+          </div>
+          <div class="news-item__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="news-item__slide"><img class="news-item__img" src="assets/images/career.jpg" alt="">
+                    <figcaption class="news-item__caption">Подпись к фото</figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="news-item__slide"><img class="news-item__img" src="assets/images/career.jpg" alt="">
+                    <figcaption class="news-item__caption">Подпись к фото</figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="news-item__slide"><img class="news-item__img" src="assets/images/career.jpg" alt="">
+                    <figcaption class="news-item__caption">Подпись к фото</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-button_green">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button_green">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="news-item__text-wrap">
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+            <div class="news-item__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Корзина</h1>
+          </div>
+          <div class="cart">
+            <p class="cart__text">Мы работаем только с юридическими лицами</p>
+            <div class="cart__wrap">
+              <div class="cart__table-wrap">
+                <table class="cart__table cart-table">
+                  <thead class="cart-table__head">
+                    <tr class="cart-table__head-row">
+                      <th class="cart-table__cell">Код</th>
+                      <th class="cart-table__cell cart-table__cell_name">Наименование</th>
+                      <th class="cart-table__cell cart-table__cell_order">Заказ</th>
+                    </tr>
+                  </thead>
+                  <tbody class="cart-table__body">
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ рожковый - 110/2</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ с профилем TORX с Т-образной рукояткой - 193TX</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ динамометрический шкальный 1/4" - 260</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><a class="cart__btn cart__btn_mobile button main-color_red" href="#">Узнать цену</a>
+              <div class="cart__text-wrap">
+                <div class="cart__caption">Как формируется заказ</div>
+                <p>После того как Вы создадите заказ, необходимо будет указать Вашу контактную информацию. </p>
+                <p>Наши специалисты свяжутся  с вами и выставят счет на оплату товара по Вашим реквизитам. Также вы сможете задать им возникшие у Вас вопросы.</p>
+              </div>
+            </div><a class="cart__btn button main-color_red" href="#">Узнать цену</a>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Оформление заказа</h1>
+          </div>
+          <div class="order-place">
+            <div class="order-place__form-wrap">
+              <form class="order-place__form" action="#" method="#">
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Название компании" required>
+                  <div class="input__name">Название компании</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Регион" required>
+                  <div class="input__name">Регион</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="ФИО" required>
+                  <div class="input__name">ФИО</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="tel" name="name" placeholder="Телефон" required>
+                  <div class="input__name">Телефон</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="email" name="name" placeholder="E-mail" required>
+                  <div class="input__name">E-mail</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Конечный клиент">
+                  <div class="input__name">Конечный клиент</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Комментарии к заказу">
+                  <div class="input__name">Комментарии к заказу</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <button class="order-place__btn button main-color_red" type="submit">Узнать цену</button>
+              </form>
+              <div class="order-place__bottom-text">
+                <p>Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с <a class="order-place__link" href="">Пользовательским соглашением</a></p><span>* - поля обязательные для заполнения</span>
+              </div>
+            </div>
+            <div class="order-place__details">
+              <div class="order-place__caption">Товары в заказе</div>
+              <ul class="order-place__list">
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ рожковый - 110/2</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ с профилем TORX с Т-образной рукояткой - 193TX</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ динамометрический шкальный 1/4" - 260</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb95">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_yellow">Наши возможности</h1>
+          </div>
+          <div class="capacity">
+            <div class="capacity__block">
+              <h2 class="capacity__subtitle subtitle">Услуги по проектированию рабочего места 5S</h2>
+              <div class="capacity__img-wrap"><img src="assets/images/capacity-banner-min.jpg" alt=""></div>
+              <div class="capacity__text-wrap">
+                <div class="capacity__text">
+                  <p>Рабочее место (пространство) – это участок производственной площадки, цеха, мастерской, где рабочий выполняет определенные работы в соответствии со своими задачами. Такое место оснащено оборудованием, инструментами и приспособлениями в соответствии с характером выполняемой работы.</p>
+                  <p>Таким образом, основная цель проектирования рабочего места – создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.</p>
+                  <p>Если перед вами или вашими специалистами стоят именно такие задачи, то наша компания готова подобрать индивидуальное решение в соответствии с вашими требованиями.</p>
+                  <p>Кроме привычного уже всем пользователям ассортимента мебели Unior – тележек, верстаков, шкафов, чемоданов и прочих систем хранения и аксессуаров, наша компания предлагает вашему вниманию новую модульную систему, включающую улучшенные версии верстаков с повышенной функциональностью и расширенным ассортиментом составляющих элементов и модулей.</p>
+                </div>
+                <ul class="capacity__list capacity-list">
+                  <li class="capacity-list__item"><a class="capacity-list__link button main-color_orange" href=""><span class="capacity-list__text">Скачать каталог по модульным системам</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="assets/images/sprite.svg#icon-pdf"></use>
+                      </svg></a></li>
+                  <li class="capacity-list__item"><a class="capacity-list__link button main-color_orange" href=""><span class="capacity-list__text">Скачать листовку «Проектирование рабочего пространства»</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="assets/images/sprite.svg#icon-pdf"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="capacity__block">
+              <h2 class="capacity__subtitle subtitle">Услуги по проектированию рабочего места 5S</h2>
+              <div class="capacity__img-wrap"><img src="assets/images/capacity-banner-2-min.jpg" alt=""></div>
+              <div class="capacity__text-wrap">
+                <div class="capacity__text">
+                  <p>Рабочее место (пространство) – это участок производственной площадки, цеха, мастерской, где рабочий выполняет определенные работы в соответствии со своими задачами. Такое место оснащено оборудованием, инструментами и приспособлениями в соответствии с характером выполняемой работы.</p>
+                  <p>Таким образом, основная цель проектирования рабочего места – создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.</p>
+                  <p>Если перед вами или вашими специалистами стоят именно такие задачи, то наша компания готова подобрать индивидуальное решение в соответствии с вашими требованиями.</p>
+                  <p>Кроме привычного уже всем пользователям ассортимента мебели Unior – тележек, верстаков, шкафов, чемоданов и прочих систем хранения и аксессуаров, наша компания предлагает вашему вниманию новую модульную систему, включающую улучшенные версии верстаков с повышенной функциональностью и расширенным ассортиментом составляющих элементов и модулей.</p>
+                </div>
+                <ul class="capacity__list capacity-list">
+                  <li class="capacity-list__item"><a class="capacity-list__link button main-color_orange" href=""><span class="capacity-list__text">Скачать каталог по модульным системам</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="assets/images/sprite.svg#icon-pdf"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="cont-block__wrap footer__wrap">
       <div class="cont-block footer">
@@ -1075,6 +1806,22 @@
         <div class="footer__bot"> <a class="footer__bot-linc" href="#">Правовая информация</a><a class="footer__bot-linc" href="#">Сделано в <strong>RA-Studio</strong></a></div>
       </div>
     </footer>
+    <div class="popup">
+      <div class="popup__fade" data-close-popup>
+        <section class="popup__wrap">
+          <div class="popup__container">
+            <div class="popup__app-caption subtitle">Ваша заявка принята</div>
+            <p class="popup__app-text">Мы перезвоним вам в течении 20 минут</p>
+            <button class="popup__app-btn button main-color_orange" data-close-popup>Закрыть</button>
+            <button class="popup__close popup__close_orange" data-close-popup>
+              <svg width="24" height="24">
+                <use xlink:href="assets/images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/swiper-bundle.min.js"></script>

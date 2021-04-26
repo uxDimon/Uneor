@@ -1,3 +1,4 @@
+new Accordion(".vacancy-ac");
 const activeClass = "active";
 
 // Переключение табов
@@ -209,7 +210,45 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 	});
 }
 
-new Accordion(".vacancy-ac");
+//goods slider
+if(document.querySelectorAll('.goods-list')) {
+	let styleProjects;
+	let sliderOn = false;
+
+	function initSlider() {
+		if (document.body.clientWidth < 768 && sliderOn) {
+			styleProjects.destroy();
+			sliderOn = false;
+		}
+		if (document.body.clientWidth >= 768 && !sliderOn) {
+			styleProjects = new Swiper(".goods-list .swiper-container", {
+				
+				spaceBetween: 30,
+				breakpoints: {
+					1240: {
+						slidesPerView: 4,
+					},
+					768: {
+						slidesPerView: 3,
+					}
+				},
+
+				// Navigation arrows
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+			sliderOn = true;
+		}
+	}
+
+	window.onresize = function () {
+		initSlider();
+	};
+
+	initSlider();
+}
 
 // input_file
 for (const wrap of document.querySelectorAll(".input_file")) {
@@ -230,4 +269,71 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 			listNme.insertAdjacentHTML("beforeend", html("Прикрепить файл"));
 		}
 	});
+}
+
+//zoom
+mediumZoom(document.querySelectorAll('[data-zoomable]'));
+
+//sert slider
+if (document.querySelector(".tech-information__slider")) {
+	const swiper = new Swiper(".tech-information__slider .swiper-container", {
+		// Optional parameters
+		slidesPerView: 6,
+		spaceBetween: 30,
+
+		breakpoints: {
+			0: {
+				slidesPerView: 1.5,
+				spaceBetween: 20,
+			},
+			500: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 4,
+			},
+			1024: {
+				slidesPerView: 6,
+			},
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+
+//news-item slider
+if (document.querySelector(".news-item__slider")) {
+	const swiper = new Swiper(".news-item__slider .swiper-container", {
+		// Optional parameters
+		slidesPerView: 1,
+		spaceBetween: 30,
+
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+
+//popup close
+if(document.querySelectorAll('.popup').length) {
+	let popups = document.querySelectorAll('.popup');
+
+	popups.forEach((item) => {
+		item.querySelectorAll('[data-close-popup]').forEach((closeBtn) => {
+			closeBtn.addEventListener('click', function(){
+				item.style.display = 'none';
+			});
+		});
+	})
 }
