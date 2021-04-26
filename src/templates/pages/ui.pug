@@ -1398,3 +1398,66 @@ block content
                             p Наши специалисты свяжутся  с вами и выставят счет на оплату товара по Вашим реквизитам. Также вы сможете задать им возникшие у Вас вопросы.
 
                     a.cart__btn.button.main-color_red(href="#") Узнать цену
+
+        //- Оформление заказа
+        section.cont-block__wrap.cont-block_mb95
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_red Оформление заказа
+
+                .order-place
+                    .order-place__form-wrap
+                        form.order-place__form(action="#" method="#")
+                            label.input
+                                input(type="text" name="name" placeholder="Название компании" required).input__input
+                                .input__name Название компании
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="text" name="name" placeholder="Регион" required).input__input
+                                .input__name Регион
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="text" name="name" placeholder="ФИО" required).input__input
+                                .input__name ФИО
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="tel" name="name" placeholder="Телефон" required).input__input
+                                .input__name Телефон
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="email" name="name" placeholder="E-mail" required).input__input
+                                .input__name E-mail
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="text" name="name" placeholder="Конечный клиент").input__input
+                                .input__name Конечный клиент
+                                .input__error Поле введено не верно
+                            label.input
+                                input(type="text" name="name" placeholder="Комментарии к заказу").input__input
+                                .input__name Комментарии к заказу
+                                .input__error Поле введено не верно
+                            button.order-place__btn.button.main-color_red(type="submit") Узнать цену
+                    
+                        .order-place__bottom-text
+                            p Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с 
+                                a.order-place__link(href="") Пользовательским соглашением
+                            span * - поля обязательные для заполнения
+                    
+                    .order-place__details
+                        .order-place__caption Товары в заказе
+                        ul.order-place__list
+                            li.order-place__item
+                                span.order-place__article 602081
+                                p.order-place__name Ключ рожковый - 110/2
+                            li.order-place__item
+                                span.order-place__article 602081
+                                p.order-place__name Ключ с профилем TORX с Т-образной рукояткой - 193TX
+                            li.order-place__item
+                                span.order-place__article 602081
+                                p.order-place__name Ключ динамометрический шкальный 1/4" - 260
+                            li.order-place__item
+                                span.order-place__article 602081
+                                p.order-place__name Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12
+
+
+                                
