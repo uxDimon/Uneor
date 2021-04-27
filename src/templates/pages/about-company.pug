@@ -1,0 +1,243 @@
+extends ../template
+
+block variables
+    - var title = 'О компании'
+    - var contactForm = true
+
+
+block content
+    main
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current О компании
+
+        //- about company блок о компании
+        section.cont-block__wrap.cont-block_mb100.cont-block_mt50
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_blue-1 О компании
+
+                .about-company
+                    .about-company__left
+                        .about-company__caption UNIOR d.d.
+                        img.about-company__img(src="assets/images/logo-white.png" alt="")
+                        p Акционерное общество UNIOR основано в 1919 году и находится в Словении (территория бывшей Югославии). Компания UNIOR берет начало из региона Похорье, который широко известен своими традициями ковки. Помимо головного предприятия в Зрече, компания включает в себя производственные и коммерческие предприятия по всему миру.
+                        button.about-company__btn.button_more
+                            span Показать полностью
+                            svg(width="10" height="10")
+                                use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                        p Компания UNIOR широко известна как производитель профессионального ручного инструмента, кованых изделий, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    .about-company__right
+                        .cont-block__h.about-company__caption UNIOR в России
+                        img.about-company__img(src="assets/images/logo-blue.png" alt="")
+                        p ООО "Униор Профешнл Тулз" – дочернее предприятие и официальное представительство компании UNIOR d.d. в России и странах СНГ с головным офисом и центральным складом в Санкт-Петербурге, а также представительствами и складами в Москве и Екатеринбурге.
+                        button.about-company__btn.button_more
+                            span Показать полностью
+                            svg(width="10" height="10")
+                                use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                        p Основная задача нашей компании – <b>обеспечение поддержки предприятий в реализации их производственных, эксплуатационных и ремонтных задач с помощью поставки качественного профессионального ручного инструмента.</b> Мы не просто осуществляем поставки – мы помогаем в решении ряда вопросов, связанных со снижением затрат и повышением качества и безопасности проводимых работ.
+                        p Свою цель мы видим в том, чтобы помочь каждому клиенту в выборе того инструмента, который необходим именно ему.
+
+        //- about company филиалы
+        section.cont-block__wrap.cont-block_mb100
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Филиалы UNIOR в России
+
+                .subsidiary-wrap
+                    ul.subsidiary-list
+                        li.subsidiary-list__item
+                            .subsidiary-list__caption Санкт-Петербург
+                            address.subsidiary-list__address 196105, Санкт-Петербург, ул. Благодатная, д. 63, корпус 1, литера Д
+                            a.subsidiary-list__number(href="tel:+78124498350") (812) 449-83-50
+                            a.subsidiary-list__number(href="tel:+78124498351") (812) 449-83-51
+                            a.subsidiary-list__mail(href="mailto:unior@unior.ru") unior@unior.ru
+                        li.subsidiary-list__item
+                            .subsidiary-list__caption Екатеринбург
+                            address.subsidiary-list__address 620049, Екатеринбург, переулок Автоматики, д. 1, литера Б
+                            a.subsidiary-list__number(href="tel:+73433453774") (343) 345-37-74
+                            a.subsidiary-list__mail(href="mailto:ekb@unior.ru") ekb@unior.ru
+                        li.subsidiary-list__item
+                            .subsidiary-list__caption Москва
+                            address.subsidiary-list__address 117574, Москва, проезд Одоевского, д.2А
+                            a.subsidiary-list__number(href="tel:+74952589274") (495) 258-92-74
+                            a.subsidiary-list__mail(href="mailto:unior@unior.ru") moscow@unior.ru
+
+        //- about company отраслевые решения
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Отраслевые решения
+
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    button.about__text-btn.button_more
+                        span Показать полностью
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+
+        //- news block
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_green Новости
+                    a(href="#").linc-arrow.cont-block--linc-arrow.main-color_green
+                        | Смотреть все
+                        svg(width="12" height="12").linc-arrow__icont
+                            use(xlink:href="./assets/images/sprite.svg#arrow-smal")
+                ul.cont-block__list.news-list
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-1-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-2-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-3-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+
+        //- about company блок карьера
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_red Карьера
+
+                .cont-block__text-wrap
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                    p Ullamcorper massa dolor, in vel phasellus purus, dictum. Feugiat elementum elit imperdiet eros in. Consequat, ridiculus amet, velit sit malesuada duis duis fermentum et.
+
+                ul.career-advantages
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#014-education")
+                        p.career-advantages__text Обучение:<br> продукт, продажи,<br> бизнес-процессы
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#036-contract")
+                        p.career-advantages__text Оформление<br> по ТК РФ
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#027-health-insurance")
+                        p.career-advantages__text Расширенный пакет<br> ДМС
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#029-handshake")
+                        p.career-advantages__text Социальная<br> поддержка
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#002-manager")
+                        p.career-advantages__text Наставник<br> для новичка
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#038-salary")
+                        p.career-advantages__text Оклад и премии<br> (месяц, квартал), выслуга лет
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#030-gift")
+                        p.career-advantages__text Подарки детям и сотрудникам
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#045-promotion")
+                        p.career-advantages__text Возможность учиться и перенять опыт лучших
+                    li.career-advantages__item
+                        svg.career-advantages__icon(width="50" height="50")
+                            use(xlink:href="assets/images/sprite.svg#033-Work-time")
+                        p.career-advantages__text Гибкий график<br> работы
+                    li.career-advantages__item.career-advantages__item_link
+                        a.career-advantages__link(href="#")
+                            span Перейти в раздел с<br> вакансиями
+                                svg(width="20" height="20")
+                                    use(xlink:href="assets/images/sprite.svg#arrow")
+
+        //- about company стать партнером
+        section.cont-block__wrap.cont-block_mb100
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Стать нашим партнером
+
+                .cooperation
+                    .cooperation__text-wrap
+                        p Миссия компании UNIOR в России – сделать качественный инструмент доступным любому пользователю. Для этого мы создали и развиваем региональную партнерскую сеть, которая помогает нашим клиентам облегчить и ускорить выбор и получение нужного им инструмента. 
+                        p В настоящее время партнерская сеть UNIOR активно развивается, и мы приглашаем к сотрудничеству торговые компании, занимающиеся продажами инструмента и другой технической продукции в сфере промышленных, ремонтных, монтажных и строительных предприятий.
+
+                    .cooperation__slider
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .cooperation__slider-img
+                                        img(src="assets/images/cooperation-1.jpg" alt="")
+                                .swiper-slide
+                                    .cooperation__slider-img
+                                        img(src="assets/images/cooperation-2.jpg" alt="")
+                            .swiper-button-prev
+                                svg(width="22" height="22")
+                                    use(xlink:href="assets/images/sprite.svg#long-arrow")
+                            .swiper-button-next
+                                svg(width="22" height="22")
+                                    use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+                    .cooperation__bot
+                        .cooperation__wrap
+                            h3.cooperation__subtitle Преимущества сотрудничества с UNIOR
+                            ul.cooperation__list
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Высококачественный и надежный инструмент, отлично зарекомендовавший себя во всех отраслях промышленности, монтажа и ремонта.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Большой склад в Санкт-Петербурге (один из крупнейших в России), а также в Москве, позволяющие в сжатые сроки комплектовать и транспортировать необходимый инструмент в любую точку нашей страны.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Эффективная программа поддержки и развития наших партнеров.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Сотрудничество с европейской компанией – возможность использования опыта других Российских и европейских партнеров UNIOR для увеличения Ваших продаж.
+                        .cooperation__wrap
+                            h3.cooperation__subtitle Как это работает?
+                            p Если Вам интересно развивать свой бизнес вместе с компанией UNIOR и заниматься поставками высококачественного профессионального инструмента, свяжитесь с нами, и мы подробнее познакомим Вас с нашими возможностями и условиями сотрудничества.
+                            button.cooperation__btn.button Заполнить заявку
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+

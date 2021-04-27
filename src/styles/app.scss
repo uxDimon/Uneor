@@ -177,8 +177,18 @@ img {
 	margin-right: 20px;
 }
 
+.cont-block_mt40 {
+	margin-top: 40px;
+}
+.cont-block_mt50 {
+	margin-top: 50px;
+}
+
 .cont-block_mb120 {
 	margin-bottom: 120px;
+}
+.cont-block_mb100 {
+	margin-bottom: 100px;
 }
 .cont-block_mb95 {
 	margin-bottom: 95px;
@@ -671,6 +681,7 @@ textarea.input__input {
 @import "./common/header.scss";
 @import "./pages/index.scss";
 @import "./common/footer.scss";
+@import "./common/breadcrumbs.scss";
 
 @import "./common/main-page-banner.scss";
 @import "./common/main-news.scss";
