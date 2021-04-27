@@ -1,4 +1,4 @@
-new Accordion(".vacancy-ac");
+
 const activeClass = "active";
 
 // Переключение табов
@@ -337,3 +337,5 @@ if(document.querySelectorAll('.popup').length) {
 		});
 	})
 }
+
+new Accordion(".vacancy-ac");

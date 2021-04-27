@@ -146,8 +146,29 @@ img {
 .cont-block--linc-arrow {
   margin-right: 20px; }
 
+.cont-block_mt40 {
+  margin-top: 40px; }
+
+.cont-block_mt50 {
+  margin-top: 50px; }
+
+.cont-block_mb120 {
+  margin-bottom: 120px; }
+
+.cont-block_mb100 {
+  margin-bottom: 100px; }
+
 .cont-block_mb95 {
   margin-bottom: 95px; }
+
+.cont-block_mb90 {
+  margin-bottom: 90px; }
+
+.cont-block_mb85 {
+  margin-bottom: 85px; }
+
+.cont-block_mb60 {
+  margin-bottom: 60px; }
 
 @media screen and (max-width: 768px) {
   .cont-block__header {
@@ -1190,6 +1211,76 @@ textarea.input__input {
     grid-column-gap: 20px; }
   .footer__contact-item-tel {
     font-size: 14px; } }
+
+.breadcrumbs__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -moz-column-gap: 10px;
+       column-gap: 10px; }
+
+.breadcrumbs__item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px; }
+  .breadcrumbs__item svg {
+    --icon-color: #252525; }
+
+.breadcrumbs__link {
+  color: inherit;
+  text-decoration: none; }
+
+.breadcrumbs__link_current {
+  color: #b4b4b4; }
+
+.main-page__banner {
+  position: relative; }
+
+.main-page__left {
+  position: absolute;
+  max-width: 500px;
+  height: 100%;
+  color: #ffffff;
+  background-color: #0077c1;
+  padding: 0 35px;
+  padding-top: 111px; }
+
+.main-page__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 140%;
+  margin: 0; }
+  .main-page__title span {
+    display: block;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    margin-bottom: 5px; }
+
+.main-page__right {
+  width: 100%;
+  height: 400px; }
+  .main-page__right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.search {
+  position: relative;
+  margin-top: 20px; }
+  .search__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); }
+  .search .input__input {
+    min-height: 50px; }
 
 .news-list {
   display: grid;

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/fav.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="cont-block__wrap header__head-wrap">
+        <div class="cont-block">
+          <div class="header__head" data-active-block="mainBurger">
+            <div class="location-choice header__head--location-choice" data-location-choice>
+              <button class="location-choice__mimic" data-location-button="spb">
+                <svg class="location-choice__icon-piont" width="20" height="20">
+                  <use xlink:href="./assets/images/sprite.svg#map-marker"></use>
+                </svg>
+                <div class="location-choice__text">Санкт-Петербург</div>
+                <svg class="location-choice__icon-arrow" width="12" height="12">
+                  <use xlink:href="./assets/images/sprite.svg#arrow-smal"></use>
+                </svg>
+              </button>
+              <ul class="location-choice__option" data-location-option-list>
+                <li class="location-choice__item"> 
+                  <label class="location-choice__button">
+                    <input type="radio" name="location-choice" value="spb" checked data-name="Санкт-Петербург">Санкт-Петербург
+                  </label>
+                </li>
+                <li class="location-choice__item"> 
+                  <label class="location-choice__button">
+                    <input type="radio" name="location-choice" value="msk" data-name="Москва">Москва
+                  </label>
+                </li>
+                <li class="location-choice__item"> 
+                  <label class="location-choice__button">
+                    <input type="radio" name="location-choice" value="ekb" data-name="Екатеринбург">Екатеринбург
+                  </label>
+                </li>
+              </ul>
+            </div><a class="basket-button header__head--basket-button" href="#">
+              <div class="basket-button__icon-wrap">
+                <div class="basket-button__number">2</div>
+                <svg class="basket-button__icon" width="20" height="20">
+                  <use xlink:href="./assets/images/sprite.svg#wheelbarrow"></use>
+                </svg>
+              </div><span class="basket-button-trxt">Корзина</span></a><a class="header__head-basket" href="#">
+              <svg width="20" height="20">
+                <use xlink:href="./assets/images/sprite.svg#wheelbarrow"></use>
+              </svg>Корзина</a>
+            <nav class="header__head--header-menu">
+              <ul class="header-menu"> 
+                <li class="header-menu__item header-menu__item_burder"><a class="header-menu__licn" href="#">Каталог</a></li>
+                <li class="header-menu__item header-menu__item_burder"><a class="header-menu__licn" href="#">О компании</a></li>
+                <li class="header-menu__item header-menu__item_burder"><a class="header-menu__licn" href="#">Наши бренды</a></li>
+                <li class="header-menu__item header-menu__item_burder"><a class="header-menu__licn" href="#">Дилеры</a></li>
+                <li class="header-menu__item header-menu__item_burder"><a class="header-menu__licn" href="#">Техническая информация</a></li>
+                <li class="header-menu__item"> <a class="header-menu__licn" href="#">Наши возможности</a></li>
+                <li class="header-menu__item"> <a class="header-menu__licn" href="#">Новости</a></li>
+                <li class="header-menu__item"> <a class="header-menu__licn" href="#">Карьера</a></li>
+                <li class="header-menu__item"> <a class="header-menu__licn" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <ul class="header__head-tel"> 
+              <li class="head-tel head-tel_choice" data-size-viseble><a class="head-tel__tel" href="tel:+78007008351">8 (800) 700-83-51</a>
+                <div class="head-tel__name">Звонки по России бесплатно</div>
+              </li>
+              <li class="head-tel" data-size-viseble="spb"><a class="head-tel__tel" href="tel:+78124498350">8 (812) 449-83-50</a>
+                <div class="head-tel__name">Санкт-Петербург</div>
+              </li>
+              <li class="head-tel" data-size-viseble="msk"><a class="head-tel__tel" href="tel:+74952589274">8 (495) 258-92-74</a>
+                <div class="head-tel__name">Москва</div>
+              </li>
+              <li class="head-tel" data-size-viseble="ekb"><a class="head-tel__tel" href="tel:+73433453774">8 (343) 345-37-74</a>
+                <div class="head-tel__name">Екатеринбург</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cont-block__wrap header__body-wrap">
+        <div class="cont-block header__body"><a class="header__body-logo" href="/">
+            <svg width="130" height="60">
+              <use xlink:href="./assets/images/sprite.svg#main-logo"></use>
+            </svg></a>
+          <nav class="header__body--header-menu">
+            <ul class="header-menu"> 
+              <li class="header-menu__item"> <a class="header-menu__licn" href="#"> 
+                  <svg width="35" height="35">
+                    <use xlink:href="./assets/images/sprite.svg#square-arrey"></use>
+                  </svg>Каталог</a></li>
+              <li class="header-menu__item"> <a class="header-menu__licn" href="#">О компании</a></li>
+              <li class="header-menu__item"> <a class="header-menu__licn" href="#">Наши бренды</a></li>
+              <li class="header-menu__item"> <a class="header-menu__licn" href="#">Дилеры</a></li>
+              <li class="header-menu__item"> <a class="header-menu__licn" href="#">Техническая информация</a></li>
+            </ul>
+          </nav>
+          <div class="header__body-user-wrap">
+            <form class="header__body--header-search">
+              <label class="header-search">
+                <svg class="header-search__icon-search" width="20" height="20">
+                  <use xlink:href="./assets/images/sprite.svg#search-alt"></use>
+                </svg>
+                <input class="header-search__input" type="search" name="header-search" placeholder="Поиск">
+                <button class="header-search__clear" type="button">
+                  <svg width="17" height="17">
+                    <use xlink:href="./assets/images/sprite.svg#plus-minus"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
+            <button class="header__body-login" data-login-control data-active-control="login1">
+              <svg width="20" height="20">
+                <use xlink:href="./assets/images/sprite.svg#user"></use>
+              </svg><span class="header__body-login-text">Вход / Регистрация</span>
+            </button>
+            <div class="header__body-login-popup login-popup" data-login-block data-active-block="login1">
+              <div class="login-popup__error-text">Неверный логин или пароль</div>
+              <form class="login-popup__form">
+                <label class="input login-popup__form--input">
+                  <input class="input__input" type="text" name="name" placeholder="Лгин" required>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input login-popup__form--input">
+                  <input class="input__input" type="password" name="name" placeholder="Пароль" required>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input-switch login-popup__form--input-switch">
+                  <input class="input-switch__input" type="checkbox" name="checkbox">
+                  <div class="input-switch__wrap">
+                    <div class="input-switch__mimic">          </div>
+                    <div class="input-switch__text">Запомнить меня            </div>
+                  </div>
+                </label>
+                <div class="button__wrap login-popup__form--button__wrap">
+                  <button class="button" type="submit">Войти</button>
+                </div>
+              </form>
+              <div class="login-popup__linc-wrap"><a class="login-popup__linc" href="">Забыли пароль?</a><a class="login-popup__linc" href="">Зарегистрироваться</a></div>
+            </div><a class="basket-button header__body--basket-button" href="#">
+              <div class="basket-button__icon-wrap">
+                <div class="basket-button__number">2</div>
+                <svg class="basket-button__icon" width="20" height="20">
+                  <use xlink:href="./assets/images/sprite.svg#wheelbarrow"></use>
+                </svg>
+              </div><span class="basket-button-trxt">Корзина</span></a>
+            <button class="burger-button__wrap" data-active-control="mainBurger">
+              <div class="burger-button">
+                <div class="burger-button__border"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-page">
+      <section class="cont-block__wrap cont-block_mb60">
+        <div class="cont-block">
+          <div class="main-page__banner">
+            <div class="main-page__left">
+              <h1 class="main-page__title"> <span>UNIOR — </span>UNIverzalno ORodje</h1>
+            </div>
+            <div class="main-page__right"><img src="assets/images/capacity-banner-min.jpg" alt=""></div>
+          </div>
+          <label class="input search">
+            <input class="input__input" type="search" name="search" placeholder="Введите свой запрос">
+            <div class="input__error">Поле введено не верно</div>
+            <svg class="search__icon" width="20" height="20">
+              <use xlink:href="assets/images/sprite.svg#search-alt"></use>
+            </svg>
+          </label>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb85">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_yellow">Каталог продукции</h2><a class="button main-color_yellow" href="#">Смотреть все</a>
+          </div>
+          <ul class="cont-block__list catalog-list">
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Слесарно-монтажный инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Слесарно-монтажный инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Пневматический инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Пневматический инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Промышленные съемники"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Промышленные<br> съемники</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Инструментальная мебель и средства хранения"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Инструментальная мебель<br> и средства хранения</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Динамометрический инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Динамометрический<br> инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Гидравлический инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Гидравлический<br> инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Искробезопасный инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Искробезопасный<br> инструмент</div>
+                  <svg class="catalog-list__ex" width="30" height="26">
+                    <use xlink:href="assets/images/sprite.svg#EX"></use>
+                  </svg>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Резьбонарезной инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Резьбонарезной<br> инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Абразивный инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Абразивный<br> инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Сервисный инструмент"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Сервисный<br> инструмент</div>
+                </div></a></li>
+            <li class="catalog-list__item"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Наши возможности"></div>
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Наши<br> возможности</div>
+                </div></a></li>
+            <li class="catalog-list__buttom-more">
+              <label class="button main-color_yellow"> <span>Показать больше</span>
+                <input type="checkbox" name="buttom-more" data-catalog-list-more>
+              </label>
+            </li>
+            <li class="catalog-list__item catalog-list__item_catalog"><a class="catalog-list__link" href="#">
+                <div class="catalog-list__text-wrap">
+                  <div class="catalog-list__caption">Перейти в каталог</div>
+                  <svg class="catalog-list__icon-arrow" width="20" height="20">
+                    <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="catalog-list__img-wrap"><img class="catalog-list__img" src="assets/images/main-catalog/catalog-12-min.png" alt=""></div></a></li>
+          </ul>
+          <div class="cont-block__addition catalog-addition">
+            <div class="catalog-addition__top">
+              <div class="catalog-addition__left">
+                <svg width="451" height="54">
+                  <use xlink:href="assets/images/sprite.svg#logo-bike-tools"></use>
+                </svg>
+                <p class="catalog-addition__text">Инструменты для велосипедов высшего уровня</p><a class="catalog-addition__btn button main-color_yellow" href="#">Подробнее</a>
+              </div>
+              <div class="catalog-addition__right"> <img src="assets/images/unior-bike-tools-min.jpg" alt=""></div>
+            </div>
+            <ul class="catalog-addition__bot">
+              <li class="catalog-addition__item catalog-addition__item_orange">
+                <div class="catalog-addition__img-wrap"><img src="assets/images/catalog-addition-1-min.png" alt=""></div>
+                <div class="catalog-addition__text-wrap">
+                  <div class="catalog-addition__caption">Акции</div><a class="catalog-addition__link button" href="#">Смотреть все</a>
+                </div>
+              </li>
+              <li class="catalog-addition__item catalog-addition__item_blue">
+                <div class="catalog-addition__img-wrap"><img src="assets/images/catalog-addition-2-min.png" alt=""></div>
+                <div class="catalog-addition__text-wrap">
+                  <div class="catalog-addition__caption">Новинки 2021</div><a class="catalog-addition__link button" href="#">Смотреть все</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb90">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_green">Новости</h2><a class="linc-arrow cont-block--linc-arrow main-color_green" href="#">Смотреть все
+              <svg class="linc-arrow__icont" width="12" height="12">
+                <use xlink:href="./assets/images/sprite.svg#arrow-smal"></use>
+              </svg></a>
+          </div>
+          <ul class="cont-block__list news-list">
+            <li class="news-list__item"><a class="news-list__link" href="#">
+                <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-1-min.jpg" alt=""></div>
+                <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                  <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                  <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                </div></a></li>
+            <li class="news-list__item"><a class="news-list__link" href="#">
+                <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-2-min.jpg" alt=""></div>
+                <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                  <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                  <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                </div></a></li>
+            <li class="news-list__item"><a class="news-list__link" href="#">
+                <div class="news-list__img-wrap"><img class="news-list__img" src="assets/images/news-3-min.jpg" alt=""></div>
+                <div class="news-list__text-wrap"><span class="news-list__date">10.12.2020</span>
+                  <h3 class="news-list__caption">Интервью с руководителем коммерческого департамента</h3>
+                  <p class="news-list__text">Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!</p>
+                </div></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb90">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_red">Hytorc</h2>
+          </div>
+          <div class="cont-block__content manufact">
+            <div class="manufact__img-wrap"><img src="assets/images/hytorc.png" alt="hytorc logo"></div>
+            <div class="manufact__text-wrap">
+              <p>Lorem 1 ipsum dolor 123 sit amet, consectetur adipiscing elit. Consequat ipsum eu diam est facilisi. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices</p>
+              <p>Integer ultrices magnis odio suspendisse ultrices aliquam natoque maecenas justo. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices.</p><a class="manufact__btn button main-color_red" href="#" download>Скачать каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb90">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_yellow">Наши возможности</h2>
+          </div>
+          <div class="abilities-list">
+            <div class="abilities-list__item"><img class="abilities-list__img" src="assets/images/options-1.jpg" alt="">
+              <div class="abilities__text-wrap">
+                <h3 class="abilities__caption">Проектирование рабочего пространства</h3>
+                <p>Создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.</p>
+              </div><a class="abilities__btn button" href="#">Подробнее</a>
+            </div>
+            <div class="abilities-list__item"><img class="abilities-list__img" src="assets/images/options-2.jpg" alt="">
+              <div class="abilities__text-wrap">
+                <h3 class="abilities__caption">Сервис</h3>
+                <p>Наша компания предоставляет широкий спектр услуг по созданию модульных систем, систем хранения, а также 3D-моделированию. Также мы занимаемся обслуживанием и ремонтом поставляемого оборудования.</p>
+              </div><a class="abilities__btn button" href="#">Подробнее</a>
+            </div>
+            <div class="abilities-list__item"><img class="abilities-list__img" src="assets/images/options-3.jpg" alt="">
+              <div class="abilities__text-wrap">
+                <h3 class="abilities__caption">Гарантия</h3>
+                <p>UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент. В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.</p>
+              </div><a class="abilities__btn button" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb120">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_red">Наши партнеры</h2>
+          </div>
+          <ul class="partners-list cont-block_mb95">
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part1.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part2.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part1.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part2.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part1.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part2.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part1.png" alt=""></li>
+            <li class="partners-list__item"><img class="partners-list__img" src="assets/images/part2.png" alt=""></li>
+          </ul>
+          <div class="main-form">
+            <div class="main-form__block main-form-quest">
+              <h3 class="main-form__h">Задайте нам вопрос</h3>
+              <p class="main-form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. Ultrices arcu nec scelerisque convallis eu. Tellus sed vel sem vel vestibulum nunc tincidunt. </p>
+              <form class="main-form-quest__form">
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Ваше имя">
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="tel" name="name" placeholder="Ваш телефон">
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <textarea class="input__input" name="name" placeholder="Введите сообщение"></textarea>
+                </label>
+                <label class="input_file">
+                  <input class="input_file__input" type="file" multiple name="name" placeholder="Ваш телефон">
+                  <svg class="input_file__icont" width="20" height="20">
+                    <use xlink:href="./assets/images/sprite.svg#clip">                               </use>
+                  </svg>
+                  <ul class="input_file__name">
+                    <li>Прикрепить файл</li>
+                  </ul>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <div class="button__wrap"> 
+                  <button class="button" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+            <div class="main-form__block main-form-reg">
+              <h3 class="main-form__h">Войти в личный кабинет</h3>
+              <form class="main-form-reg__form">
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Лгин" required>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="password" name="name" placeholder="Пароль" required>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <!-- label.input-switch.main-color_red
+                input(type="checkbox" name="checkbox").input-switch__input
+                .input-switch__wrap
+                    .input-switch__mimic           
+                    .input-switch__text Запомнить меня            
+                
+                -->
+                <div class="button__wrap">
+                  <button class="button main-color_red" type="submit">Войти</button>
+                </div>
+              </form>
+              <div class="login-popup__linc-wrap"><a class="login-popup__linc main-color_red" href="">Забыли пароль?</a><a class="login-popup__linc main-color_red" href="">Зарегистрироваться</a></div>
+            </div>
+            <div class="main-form__block main-form-download">
+              <h3 class="main-form__h">Задайте нам вопрос</h3>
+              <p class="main-form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. </p><a class="linc-arrow main-color_orange" href="#">Смотреть все
+                <svg class="linc-arrow__icont" width="20" height="20">
+                  <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb90">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h main-color_blue-1">Видео</h2>
+          </div>
+          <div class="video-nav tab-nav">
+            <label class="tab-nav__item">
+              <input class="visually-hidden" type="radio" name="sort-video" value="learn" checked data-tab-id="video-tabId" data-tab-control="tab1"><span>Обучающее видео</span>
+            </label>
+            <label class="tab-nav__item">
+              <input class="visually-hidden" type="radio" name="sort-video" value="about" data-tab-id="video-tabId" data-tab-control="tab2"><span>Видео о нас</span>
+            </label>
+          </div>
+          <div class="video-list" data-tab-id="video-tabId" data-tab-block="tab1">
+            <div class="video-list__item">
+              <div class="video-list__wrap"><img src="assets/images/video-cover.jpg" alt="">
+                <button class="video-list__btn" aria-label="Play"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+</svg>
+                </button>
+              </div><span class="video-list__caption">Правильный выбор инструмента, советы от профессионалов</span>
+            </div>
+            <div class="video-list__item">
+              <div class="video-list__wrap"><img src="assets/images/video-cover.jpg" alt="">
+                <button class="video-list__btn" aria-label="Play"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+</svg>
+                </button>
+              </div><span class="video-list__caption">Правильный выбор инструмента, советы от профессионалов</span>
+            </div>
+            <div class="video-list__item">
+              <div class="video-list__wrap"><img src="assets/images/video-cover.jpg" alt="">
+                <button class="video-list__btn" aria-label="Play"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+</svg>
+                </button>
+              </div><span class="video-list__caption">Правильный выбор инструмента, советы от профессионалов</span>
+            </div>
+          </div>
+          <div class="video-list" data-tab-id="video-tabId" data-tab-block="tab2">
+            <div class="video-list__item">
+              <div class="video-list__wrap"><img src="assets/images/video-cover.jpg" alt="">
+                <button class="video-list__btn" aria-label="Play"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+</svg>
+                </button>
+              </div><span class="video-list__caption">Правильный выбор инструмента, советы от профессионалов</span>
+            </div>
+            <div class="video-list__item">
+              <div class="video-list__wrap"><img src="assets/images/video-cover.jpg" alt="">
+                <button class="video-list__btn" aria-label="Play"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+</svg>
+                </button>
+              </div><span class="video-list__caption">Правильный выбор инструмента, советы от профессионалов</span>
+            </div>
+          </div>
+          <button class="video-btn_more button">Показать больше</button>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb120">
+        <div class="cont-block">
+          <div class="about__text-wrap">
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+            <p>Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="cont-block__wrap footer__wrap">
+      <div class="cont-block footer">
+        <div class="footer__body">
+          <div class="footer__logo-wrap"><a class="footer__logo" href="">
+              <svg width="130" height="60">
+                <use xlink:href="./assets/images/sprite.svg#main-logo"></use>
+              </svg></a>
+            <div class="footer__qr-wrap">
+              <div class="footer__qr"><svg width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h70v70H0z"/><path d="M28 2h-2v2h2V2zM40 4h2v2h2v2h2V6h2V4h-2V2H34v2h-2V2h-2v4h8V4h2zM50 2h-2v2h2V2zM66 2H54v14h14V2h-2zm0 4v8H56V4h10v2zM20 4h-2v2h2V4zM24 4V2h-2v4h2V4zM28 6h-2v4h2V6z" fill="#000"/><path d="M40 6h-2v2h2V6zM60 6h-2v6h6V6h-4zM10 12h2V6H6v6h4zM22 14v-4h2V8h-6v2h2v2h-2v4h2v-2h2z" fill="#000"/><path d="M6 16h10V2H2v14h4zm-2-4V4h10v10H4v-2zM26 16h2v-2h2v4h-2v2h-2v2h4v-2h4v-2h2v-6h2v4h2v-4h2v4h-2v2h6v2h2v-2h4V8h-2V6h-2v2h-2v2h2v2h2v4h-2v-4h-2v-2h-8V8h-8v2h-2v2h-4v2h2v2zm20 0h-2v-2h2v2zm-12 0h-2v-2h2v2zm0-6v2h-2v-2h2zM58 18h-2v2h2v-2zM62 18h-2v2h2v-2zM66 18h-2v2h-2v2h2v2h2v-2h2v-2h-2v-2zM22 22v2h2v-4h-2v2z" fill="#000"/><path d="M42 20h-2v2h6v-2h-4zM50 20h-2v2h2v-2zM52 22h4v-2h-2v-2h-2v4zM16 22h-2v2h2v-2zM60 24h2v-2h-6v2h2v2h-2v2h-2v-2h2v-2h-4v2h-2v2h2v2h4v4h2v-6h4v-2h-2v-2zM64 24h-2v2h2v-2z" fill="#000"/><path d="M16 28v2h2v-2h6v-2h-4v-6h2v-2h2v2h2v-4h-2v-2h-2v2h-2v2h-6v2h2v2h2v2h-2v2h-2v-2h-2v2h-2v2h2v2h2v-2h2zM46 28h2v-4h-4v2h2v2zM50 28h-2v2h2v-2z" fill="#000"/><path d="M8 30h2v-2H8v-4h4v-2H6v2H4v-2h2v-2h6v-2H2v10h2v-2h2v2H4v2H2v2h2v2h4v2h2v-4H8v-2z" fill="#000"/><path d="M12 30h-2v2h2v-2zM16 30h-2v2h2v-2zM20 30h-2v2h2v-2zM44 30v-4h-2v2h-4v4h2v-2h2v2h-2v6h2v4h4v2h-2v2h6v-2h-2v-4h-2v-4h-4v-2h4v-2h2v-2h-4zM66 30h2v-2h-4v4h2v-2zM26 32h2v-2h-4v2h-2v4h4v-4z" fill="#000"/><path d="M50 34h2v-2h-4v2h2zM64 32h-2v2h2v-2zM18 36v-4h-2v2h-2v2h4zM48 34h-2v2h2v-2zM54 34h-2v2h2v-2zM60 34h-2v2h2v-2zM6 36H4v2h2v-2zM50 36h-2v2h2v-2zM56 36h-2v2h2v-2zM24 38h-2v2h2v-2zM58 38v2h4v-4h-2v2h-2zM66 38h2v-2h-2v-2h-2v6h2v-2zM4 40H2v2h2v-2zM40 40h-2v2h2v-2zM64 40h-2v2h2v-2zM28 42v-2h-2v4h4v-2h-2z" fill="#000"/><path d="M32 44h2v-2h2v-6h2v-2h-4v-2h2v-4h2v-2h-2v-2h2v2h4v-2h-2v-2h-2v-4h-2v2h-2v2h-2v2h-2v2h-2v-2h-2v4h8v2h-4v2h2v4h2v2h-2v-2h-2v-2h-2v2h-2v2h4v4h2v2z" fill="#000"/><path d="M40 44h-2v-2h-2v2h-2v2h4v2h2v-2h2v-4h-2v2zM60 44v-2h-2v-2h-4v2h2v2h4zM32 44h-2v2h2v-2zM64 46v2h2v-2h2v-2h-2v-2h-2v4zM34 46h-2v2h2v-2zM62 46v-2h-2v6h4v-2h-2v-2zM12 48v-2h2v-2h2v2h-2v2h4v-2h2v-2h4v-2h-2v-2h-4v2h-4v-2h2v-2h-2v-2h-2v4h-2v-2H6v4h2v4h2v2H8v2H6v2h6v-2h2v-2h-2zM32 48h-2v2h2v-2zM4 50v-4h2v-2H2v8h2v-2z" fill="#000"/><path d="M30 52v-2h-4v-2h2v-2h-4v4h-4v-2h-2v2h-4v2h4v4h2v-4h6v2h2v-2h2zM56 50v-6h-2v2h-2v2h2v2h-4v-2h-2v2h-2v2h4v2h-2v2h2v4h-2v-4h-2v-4h-4v-2h4v-2h-6v4h-2v-2h-6v2h2v2h-2v2h2v4h2v2h-4v2h2v2h2v-2h2v-2h4v2h2v2h2v-2h2v2h-2v2h6v-2h-2v-2h6v-2h-2v-2h2v2h4v-4h4v2h2v-6h-4v2h-2v-2h2v-2h-2v-2h-4zM38 60v-2h-2v-2h2v-2h4v2h-2v4h-2zm4-2h4v2h-4v-2zm16-4v4h-6v-6h6v2zM32 52h-2v2h2v-2zM68 52v-2h-2v4h2v-2z" fill="#000"/><path d="M12 54H2v14h14V54h-4zm2 4v8H4V56h10v2zM30 54h-2v2h2v-2zM56 54h-2v2h2v-2zM28 56h-2v2h2v-2z" fill="#000"/><path d="M8 58H6v6h6v-6H8zM30 58h-2v2h2v-2zM26 60v-2h-2v4h4v-2h-2zM32 60h-2v2h2v-2zM30 62h-2v2h2v-2zM62 62h-2v2h2v-2zM66 62h-2v2h2v-2z" fill="#000"/><path d="M24 64h-2v2h-2v-6h2v-2h-4v10h6v-2h4v-2h-4zM56 64v2h2v2h2v-4h-4zM64 64h-2v2h2v-2zM30 66h-2v2h2v-2zM36 66v2h6v-2h-2v-2h-2v2h-2zM56 66h-2v2h2v-2zM66 66h-2v2h2v-2z" fill="#000"/></svg></div>
+              <div class="footer__qr"><svg width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h70v70H0z"/><path d="M40 4h2v2h2v2h2V6h2V4h-2V2H34v2h-2V2h-2v4h8V4h2zM50 2h-2v2h2V2zM66 2H54v14h14V2h-2zm0 4v8H56V4h10v2zM26 6h2V4h-4v2h-2V2h-2v2h-2v2h2v2h-2v2h4V8h2v2h2V6z" fill="#000"/><path d="M40 6h-2v2h2V6zM60 6h-2v6h6V6h-4zM10 12h2V6H6v6h4zM22 12v4h2v-6h-2v2z" fill="#000"/><path d="M6 16h10V2H2v14h4zm-2-4V4h10v10H4v-2zM20 14v-2h-2v4h2v-2zM58 18h-2v2h2v-2zM62 18h-2v2h2v-2zM66 18h-2v2h-2v2h2v2h2v-2h2v-2h-2v-2zM30 20h4v-2h2v-6h2v4h2v-4h2v4h-2v2h6v2h2v-2h4V8h-2V6h-2v2h-2v2h2v2h2v4h-2v-4h-2v-2h-8V8h-8v2h-4v2h2v2h2v4h-2v-4h-2v6h2v2h2v-2zm16-4h-2v-2h2v2zm-12-6v2h-2v-2h2zm-2 4h2v2h-2v-2z" fill="#000"/><path d="M42 20h-2v2h6v-2h-4zM50 20h-2v2h2v-2zM52 22h4v-2h-2v-2h-2v4zM6 22H4v2h4v-2H6zM60 24h2v-2h-6v2h2v2h-2v2h-2v-2h2v-2h-4v2h-2v2h2v2h4v4h2v-6h4v-2h-2v-2zM64 24h-2v2h2v-2zM16 26h-2v2h2v-2z" fill="#000"/><path d="M32 28h2v2h-4v2h2v4h2v2h-2v-2h-2v-2h-2v-2h-2v4h2v2h2v4h2v2h2v-2h2v-6h2v-2h-4v-2h2v-4h2v-2h-2v-2h2v2h4v-2h-2v-2h-2v-4h-2v2h-2v2h-2v2h-2v2h-2v2h4zM46 28h2v-4h-4v2h2v2z" fill="#000"/><path d="M28 28h-2v2h2v-2zM50 28h-2v2h2v-2zM44 30v-4h-2v2h-4v4h2v-2h2v2h-2v6h2v4h4v2h-2v2h6v-2h-2v-4h-2v-4h-4v-2h4v-2h2v-2h-4zM66 30h2v-2h-4v4h2v-2z" fill="#000"/><path d="M50 34h2v-2h-4v2h2zM64 32h-2v2h2v-2zM6 34h2v-2h2v-2h2v2h4v2h-2v2h2v2h2v-2h2v-2h4v-2h-2v-2h2v-2h-2v-2h2v2h2v-4h2v-2h-4v2h-2v-4h2v-2H14v2h2v2h-2v-2h-2v-2H2v2h6v2h2v2H8v2h2v2H8v-2H4v2h2v2H4v-2H2v4h2v2H2v2h2v2h2v-4zm6-8h2v-2h4v2h2v4h-2v-2h-2v2h-2v-2h-2v-2zM48 34h-2v2h2v-2zM54 34h-2v2h2v-2zM60 34h-2v2h2v-2zM50 36h-2v2h2v-2zM56 36h-2v2h2v-2z" fill="#000"/><path d="M20 40h2v-4h-2v4zM58 38v2h4v-4h-2v2h-2zM66 38h2v-2h-2v-2h-2v6h2v-2zM40 40h-2v2h2v-2zM64 40h-2v2h2v-2zM40 44h-2v-2h-2v2h-2v2h4v2h2v-2h2v-4h-2v2zM60 44v-2h-2v-2h-4v2h2v2h4zM14 46v-2h-2v-2h2v-2h2v-2h-2v-2h-2v-4h-2v2H8v4h2v2H8v-2H6v2H4v2h2v2h4v2h4zM32 44h-2v2h2v-2zM64 46v2h2v-2h2v-2h-2v-2h-2v4zM16 46h-2v2h2v-2zM34 46h-2v2h2v-2zM62 46v-2h-2v6h4v-2h-2v-2zM12 48h-2v-2H6v2h2v2h6v-2h-2z" fill="#000"/><path d="M28 48v-4h2v-2h-4v-2h2v-2h-4v4h-2v4h-2v-2h-2v-2h-4v2h2v2h2v2h6v-4h2v6h2v-2zM32 48h-2v2h2v-2zM4 50v-6H2v8h2v-2zM16 50h-2v2h4v-2h-2zM30 50h-2v2h2v-2zM56 50v-6h-2v2h-2v2h2v2h-4v-2h-2v2h-2v2h4v2h-2v2h2v4h-2v-4h-2v-4h-4v-2h4v-2h-6v4h-2v-2h-6v2h2v2h-2v2h2v4h2v2h-4v-2h-2v2h-2v2h2v2h2v-2h2v2h2v-2h2v-2h4v2h2v2h2v-2h2v2h-2v2h6v-2h-2v-2h6v-2h-2v-2h2v2h4v-4h4v-2h2v-2h-4v2h-2v-2h2v-2h-2v-2h-4zM38 60v-2h-2v-2h2v-2h4v2h-2v4h-2zm4-2h4v2h-4v-2zm16-4v4h-6v-6h6v2zM24 54h4v-2h-2v-2h-2v2h-2v-2h-2v2h-2v4h4v-2h2z" fill="#000"/><path d="M32 52h-2v2h2v-2zM68 52v-2h-2v4h2v-2zM12 54H2v14h14V54h-4zm2 4v8H4V56h10v2zM56 54h-2v2h2v-2zM26 58v-2h-4v2h-4v10h2v-2h4v-2h-2v-2h-2v-2h4v-2h2zM68 56h-2v2h2v-2z" fill="#000"/><path d="M8 58H6v6h6v-6H8zM30 58h-2v2h2v-2zM66 58h-2v2h2v-2zM26 60h-2v2h4v-2h-2zM62 62h-2v2h2v-2zM66 62h-2v2h2v-2zM56 64v2h2v2h2v-4h-4zM64 64h-2v2h2v-2zM30 66h-2v2h2v-2zM36 66v2h6v-2h-2v-2h-2v2h-2zM56 66h-2v2h2v-2zM66 66h-2v2h2v-2z" fill="#000"/></svg></div>
+            </div>
+          </div>
+          <nav class="footer__nav-wrap"> 
+            <ul class="footer__nav">
+              <li class="footer__nav-item"> <a class="footer__nav-linc footer__nav-linc_primary" href="#">Каталог</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Ручной инструмент</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Искробезопасный инструмент </a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Гидравлический инструмент</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Вело инструмент</a></li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item"> <a class="footer__nav-linc footer__nav-linc_primary" href="#">О компании</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">UNIOR в России</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Миссия и видение</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">История UNIOR</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Качество</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Новости</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Карьера</a></li>
+              <li class="footer__nav-item"> <a class="footer__nav-linc" href="#">Контакты</a></li>
+            </ul>
+            <ul class="footer__nav footer__nav_single">
+              <li class="footer__nav-item"> <a class="footer__nav-linc footer__nav-linc_primary" href="#">Техническая информация</a></li>
+            </ul>
+            <ul class="footer__nav footer__nav_single">
+              <li class="footer__nav-item"> <a class="footer__nav-linc footer__nav-linc_primary" href="#">Наши бренды</a></li>
+            </ul>
+            <ul class="footer__nav footer__nav_single">
+              <li class="footer__nav-item"> <a class="footer__nav-linc footer__nav-linc_primary" href="#">Дилеры</a></li>
+            </ul>
+          </nav>
+          <div class="footer__contact">
+            <form class="subscribe-news footer__contact-subscribe">
+              <input class="subscribe-news__input" type="email" name="subscribe-news" placeholder="Введите Ваш E-mail">
+              <button class="subscribe-news__button" type="submit">Подписаться на рассылку</button>
+            </form>
+            <ul class="footer__contact-list"> 
+              <li class="footer__contact-item">
+                <div class="footer__contact-item-text">Звонки по России:</div><a class="footer__contact-item-tel" href="tel:+78007008351">8-800-700-83-51</a>
+                <div class="footer__contact-item-text-small">[звонок бесплатный]</div>
+              </li>
+              <li class="footer__contact-item">
+                <div class="footer__contact-item-text">Санкт-Петербург:</div><a class="footer__contact-item-tel" href="tel:+78124498350">8-812-449-83-50</a><a class="footer__contact-item-tel" href="tel:+78124498351">8-812-449-83-51</a>
+              </li>
+              <li class="footer__contact-item">
+                <div class="footer__contact-item-text">Екатеринбург:</div><a class="footer__contact-item-tel" href="tel:+73433453774">8-343-345-37-74</a>
+              </li>
+              <li class="footer__contact-item">
+                <div class="footer__contact-item-text">Москва:</div><a class="footer__contact-item-tel" href="tel:+74952589274">8-495-258-92-74</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bot"> <a class="footer__bot-linc" href="#">Правовая информация</a><a class="footer__bot-linc" href="#">Сделано в <strong>RA-Studio</strong></a></div>
+      </div>
+    </footer>
+    <div class="popup">
+      <div class="popup__fade" data-close-popup>
+        <section class="popup__wrap">
+          <div class="popup__container">
+            <div class="popup__app-caption subtitle">Ваша заявка принята</div>
+            <p class="popup__app-text">Мы перезвоним вам в течении 20 минут</p>
+            <button class="popup__app-btn button main-color_orange" data-close-popup>Закрыть</button>
+            <button class="popup__close popup__close_orange" data-close-popup>
+              <svg width="24" height="24">
+                <use xlink:href="assets/images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="assets/scripts/imask.min.js"></script>
+    <script src="assets/scripts/accordion.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/focus-visible.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
