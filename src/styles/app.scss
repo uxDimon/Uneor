@@ -177,8 +177,20 @@ img {
 	margin-right: 20px;
 }
 
+.cont-block_mb120 {
+	margin-bottom: 120px;
+}
 .cont-block_mb95 {
 	margin-bottom: 95px;
+}
+.cont-block_mb90 {
+	margin-bottom: 90px;
+}
+.cont-block_mb85 {
+	margin-bottom: 85px;
+}
+.cont-block_mb60 {
+	margin-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -660,6 +672,7 @@ textarea.input__input {
 @import "./pages/index.scss";
 @import "./common/footer.scss";
 
+@import "./common/main-page-banner.scss";
 @import "./common/main-news.scss";
 @import "./common/main-catalog.scss";
 @import "./common/manufacturer-block.scss";

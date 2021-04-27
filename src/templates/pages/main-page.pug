@@ -1,0 +1,380 @@
+extends ../template
+
+block variables
+    - var title = 'Главная'
+    - var contactForm = true
+
+
+block content
+    main.main-page
+        //- main banner
+        section.cont-block__wrap.cont-block_mb60
+            .cont-block
+                .main-page__banner
+                    .main-page__left
+                        h1.main-page__title 
+                            span UNIOR — 
+                            | UNIverzalno ORodje
+                    .main-page__right
+                        img(src="assets/images/capacity-banner-min.jpg", alt="")
+                
+                label.input.search
+                    input(type="search" name="search" placeholder="Введите свой запрос").input__input
+                    .input__error Поле введено не верно
+                    svg.search__icon(width="20" height="20")
+                        use(xlink:href="assets/images/sprite.svg#search-alt")
+
+        //- main catalog block
+        section.cont-block__wrap.cont-block_mb85
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_yellow Каталог продукции
+                    a(href="#").button.main-color_yellow Смотреть все
+                ul.cont-block__list.catalog-list
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Слесарно-монтажный инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Слесарно-монтажный инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Пневматический инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Пневматический инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Промышленные съемники")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Промышленные<br> съемники
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Инструментальная мебель и средства хранения")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Инструментальная мебель<br> и средства хранения
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Динамометрический инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Динамометрический<br> инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Гидравлический инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Гидравлический<br> инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Искробезопасный инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Искробезопасный<br> инструмент
+                                svg(width="30" height="26").catalog-list__ex
+                                    use(xlink:href="assets/images/sprite.svg#EX")
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Резьбонарезной инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Резьбонарезной<br> инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Абразивный инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Абразивный<br> инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Сервисный инструмент")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Сервисный<br> инструмент
+                    li.catalog-list__item
+                        a.catalog-list__link(href="#")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Наши возможности")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Наши<br> возможности
+
+                    li.catalog-list__buttom-more
+                        label.button.main-color_yellow 
+                            span Показать больше
+                            input(type="checkbox" name="buttom-more")(data-catalog-list-more) 
+
+                    li.catalog-list__item.catalog-list__item_catalog
+                        a.catalog-list__link(href="#")
+                            .catalog-list__text-wrap
+                                .catalog-list__caption Перейти в каталог
+                                svg.catalog-list__icon-arrow(width="20" height="20")
+                                    use(xlink:href="assets/images/sprite.svg#arrow")
+                            .catalog-list__img-wrap
+                                img.catalog-list__img(src="assets/images/main-catalog/catalog-12-min.png" alt="")
+                .cont-block__addition.catalog-addition
+                    .catalog-addition__top
+                        .catalog-addition__left
+                            svg(width="451" height="54")
+                                use(xlink:href="assets/images/sprite.svg#logo-bike-tools")
+                            p.catalog-addition__text Инструменты для велосипедов высшего уровня
+                            a.catalog-addition__btn.button.main-color_yellow(href="#") Подробнее
+                        .catalog-addition__right 
+                            img(src="assets/images/unior-bike-tools-min.jpg" alt="")
+                    ul.catalog-addition__bot
+                        li.catalog-addition__item.catalog-addition__item_orange
+                            .catalog-addition__img-wrap
+                                img(src="assets/images/catalog-addition-1-min.png" alt="")
+                            .catalog-addition__text-wrap
+                                .catalog-addition__caption Акции
+                                a.catalog-addition__link.button(href="#") Смотреть все
+                        li.catalog-addition__item.catalog-addition__item_blue
+                            .catalog-addition__img-wrap
+                                img(src="assets/images/catalog-addition-2-min.png" alt="")
+                            .catalog-addition__text-wrap
+                                .catalog-addition__caption Новинки 2021
+                                a.catalog-addition__link.button(href="#") Смотреть все
+
+        //- main news block
+        section.cont-block__wrap.cont-block_mb90
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_green Новости
+                    a(href="#").linc-arrow.cont-block--linc-arrow.main-color_green
+                        | Смотреть все
+                        svg(width="12" height="12").linc-arrow__icont
+                            use(xlink:href="./assets/images/sprite.svg#arrow-smal")
+                ul.cont-block__list.news-list
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-1-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-2-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                    li.news-list__item
+                        a.news-list__link(href="#")
+                            .news-list__img-wrap
+                                img.news-list__img(src="assets/images/news-3-min.jpg" alt="")
+                            .news-list__text-wrap
+                                span.news-list__date 10.12.2020
+                                h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+
+        //- main block производитель
+        section.cont-block__wrap.cont-block_mb90
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_red Hytorc
+
+                .cont-block__content.manufact
+                    .manufact__img-wrap
+                        img(src="assets/images/hytorc.png" alt="hytorc logo")
+                    .manufact__text-wrap
+                        p Lorem 1 ipsum dolor 123 sit amet, consectetur adipiscing elit. Consequat ipsum eu diam est facilisi. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices
+                        p Integer ultrices magnis odio suspendisse ultrices aliquam natoque maecenas justo. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices.
+
+                        a.manufact__btn.button.main-color_red(href="#" download) Скачать каталог
+
+        //- main block наши возможности
+        section.cont-block__wrap.cont-block_mb90
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_yellow Наши возможности
+
+                .abilities-list
+                    .abilities-list__item
+                        img.abilities-list__img(src="assets/images/options-1.jpg" alt="")
+                        .abilities__text-wrap
+                            h3.abilities__caption Проектирование рабочего пространства
+                            p Создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.
+                        a.abilities__btn.button(href="#") Подробнее
+                    .abilities-list__item
+                        img.abilities-list__img(src="assets/images/options-2.jpg" alt="")
+                        .abilities__text-wrap
+                            h3.abilities__caption Сервис
+                            p Наша компания предоставляет широкий спектр услуг по созданию модульных систем, систем хранения, а также 3D-моделированию. Также мы занимаемся обслуживанием и ремонтом поставляемого оборудования.
+                        a.abilities__btn.button(href="#") Подробнее
+                    .abilities-list__item
+                        img.abilities-list__img(src="assets/images/options-3.jpg" alt="")
+                        .abilities__text-wrap
+                            h3.abilities__caption Гарантия
+                            p UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент. В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.
+                        a.abilities__btn.button(href="#") Подробнее
+
+        //- Наши партнеры
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_red Наши партнеры
+
+                ul.partners-list.cont-block_mb95
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part1.png" alt="").partners-list__img
+                    li.partners-list__item
+                        img(src="assets/images/part2.png" alt="").partners-list__img
+
+                .main-form
+                    .main-form__block.main-form-quest
+                        h3.main-form__h Задайте нам вопрос
+                        p.main-form__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. Ultrices arcu nec scelerisque convallis eu. Tellus sed vel sem vel vestibulum nunc tincidunt. 
+
+                        form.main-form-quest__form
+                            label.input
+                                input(type="text" name="name" placeholder="Ваше имя").input__input
+                                //- .input__name Логин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                input(type="tel" name="name" placeholder="Ваш телефон").input__input
+                                //- .input__name Логин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                textarea(name="name" placeholder="Введите сообщение").input__input
+                                //- .input__name Логин
+
+                            label.input_file
+                                input(type="file" multiple name="name" placeholder="Ваш телефон").input_file__input
+
+                                svg(width="20" height="20").input_file__icont
+                                    use(xlink:href="./assets/images/sprite.svg#clip")                                
+                                ul.input_file__name
+                                    li Прикрепить файл
+                                .input__error Поле введено не верно
+
+                            .button__wrap 
+                                button(type="submit").button Отправить
+
+                    .main-form__block.main-form-reg
+                        h3.main-form__h Войти в личный кабинет
+
+                        form.main-form-reg__form
+                            label.input
+                                input(type="text" name="name" placeholder="Лгин" required).input__input
+                                //- .input__name Лгин
+                                .input__error Поле введено не верно
+
+                            label.input
+                                input(type="password" name="name" placeholder="Пароль" required).input__input
+                                //- .input__name Пароль
+                                .input__error Поле введено не верно
+
+                            // label.input-switch.main-color_red
+                                input(type="checkbox" name="checkbox").input-switch__input
+                                .input-switch__wrap
+                                    .input-switch__mimic           
+                                    .input-switch__text Запомнить меня            
+
+                            .button__wrap
+                                button(type="submit").button.main-color_red Войти
+
+                        .login-popup__linc-wrap
+                            a(href="").login-popup__linc.main-color_red Забыли пароль?
+                            a(href="").login-popup__linc.main-color_red Зарегистрироваться
+
+
+                    .main-form__block.main-form-download
+                        h3.main-form__h Задайте нам вопрос
+                        p.main-form__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. 
+
+                        a(href="#").linc-arrow.main-color_orange
+                            | Смотреть все
+                            svg(width="20" height="20").linc-arrow__icont
+                                use(xlink:href="./assets/images/sprite.svg#arrow")
+
+        //- main block video list
+        section.cont-block__wrap.cont-block_mb90
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Видео
+                .video-nav.tab-nav
+                    label.tab-nav__item
+                        input.visually-hidden(type="radio" name="sort-video" value="learn" checked data-tab-id="video-tabId" data-tab-control="tab1")
+                        span Обучающее видео
+                    label.tab-nav__item
+                        input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="video-tabId" data-tab-control="tab2")
+                        span Видео о нас
+
+
+                .video-list(data-tab-id="video-tabId" data-tab-block="tab1")
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                </svg>
+                        span.video-list__caption Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                </svg>
+                        span.video-list__caption Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                </svg>
+                        span.video-list__caption Правильный выбор инструмента, советы от профессионалов
+
+                .video-list(data-tab-id="video-tabId" data-tab-block="tab2")
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                </svg>
+                        span.video-list__caption Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                </svg>
+                        span.video-list__caption Правильный выбор инструмента, советы от профессионалов
+
+                button.video-btn_more.button Показать больше
+
+
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+

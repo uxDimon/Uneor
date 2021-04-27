@@ -1,0 +1,71 @@
+// Цвета
+$color-dark-grey: #252525;
+$color-dark-grey-2: #222325;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-grey-text: #A1A1A1;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+$color-b-grey: #868686;
+
+.main-page__banner {
+    position: relative;
+}
+.main-page__left {
+    position: absolute;
+    max-width: 500px;
+    height: 100%;
+    color: $color-White;
+    background-color: $color-Blue_1;
+    padding: 0 35px;
+    padding-top: 111px;
+}
+.main-page__title  {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 140%;
+    margin: 0;
+
+    span {
+        display: block;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 130%;
+        margin-bottom: 5px;
+    }
+}
+.main-page__right {
+    width: 100%;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.search {
+    position: relative;
+    margin-top: 20px;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+
+    .input__input {
+        min-height: 50px;
+    }
+}
