@@ -1,0 +1,211 @@
+extends ../template
+
+block variables
+    - var title = 'Карьера'
+    - var contactForm = true
+
+
+block content
+    main
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current О компании
+        
+        //- career banner
+        section.cont-block__wrap.cont-block_mb50.cont-block_mt28
+            .cont-block
+                .banner-wrap
+                    img(src="assets/images/career-banner.jpg" alt="")
+        
+        //- career блок работа в компании
+        section.cont-block__wrap.cont-block__wrap_career.cont-block_mb120
+            .cont-block.cont-block_small
+                .cont-block__header
+                    h1.cont-block__h.main-color_red Работа в компании UNIOR
+
+                .cont-block__text-wrap
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+
+                    p Ullamcorper massa dolor, in vel phasellus purus, dictum. Feugiat elementum elit imperdiet eros in. Consequat, ridiculus amet, velit sit malesuada duis duis fermentum et.
+
+                .career-slider
+                    h3.career-slider__subtitle.subtitle Истории успеха от нашей команды
+
+                    .career-slider__slider-wrap
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .career-slider__item
+                                        .career-slider__video-wrap
+                                            img(src="assets/images/career.jpg" alt="")
+                                            button.video-list__btn(aria-label="Play")
+                                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                                </svg>
+                                        .career-slider__text-wrap
+                                            .career-slider__caption Иванов Иван Иванович
+                                            span.career-slider__desc Руководитель отдела продаж
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .swiper-slide
+                                    .career-slider__item
+                                        .career-slider__video-wrap
+                                            img(src="assets/images/career.jpg" alt="")
+                                            button.video-list__btn(aria-label="Play")
+                                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="#0077C1"/>
+                                                </svg>
+                                        .career-slider__text-wrap
+                                            .career-slider__caption Иванов Иван Иванович
+                                            span.career-slider__desc Руководитель отдела продаж
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+
+                        .swiper-button-prev.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")
+                        .swiper-button-next.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+        //- вакансии аккордион
+        section.cont-block__wrap.cont-block__wrap_career.cont-block_mb120
+            .cont-block.cont-block_small
+                .cont-block__header
+                    h1.cont-block__h.main-color_red Вакансии
+
+                .vacancy-ac
+                    .ac
+                        .ac-header
+                            .ac-trigger
+                                .vacancy-ac__name Руководитель отдела продаж
+                                .vacancy-ac__city
+                                    .vacancy-ac__term Город:
+                                    .vacancy-ac__value Санкт-Петербург
+                        .ac-panel
+                            .vacancy-ac__panel
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                button.vacancy-ac__btn.button Откликнуться на вакансию
+
+                    .ac
+                        .ac-header
+                            .ac-trigger
+                                .vacancy-ac__name Руководитель отдела по связям с общественностью
+                                .vacancy-ac__city
+                                    .vacancy-ac__term Город:
+                                    .vacancy-ac__value Санкт-Петербург
+                        .ac-panel
+                            .vacancy-ac__panel
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                button.vacancy-ac__btn.button Откликнуться на вакансию
+
+                    .ac
+                        .ac-header
+                            .ac-trigger
+                                .vacancy-ac__name Старший продавец-консультант на склад
+                                .vacancy-ac__city
+                                    .vacancy-ac__term Город:
+                                    .vacancy-ac__value Санкт-Петербург
+                        .ac-panel
+                            .vacancy-ac__panel
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                .vacancy-ac__text-wrap
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    p Hendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis. Рendrerit viverra est euismod velit nec. Ridiculus at quam id elementum vulputate sagittis.
+                                button.vacancy-ac__btn.button Откликнуться на вакансию
+
+                .vacancy-bot
+                    .vacancy-bot__caption Не нашли подходящую вакансию?
+                    p Свое резюме вы можете отправить по электронному адресу 
+                        a(href="mailto:job@unior.ru") job@unior.ru 
+                        | или заполнить анкету, и специалисты отдела персонала свяжутся с вами.
+                    button.vacancy-bot__btn.button Заполнить анкету
+
+        //- вакансии контакты
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-2 Контакты
+
+                .vacancy-contacts
+                    ul.contacts-list
+                        li.contacts-list__item
+                            .contacts-list__top Представительство компании UNIOR d.d. в России и странах СНГ:
+                            .contacts-list__mid
+                                img.contacts-list__logo(src="assets/images/logo-blue.png" width="44" height="20" alt="")
+                                span ООО «Униор Профешнл Тулз»
+                            .contacts-list__bot
+                                span Звонки по России:
+                                a.contacts-list__tel(href="tel:8-800-700-83-51") 8-800-700-83-51
+                                span [звонок бесплатный]
+                        li.contacts-list__item 
+                            .contacts-list__caption Санкт-Петербург
+                            address.contacts-list__address 196105, Санкт-Петербург, ул. Благодатная, д. 63, корпус 1, литера Д
+                            .contacts-list__wrap
+                                a.contacts-list__tel(href="tel:+78124498350") (812) 449-83-50
+                                a.contacts-list__tel(href="tel:+78124498351") (812) 449-83-51
+                                a.contacts-list__mail(href="mailto:unior@unior.ru") unior@unior.ru
+                            a.contacts-list__link(href="#") 
+                                svg(width="16" height="16")
+                                    use(xlink:href="assets/images/sprite.svg#map")
+                                span Схема проезда
+                        li.contacts-list__item 
+                            .contacts-list__caption Екатеринбург
+                            address.contacts-list__address 620049, Екатеринбург, переулок Автоматики,    д. 1, литера Б
+                            .contacts-list__wrap
+                                a.contacts-list__tel(href="tel:+73433453774") (343) 345-37-74
+                                a.contacts-list__mail(href="mailto:ekb@unior.ru") ekb@unior.ru
+                            a.contacts-list__link(href="#") 
+                                svg(width="16" height="16")
+                                    use(xlink:href="assets/images/sprite.svg#map")
+                                span Схема проезда
+                        li.contacts-list__item 
+                            .contacts-list__caption Москва
+                            address.contacts-list__address 117574, Москва, проезд Одоевского, д.2А
+                            .contacts-list__wrap
+                                a.contacts-list__tel(href="tel:+74952589274") (495) 258-92-74
+                                a.contacts-list__mail(href="mailto:msk@unior.ru") msk@unior.ru
+                            a.contacts-list__link(href="#") 
+                                svg(width="16" height="16")
+                                    use(xlink:href="assets/images/sprite.svg#map")
+                                span Схема проезда
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+

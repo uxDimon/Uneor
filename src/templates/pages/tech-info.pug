@@ -1,0 +1,289 @@
+extends ../template
+
+block variables
+    - var title = 'Техническая информация'
+    - var contactForm = true
+
+
+block content
+    main.dealer-page
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Техническая информация
+
+        //- Техническая информация
+        section.cont-block__wrap.cont-block_mt50.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_blue-1 Техническая информация
+                .tech-information
+                    .tech-information__text
+                        h3.tech-information__subtitle.subtitle Наша продукция
+                        p Вся продукция, поставляемая нашей компанией, имеет все необходимые сертификаты, декларации и прочие разрешения на применение инструмента.
+
+                    .tech-information__slider
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" alt="" data-zoomable)
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" alt="" data-zoomable)
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                                .swiper-slide
+                                    .tech-information__item
+                                        img(src="assets/images/sertificate.jpg" data-zoomable alt="")
+                                        .tech-information__hover
+                                            p Свидетельство о внесении в Государственный реестр средств измерений (для динамометрических ключей)
+                                            svg(width="30" height="30")
+                                                use(xlink:href="assets/images/sprite.svg#ant-zoom")
+                        .swiper-button-prev.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")
+                        .swiper-button-next.swiper-button_blue
+                            svg(width="22" height="22")
+                                use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+        //- Гарантийные обязательства
+        section.cont-block__wrap.cont-block_mb100
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_blue-1 Гарантийные обязательства
+
+                .warranty
+                    .warranty__text-wrap
+                        p Весь ассортимент инструмента UNIOR предназначен для профессионального использования и <span>удовлетворяет требованиям международных стандартов ISO и немецких стандартов DIN.</span>
+                        .warranty__desc
+                            p UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент.
+                            p В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.
+
+                        .warranty__list-wrap
+                            p Бессрочная гарантия <span>не распространяется:</span>
+                            ul.warranty__list
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На инструмент, утративший свою работоспособность в результате естественного износа;
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На инструмент, получивший механические повреждения в результате его использования не по назначению;
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На инструмент, подвергшийся воздействию ударных нагрузок (для инструмента, не рассчитанного на такие нагрузки);
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На пневматический инструмент (см. специальные гарантийные обязательства);
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На динамометрический и реверсивный инструмент (см. специальные гарантийные обязательства);
+                                li.warranty__item
+                                    svg.warranty__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p На инструментальную мебель и средства хранения инструмента.
+                            p Подробно с гарантийными обязательствами UNIOR можно ознакомиться 
+                                a(href="#") здесь.
+                    ul.warranty__img-wrap
+                        li.warranty__img-item
+                            img(src="assets/images/iso-logo.png" alt="")
+                        li.warranty__img-item
+                            img(src="assets/images/din-logo.png" alt="")
+
+        //- main block video list
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Видео
+                    a(href="#").linc-arrow.cont-block--linc-arrow.main-color_blue-1
+                        | Смотреть все
+                        svg(width="12" height="12").linc-arrow__icont
+                            use(xlink:href="./assets/images/sprite.svg#arrow-smal")
+                .video-nav.tab-nav
+                    label.tab-nav__item
+                        input.visually-hidden(type="radio" name="sort-video" value="learn" checked data-tab-id="tabId1" data-tab-control="tab1")
+                        span Обучающее видео
+                    label.tab-nav__item
+                        input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="tabId1" data-tab-control="tab2")
+                        span Видео о нас
+
+
+                .video-list(data-tab-id="tabId1" data-tab-block="tab1")
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+
+                .video-list(data-tab-id="tabId1" data-tab-block="tab2")
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+                    .video-list__item
+                        .video-list__wrap
+                            img(src="assets/images/video-cover.jpg" alt="")
+                            button.video-list__btn(aria-label="Play")
+                                svg(width="50" height="50")
+                                    use(xlink:href="assets/images/sprite.svg#button-play")
+                        span.video-list__caption.video-list__caption_blue-1 Правильный выбор инструмента, советы от профессионалов
+
+        //- Презентации,  каталоги продукции
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-1 Презентации,  каталоги продукции
+
+                .files-top.tab-top
+                    .files-nav.tab-nav
+                        label.tab-nav__item
+                            input.visually-hidden(type="radio" name="files" value="presentation" checked data-tab-id="tabId2" data-tab-control="tab1")
+                            span Презентации
+                        label.tab-nav__item
+                            input.visually-hidden(type="radio" name="files" value="catalog" data-tab-id="tabId2" data-tab-control="tab2")
+                            span Каталоги продукции
+
+                ul.files-list(data-tab-id="tabId2" data-tab-block="tab1")
+                    li.files-list__item.files-list__item_head
+                        span.files-list__head Наименование
+                        span.files-list__head Файл / формат
+                    li.files-list__item
+                        span.files-list__caption О компании Униор Профешнл Тулз
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Ножницы FELCO
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Искробезопасный инструмент METALMINOTTI
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Динамометрический инструмент TECNOGI
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Технические чемоданы HEPCO & BECKER
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Абразивные круги «SwatyComet»
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Тележка с набором инструментов из 94 предметов
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Тележка с набором инструментов из 187 предметов
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+
+                ul.files-list(data-tab-id="tabId2" data-tab-block="tab2")
+                    li.files-list__item.files-list__item_head
+                        span.files-list__head Наименование
+                        span.files-list__head Файл / формат
+                    li.files-list__item
+                        span.files-list__caption Каталог Униор Профешнл Тулз
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+                    li.files-list__item
+                        span.files-list__caption Каталог Униор Профешнл Тулз
+                        a.files-list__link.files-list__link_blue(href="#" download) Загрузить (PDF, 11.40 Мб)
+
+
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.

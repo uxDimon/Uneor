@@ -1,0 +1,124 @@
+extends ../template
+
+block variables
+    - var title = 'Дилеры'
+    - var contactForm = true
+
+
+block content
+    main.dealer-page
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Дилеры
+
+        //- Дилеры
+        section.cont-block__wrap.cont-block_mb120.cont-block_mt50
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_blue-2 Дилеры
+                
+                .dealers__wrap
+                    p Воспользуйтесь картой для выбора дилера в своем регионе
+                    img(src="assets/images/dealer-map.png", alt="")
+
+            .dealer__bot.cont-block__wrap
+                .cont-block
+                    .dealer__left
+                        span.dealer__caption Выберите регион (область):
+                        .dealer__select-wrap
+                            select(name="region")
+                                option(value="Красноярский край") Красноярский край
+                            svg(width="15" height="15")
+                                use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    .dealer__right
+                        span.dealer__point Красноярск
+
+                        .dealer__info
+                            span.dealer__value Компания "Сибинструмент"
+                            ul.dealer__info-list.info-list
+                                li.info-list__item
+                                    address Адрес:  Красноярск, ул. 60 лет Октября, 148ж, офис 306
+                                li.info-list__item
+                                    span Тел./факс: 
+                                    a(href="tel:(391) 235-95-66") (391) 235-95-66, 
+                                    span 235-96-63
+                                li.info-list__item
+                                    span E-mail: 
+                                    a(href="mailto:krasinfo@kcu.ru") krasinfo@kcu.ru
+                                li.info-list__item
+                                    span URL: 
+                                    a(href="www.kcu.ru") www.kcu.ru
+
+
+
+        //- about company стать партнером
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_blue-2 Стать нашим партнером
+
+                .cooperation
+                    .cooperation__text-wrap
+                        p Миссия компании UNIOR в России – сделать качественный инструмент доступным любому пользователю. Для этого мы создали и развиваем региональную партнерскую сеть, которая помогает нашим клиентам облегчить и ускорить выбор и получение нужного им инструмента. 
+                        p В настоящее время партнерская сеть UNIOR активно развивается, и мы приглашаем к сотрудничеству торговые компании, занимающиеся продажами инструмента и другой технической продукции в сфере промышленных, ремонтных, монтажных и строительных предприятий.
+
+                    .cooperation__slider
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .cooperation__slider-img
+                                        img(src="assets/images/cooperation-1.jpg" alt="")
+                                .swiper-slide
+                                    .cooperation__slider-img
+                                        img(src="assets/images/cooperation-2.jpg" alt="")
+                            .swiper-button-prev
+                                svg(width="22" height="22")
+                                    use(xlink:href="assets/images/sprite.svg#long-arrow")
+                            .swiper-button-next
+                                svg(width="22" height="22")
+                                    use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+                    .cooperation__bot
+                        .cooperation__wrap
+                            h3.cooperation__subtitle Преимущества сотрудничества с UNIOR
+                            ul.cooperation__list.cooperation__list_blue-2
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Высококачественный и надежный инструмент, отлично зарекомендовавший себя во всех отраслях промышленности, монтажа и ремонта.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Большой склад в Санкт-Петербурге (один из крупнейших в России), а также в Москве, позволяющие в сжатые сроки комплектовать и транспортировать необходимый инструмент в любую точку нашей страны.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Эффективная программа поддержки и развития наших партнеров.
+                                li.cooperation__item
+                                    svg.cooperation__icon(width="20" height="20")
+                                        use(xlink:href="assets/images/sprite.svg#circle-ok")
+                                    p Сотрудничество с европейской компанией – возможность использования опыта других Российских и европейских партнеров UNIOR для увеличения Ваших продаж.
+                        .cooperation__wrap
+                            h3.cooperation__subtitle Как это работает?
+                            p Если Вам интересно развивать свой бизнес вместе с компанией UNIOR и заниматься поставками высококачественного профессионального инструмента, свяжитесь с нами, и мы подробнее познакомим Вас с нашими возможностями и условиями сотрудничества.
+                            button.cooperation__btn.button.main-color_blue-2 Заполнить заявку
+
+
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.

@@ -42,6 +42,9 @@ $color-b-grey: #868686;
     color: $color-Orange;
     text-decoration: none;
 }
+.files-list__link_blue {
+    color: $color-Blue_1;
+}
 
 @media screen and (max-width: 767px) {
     .files-nav {

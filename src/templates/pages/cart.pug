@@ -1,0 +1,95 @@
+extends ../template
+
+block variables
+    - var title = 'Корзина'
+    - var contactForm = false
+
+
+block content
+    main.cart-page
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Корзина
+
+        //- Корзина
+        section.cont-block__wrap.cont-block_mb120.cont-block_mt50
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_red Корзина
+
+                .cart
+                    p.cart__text Мы работаем только с юридическими лицами
+
+                    .cart__wrap
+                        .cart__table-wrap
+                            table.cart__table.cart-table
+                                thead.cart-table__head
+                                    tr.cart-table__head-row
+                                        th.cart-table__cell Код
+                                        th.cart-table__cell.cart-table__cell_name Наименование
+                                        th.cart-table__cell.cart-table__cell_order Заказ
+                                tbody.cart-table__body
+                                    tr.cart-table__row
+                                        td.cart-table__cell.cart-table__cell_article 602081
+                                        td.cart-table__cell.cart-table__cell_name Ключ рожковый - 110/2
+                                        td.cart-table__cell.cart-table__cell_order
+                                            .cart-table__quantity
+                                                button.cart-table__btn.cart-table__btn_minus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                input(type="number")
+                                                button.cart-table__btn.cart-table__btn_plus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                    tr.cart-table__row
+                                        td.cart-table__cell.cart-table__cell_article 602081
+                                        td.cart-table__cell.cart-table__cell_name Ключ с профилем TORX с Т-образной рукояткой - 193TX
+                                        td.cart-table__cell.cart-table__cell_order
+                                            .cart-table__quantity
+                                                button.cart-table__btn.cart-table__btn_minus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                input(type="number")
+                                                button.cart-table__btn.cart-table__btn_plus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                    tr.cart-table__row
+                                        td.cart-table__cell.cart-table__cell_article 602081
+                                        td.cart-table__cell.cart-table__cell_name Ключ динамометрический шкальный 1/4" - 260
+                                        td.cart-table__cell.cart-table__cell_order
+                                            .cart-table__quantity
+                                                button.cart-table__btn.cart-table__btn_minus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                input(type="number")
+                                                button.cart-table__btn.cart-table__btn_plus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                    tr.cart-table__row
+                                        td.cart-table__cell.cart-table__cell_article 602081
+                                        td.cart-table__cell.cart-table__cell_name Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12
+                                        td.cart-table__cell.cart-table__cell_order
+                                            .cart-table__quantity
+                                                button.cart-table__btn.cart-table__btn_minus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                input(type="number")
+                                                button.cart-table__btn.cart-table__btn_plus
+                                                    svg(width="12" height="12")
+                                                        use(xlink:href="assets/images/sprite.svg#plus-minus")
+
+                        a.cart__btn.cart__btn_mobile.button.main-color_red(href="#") Узнать цену
+
+                        .cart__text-wrap
+                            .cart__caption Как формируется заказ
+                            p После того как Вы создадите заказ, необходимо будет указать Вашу контактную информацию. 
+                            p Наши специалисты свяжутся  с вами и выставят счет на оплату товара по Вашим реквизитам. Также вы сможете задать им возникшие у Вас вопросы.
+
+                    a.cart__btn.button.main-color_red(href="#") Узнать цену
