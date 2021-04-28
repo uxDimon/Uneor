@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Навигация</title>
+    <title>Корзина</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,26 +160,125 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="cont-block">
-        <ul> 
-          <li> <a href="ui.html">UI</a></li>
-          <li> <a href="main-page.html">Главная</a></li>
-          <li> <a href="about-company.html">О компании</a></li>
-          <li> <a href="career-page.html">Карьера</a></li>
-          <li> <a href="our-brands.html">Наши бренды</a></li>
-          <li> <a href="brand-page.html">Бренд</a></li>
-          <li> <a href="dealer.html">Дилеры</a></li>
-          <li> <a href="tech-info.html">Техническая информация</a></li>
-          <li> <a href="news-page.html">Новости</a></li>
-          <li> <a href="news-item.html">Новость</a></li>
-          <li> <a href="contacts.html">Контакты</a></li>
-          <li> <a href="cart.html">Корзина</a></li>
-          <li> <a href="order-place.html">Оформление заказа</a></li>
-          <li> <a href="capacity.html">Наши возможности</a></li>
-          <li> <a href="404.html">404</a></li>
-        </ul>
-      </div>
+    <main class="cart-page">
+      <section class="cont-block__wrap cont-block_mt40">
+        <div class="cont-block">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+              <svg width="10" height="10">
+                <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_current">Корзина</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb120 cont-block_mt50">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Корзина</h1>
+          </div>
+          <div class="cart">
+            <p class="cart__text">Мы работаем только с юридическими лицами</p>
+            <div class="cart__wrap">
+              <div class="cart__table-wrap">
+                <table class="cart__table cart-table">
+                  <thead class="cart-table__head">
+                    <tr class="cart-table__head-row">
+                      <th class="cart-table__cell">Код</th>
+                      <th class="cart-table__cell cart-table__cell_name">Наименование</th>
+                      <th class="cart-table__cell cart-table__cell_order">Заказ</th>
+                    </tr>
+                  </thead>
+                  <tbody class="cart-table__body">
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ рожковый - 110/2</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ с профилем TORX с Т-образной рукояткой - 193TX</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Ключ динамометрический шкальный 1/4" - 260</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="cart-table__row">
+                      <td class="cart-table__cell cart-table__cell_article">602081</td>
+                      <td class="cart-table__cell cart-table__cell_name">Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12</td>
+                      <td class="cart-table__cell cart-table__cell_order">
+                        <div class="cart-table__quantity">
+                          <button class="cart-table__btn cart-table__btn_minus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number">
+                          <button class="cart-table__btn cart-table__btn_plus">
+                            <svg width="12" height="12">
+                              <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><a class="cart__btn cart__btn_mobile button main-color_red" href="#">Узнать цену</a>
+              <div class="cart__text-wrap">
+                <div class="cart__caption">Как формируется заказ</div>
+                <p>После того как Вы создадите заказ, необходимо будет указать Вашу контактную информацию. </p>
+                <p>Наши специалисты свяжутся  с вами и выставят счет на оплату товара по Вашим реквизитам. Также вы сможете задать им возникшие у Вас вопросы.</p>
+              </div>
+            </div><a class="cart__btn button main-color_red" href="#">Узнать цену</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="cont-block__wrap footer__wrap">
       <div class="cont-block footer">

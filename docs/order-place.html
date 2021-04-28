@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Навигация</title>
+    <title>Корзина</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,26 +160,88 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="cont-block">
-        <ul> 
-          <li> <a href="ui.html">UI</a></li>
-          <li> <a href="main-page.html">Главная</a></li>
-          <li> <a href="about-company.html">О компании</a></li>
-          <li> <a href="career-page.html">Карьера</a></li>
-          <li> <a href="our-brands.html">Наши бренды</a></li>
-          <li> <a href="brand-page.html">Бренд</a></li>
-          <li> <a href="dealer.html">Дилеры</a></li>
-          <li> <a href="tech-info.html">Техническая информация</a></li>
-          <li> <a href="news-page.html">Новости</a></li>
-          <li> <a href="news-item.html">Новость</a></li>
-          <li> <a href="contacts.html">Контакты</a></li>
-          <li> <a href="cart.html">Корзина</a></li>
-          <li> <a href="order-place.html">Оформление заказа</a></li>
-          <li> <a href="capacity.html">Наши возможности</a></li>
-          <li> <a href="404.html">404</a></li>
-        </ul>
-      </div>
+    <main class="cart-page">
+      <section class="cont-block__wrap cont-block_mt40">
+        <div class="cont-block">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+              <svg width="10" height="10">
+                <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_current">Корзина</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb60 cont-block_mt50">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h1 class="cont-block__h main-color_red">Оформление заказа</h1>
+          </div>
+          <div class="order-place">
+            <div class="order-place__form-wrap">
+              <form class="order-place__form" action="#" method="#">
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Название компании" required>
+                  <div class="input__name">Название компании</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Регион" required>
+                  <div class="input__name">Регион</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="ФИО" required>
+                  <div class="input__name">ФИО</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="tel" name="name" placeholder="Телефон" required>
+                  <div class="input__name">Телефон</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="email" name="name" placeholder="E-mail" required>
+                  <div class="input__name">E-mail</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Конечный клиент">
+                  <div class="input__name">Конечный клиент</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <label class="input">
+                  <input class="input__input" type="text" name="name" placeholder="Комментарии к заказу">
+                  <div class="input__name">Комментарии к заказу</div>
+                  <div class="input__error">Поле введено не верно</div>
+                </label>
+                <button class="order-place__btn button main-color_red" type="submit">Узнать цену</button>
+              </form>
+              <div class="order-place__bottom-text">
+                <p>Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с <a class="order-place__link" href="">Пользовательским соглашением</a></p><span>* - поля обязательные для заполнения</span>
+              </div>
+            </div>
+            <div class="order-place__details">
+              <div class="order-place__caption">Товары в заказе</div>
+              <ul class="order-place__list">
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ рожковый - 110/2</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ с профилем TORX с Т-образной рукояткой - 193TX</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Ключ динамометрический шкальный 1/4" - 260</p>
+                </li>
+                <li class="order-place__item"><span class="order-place__article">602081</span>
+                  <p class="order-place__name">Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="cont-block__wrap footer__wrap">
       <div class="cont-block footer">
