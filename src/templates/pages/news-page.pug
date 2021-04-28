@@ -1,0 +1,128 @@
+extends ../template
+
+block variables
+    - var title = 'Новости'
+    - var contactForm = false
+
+
+block content
+    main.dealer-page
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Новости
+
+        //- Новости
+        section.cont-block__wrap.cont-block_mb120.cont-block_mt50
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.main-color_green Новости
+                    a(href="#").linc-arrow.cont-block--linc-arrow.main-color_green
+                        | Архив новостей
+                        svg(width="12" height="12").linc-arrow__icont
+                            use(xlink:href="./assets/images/sprite.svg#arrow-smal")
+
+                .news
+                    .news-sort
+                        span.news-sort__desc Выбрать год:
+                        .news-sort__select-wrap
+                            select(name="years")
+                                option(value="2019") 2019
+                                option(value="2020") 2020
+                                option(value="2021") 2021
+                            svg(width="15" height="15")
+                                use(xlink:href="assets/images/sprite.svg#arrow-smal")
+
+                    ul.cont-block__list.news-list
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-1-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-2-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-3-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-1-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-2-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-3-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-1-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-2-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+                        li.news-list__item
+                            a.news-list__link(href="#")
+                                .news-list__img-wrap
+                                    img.news-list__img(src="assets/images/news-3-min.jpg" alt="")
+                                .news-list__text-wrap
+                                    span.news-list__date 10.12.2020
+                                    h3.news-list__caption Интервью с руководителем коммерческого департамента
+                                    p.news-list__text Мы воспринимаем текущий года как вызов, размышляя о том, что еще мы можем изменить и улучшить в будущем!
+
+                .news-pagination
+                    include ../components/pagination.pug
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb95
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.

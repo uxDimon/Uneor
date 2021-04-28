@@ -1,0 +1,68 @@
+extends ../template
+
+block variables
+    - var title = 'Наши возможности'
+    - var contactForm = true
+
+
+block content
+    main.capacity-page
+
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Наши возможности
+
+        //- Наши возможности блок
+        section.cont-block__wrap.cont-block_mb120.cont-block_mt50
+            .cont-block
+                .cont-block__header
+                    h1.cont-block__h.main-color_yellow Наши возможности
+                
+                .capacity
+                    .capacity__block
+                        h2.capacity__subtitle.subtitle Услуги по проектированию рабочего места 5S
+                        .capacity__img-wrap
+                            img(src="assets/images/capacity-banner-min.jpg", alt="")
+                        
+                        .capacity__text-wrap
+                            .capacity__text
+                                p Рабочее место (пространство) – это участок производственной площадки, цеха, мастерской, где рабочий выполняет определенные работы в соответствии со своими задачами. Такое место оснащено оборудованием, инструментами и приспособлениями в соответствии с характером выполняемой работы.
+                                p Таким образом, основная цель проектирования рабочего места – создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.
+                                p Если перед вами или вашими специалистами стоят именно такие задачи, то наша компания готова подобрать индивидуальное решение в соответствии с вашими требованиями.
+                                p Кроме привычного уже всем пользователям ассортимента мебели Unior – тележек, верстаков, шкафов, чемоданов и прочих систем хранения и аксессуаров, наша компания предлагает вашему вниманию новую модульную систему, включающую улучшенные версии верстаков с повышенной функциональностью и расширенным ассортиментом составляющих элементов и модулей.
+                            ul.capacity__list.capacity-list
+                                li.capacity-list__item
+                                    a.capacity-list__link.button.main-color_orange(href="")
+                                        span.capacity-list__text Скачать каталог по модульным системам
+                                        svg(width="32" height="32")
+                                            use(xlink:href="assets/images/sprite.svg#icon-pdf")
+                                li.capacity-list__item
+                                    a.capacity-list__link.button.main-color_orange(href="")
+                                        span.capacity-list__text Скачать листовку «Проектирование рабочего пространства»
+                                        svg(width="32" height="32")
+                                            use(xlink:href="assets/images/sprite.svg#icon-pdf")
+
+                    .capacity__block
+                        h2.capacity__subtitle.subtitle Услуги по проектированию рабочего места 5S
+                        .capacity__img-wrap
+                            img(src="assets/images/capacity-banner-2-min.jpg", alt="")
+                        
+                        .capacity__text-wrap
+                            .capacity__text
+                                p Рабочее место (пространство) – это участок производственной площадки, цеха, мастерской, где рабочий выполняет определенные работы в соответствии со своими задачами. Такое место оснащено оборудованием, инструментами и приспособлениями в соответствии с характером выполняемой работы.
+                                p Таким образом, основная цель проектирования рабочего места – создание условий для качественного и эффективного выполнения работ при одновременном соблюдении правил техники безопасности и создании комфортных условий для работников.
+                                p Если перед вами или вашими специалистами стоят именно такие задачи, то наша компания готова подобрать индивидуальное решение в соответствии с вашими требованиями.
+                                p Кроме привычного уже всем пользователям ассортимента мебели Unior – тележек, верстаков, шкафов, чемоданов и прочих систем хранения и аксессуаров, наша компания предлагает вашему вниманию новую модульную систему, включающую улучшенные версии верстаков с повышенной функциональностью и расширенным ассортиментом составляющих элементов и модулей.
+                            ul.capacity__list.capacity-list
+                                li.capacity-list__item
+                                    a.capacity-list__link.button.main-color_orange(href="")
+                                        span.capacity-list__text Скачать каталог по модульным системам
+                                        svg(width="32" height="32")
+                                            use(xlink:href="assets/images/sprite.svg#icon-pdf")

@@ -53,11 +53,17 @@ $color-grey: #7d7d7d;
     grid-template-columns: 1fr;
     row-gap: 15px;
 }
+.cooperation__list_blue-2 {
+    svg {
+        --icon-color: #{$color-Blue_2};
+    }
+}
 .cooperation__item {
     display: grid;
     grid-template-columns: max-content 1fr;
     column-gap: 10px;
 }
+
 .cooperation__btn {
     margin-top: 30px;
 }

@@ -177,6 +177,10 @@ img {
 	margin-right: 20px;
 }
 
+
+.cont-block_mt28 {
+	margin-top: 28px;
+}
 .cont-block_mt40 {
 	margin-top: 40px;
 }
@@ -184,6 +188,9 @@ img {
 	margin-top: 50px;
 }
 
+.cont-block_mb130 {
+	margin-bottom: 130px;
+}
 .cont-block_mb120 {
 	margin-bottom: 120px;
 }
@@ -201,6 +208,9 @@ img {
 }
 .cont-block_mb60 {
 	margin-bottom: 60px;
+}
+.cont-block_mb50 {
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -711,6 +721,7 @@ textarea.input__input {
 @import "./common/cart.scss";
 @import "./common/order-place.scss";
 @import "./common/capacity.scss";
+@import "./common/dealer-block.scss";
 
 @import "./common/popup-callapp.scss";
 @import "./common/404.scss";

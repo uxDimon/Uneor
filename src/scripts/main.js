@@ -272,7 +272,7 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 }
 
 //zoom
-mediumZoom(document.querySelectorAll('[data-zoomable]'));
+mediumZoom(document.querySelectorAll('[data-zoom-src]'));
 
 //sert slider
 if (document.querySelector(".tech-information__slider")) {
