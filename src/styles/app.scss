@@ -258,7 +258,7 @@ img {
 	--text-color_hover: #{$color-White};
 	display: inline-flex;
 	align-items: center;
-	padding: 6px 20px;
+	padding: 5px 20px 6px;
 	border-radius: 5px;
 	min-height: 40px;
 	border: 2px solid var(--main-color);
@@ -722,6 +722,8 @@ textarea.input__input {
 @import "./common/order-place.scss";
 @import "./common/capacity.scss";
 @import "./common/dealer-block.scss";
+@import "./common/contact-form.scss";
+@import "./common/catalog-acc.scss";
 
 @import "./common/popup-callapp.scss";
 @import "./common/404.scss";
