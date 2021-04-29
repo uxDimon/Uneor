@@ -1,0 +1,19 @@
+extends ../template
+
+block variables
+    - var title = 'Каталог'
+    - var contactForm = true
+
+
+block content
+    main
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        span.breadcrumbs__link.breadcrumbs__link_current Каталог

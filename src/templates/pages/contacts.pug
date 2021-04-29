@@ -18,6 +18,27 @@ block content
                     li.breadcrumbs__item
                         span.breadcrumbs__link.breadcrumbs__link_current Контакты
         
+        //- Contact form
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block.contact-form
+                .contact-form__left
+                    h2.cont-block__h.contact-form__title Заказать звонок
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. Ultrices arcu nec scelerisque convallis eu. Tellus sed vel sem vel vestibulum nunc tincidunt. 
+
+                    form.contact-form__form(action="#" method="#")
+                        label.input
+                            input(type="text" name="name" placeholder="Ваше имя" required).input__input
+                            .input__error Поле введено не верно
+                        label.input
+                            input(type="tel" name="name" placeholder="Ваш телефон" required).input__input
+                            .input__error Поле введено не верно
+                        button.contact-form__btn.button.main-color_orange(type="submit") Перезвонить мне
+                    p.contact-form__bot Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с 
+                        a(href="#") Пользовательским соглашением
+
+                .contact-form__right
+                    img(src="assets/images/make-call.jpg", alt="")
+
         //- block с текстом в 2 колонки
         section.cont-block__wrap.cont-block_mb120
             .cont-block
