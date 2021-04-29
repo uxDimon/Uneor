@@ -232,10 +232,14 @@ img {
 }
 @media screen and (max-width: 500px) {
 	.cont-block__header {
-		.button {
-			margin-top: 38px;
+		// .button {
+		// 	margin-top: 38px;
+		// }
+		.cont-block__h {
+			margin-bottom: 10px;
 		}
 	}
+	
 }
 
 // button
@@ -724,6 +728,7 @@ textarea.input__input {
 @import "./common/dealer-block.scss";
 @import "./common/contact-form.scss";
 @import "./common/catalog-acc.scss";
+@import "./common/catalog.scss";
 
 @import "./common/popup-callapp.scss";
 @import "./common/404.scss";

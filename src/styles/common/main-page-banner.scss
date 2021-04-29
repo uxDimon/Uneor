@@ -69,3 +69,30 @@ $color-b-grey: #868686;
         min-height: 50px;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .main-page__title {
+        max-width: 150px;
+        font-size: 20px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+    .main-page__right {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-page__banner {
+        margin: 0 -15px;
+    }
+    .main-page__left {
+        padding: 43px 15px;
+        padding-right: 8px;
+    }
+    .main-page__right {
+        height: 190px;
+    }
+}
