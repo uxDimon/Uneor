@@ -1,4 +1,5 @@
 
+new Accordion(".catalog-acc");
 const activeClass = "active";
 
 // Переключение табов
