@@ -58,7 +58,7 @@ th.cart-table__cell {
     padding-left: 20px;
 }
 
-.cart-table__quantity {
+.add-group {
     max-width: 77px;
     display: grid;
     grid-template-columns: repeat(3, max-content);
@@ -76,7 +76,7 @@ th.cart-table__cell {
         }
     }
 }
-.cart-table__btn {
+.add-group__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,10 +91,20 @@ th.cart-table__cell {
         --icon-color: #{$color-White};
         --icon-color-2: #{$color-White};
     }
-}
-.cart-table__btn_minus {
-    svg {
-        --icon-color-2: rgba(0,0,0, 0);
+
+    &_yellow {
+        background-color: $color-Yellow;
+
+        svg {
+            --icon-color: #{$color-dark-grey};
+            --icon-color-2: #{$color-dark-grey};
+        }
+    }
+
+    &_minus {
+        svg {
+            --icon-color-2: rgba(0,0,0, 0);
+        }
     }
 }
 

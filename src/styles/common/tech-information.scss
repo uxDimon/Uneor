@@ -77,11 +77,10 @@ $color-b-grey: #868686;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
     pointer-events: none;
-
-    svg {
-        display: block;
-        margin: 0 auto;
-    }
+}
+.tech-information__hover-zoom {
+    display: block;
+    margin: 0 auto;
 }
 
 .medium-zoom--opened .medium-zoom-overlay {

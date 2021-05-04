@@ -1,0 +1,108 @@
+// Цвета
+$color-dark-grey: #252525;
+$color-dark-grey-2: #222325;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-grey-text: #A1A1A1;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+$color-b-grey: #868686;
+
+.catalog-production__item {
+    display: grid;
+    grid-template-columns: minmax(auto, 270px) 1fr;
+    background-color: $color-White;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.catalog-production__wrap {
+    padding: 20px 30px;
+    padding-right: 40px;
+}
+.catalog-production__caption {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.catalog-production__inner-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+}
+.catalog-production__inner-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $color-Silver;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.catalog-production__inner-item_more {
+    border: none;
+    padding: 15px 0 3px;
+}
+.catalog-production__inner-btn {
+    display: flex;
+    align-items: center;
+    color: $color-Orange;
+    cursor: pointer;
+
+    svg {
+        --icon-color: #{$color-Orange};
+        transform: rotate(90deg);
+        margin-left: 10px;
+    }
+
+    &_green {
+        color: $color-Green;
+
+        svg {
+            --icon-color: #{$color-Green};
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-production__item {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+
+    .catalog-production__img-wrap {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .catalog-production__wrap {
+        padding: 20px 15px;
+    }
+    .catalog-production__caption {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .catalog-production__inner-list {
+        grid-template-columns: 1fr;
+    }
+}

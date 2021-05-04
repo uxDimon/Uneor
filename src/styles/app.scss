@@ -171,6 +171,12 @@ img {
 		flex-shrink: 0;
 		margin-top: 4px;
 	}
+
+	&_noline {
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .cont-block--linc-arrow {
@@ -214,6 +220,16 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+	.cont-block_mt40 {
+		margin-top: 20px;
+	}
+	.cont-block_mt50 {
+		margin-top: 30px;
+	}
+	.cont-block_mb120 {
+		margin-bottom: 70px;
+	}
+
 	.cont-block__header {
 		flex-wrap: wrap;
 	}
@@ -625,13 +641,22 @@ textarea.input__input {
         border-bottom-color: $color-Orange;
     }
 }
+.tab-nav__item_yellow {
+	span {
+		color: $color-b-grey;
+	}
+	input:checked + span {
+		color: $color-dark-grey;
+        border-bottom-color: $color-Yellow;
+    }
+}
 
 @media screen and (max-width: 767px) {
 	.tab-top {
 		overflow-x: scroll;
 	}
 	.tab-nav {
-        width: 100%;
+        width: max-content;
         column-gap: 20px;
         margin-top: 0;
         margin-bottom: 40px;
@@ -728,7 +753,10 @@ textarea.input__input {
 @import "./common/dealer-block.scss";
 @import "./common/contact-form.scss";
 @import "./common/catalog-acc.scss";
-@import "./common/catalog.scss";
+@import "./common/catalog-filter.scss";
+@import "./common/catalog-production.scss";
+@import "./common/catalog-group.scss";
+@import "./common/catalog-item.scss";
 
 @import "./common/popup-callapp.scss";
 @import "./common/404.scss";

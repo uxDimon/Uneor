@@ -43,6 +43,7 @@ $color-b-grey: #868686;
     border: none;
     padding: 11px 15px 12px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .catalog-filter__btn {
@@ -53,4 +54,30 @@ $color-b-grey: #868686;
     height: 40px;
     background-color: $color-Yellow;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.catalog-filter__filter-btn {
+    position: relative;
+}
+.catalog-filter__drop {
+    position: absolute;
+    display: none;
+    width: max-content;
+    padding: 15px;
+    background-color: $color-White;
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-filter {
+        justify-content: space-between;
+        margin-top: -30px;
+        
+        span {
+            display: none;
+        }
+    }
+    .catalog-filter__select {
+        width: 155px;
+    }
 }

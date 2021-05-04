@@ -1,0 +1,79 @@
+// Цвета
+$color-dark-grey: #252525;
+$color-dark-grey-2: #222325;
+$color-Silver: #e4e4e4;
+$color-Blue_1: #0077c1;
+$color-Blue_2: #72c7f0;
+$color-Orange: #f7941e;
+$color-Red: #ed1a3b;
+$color-Green: #7c9640;
+$color-Yellow: #ffcb08;
+$color-Blue_3: #eaf2f7;
+$color-Black: #000000;
+$color-White: #ffffff;
+$color-grey-text: #A1A1A1;
+$color-Gray-plus: #b4b4b4;
+$color-Text-grey: #616161;
+$color-grey: #7d7d7d;
+$color-b-grey: #868686;
+
+.catalog-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.catalog-group__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #616161;
+    text-decoration: none;
+    transition: 150ms ease-in-out 0ms;
+    transition-property: box-shadow, color;
+    overflow: hidden;
+    order: 1;
+
+    &:hover {
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+        color: #0077c1;
+    }
+}
+.catalog-group__img-wrap {
+    height: 130px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center right;
+    }
+}
+.catalog-group__text-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.catalog-group__caption {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-group {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .catalog-group__img-wrap {
+        display: none;
+    }
+    .catalog-group__text-wrap {
+        padding: 20px;
+    }
+}

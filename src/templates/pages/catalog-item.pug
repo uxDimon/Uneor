@@ -1,0 +1,511 @@
+extends ../template
+
+block variables
+    - var title = 'Элемент каталога'
+
+block content
+    main
+        //- breadcrumbs
+        section.cont-block__wrap.cont-block_mt40
+            .cont-block
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Главная
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Каталог
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Слесарно-монтажный инструмент
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Ключи гаечные
+                        svg(width="10" height="10")
+                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                    li.breadcrumbs__item.breadcrumbs__item_mobile
+                        button.breadcrumbs__btn(aria-label="open")
+                            span
+                    li.breadcrumbs__item.breadcrumbs__item_current
+                        span.breadcrumbs__link.breadcrumbs__link_current Ключ рожковый 110/2
+                
+
+        //- catalog accordion
+        section.cont-block__wrap.cont-block_mb60.cont-block_mt50
+            .cont-block.catalog-block
+                .catalog-block__left
+                    .catalog-acc
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn.catalog-acc__btn_active
+                                        a(href="#").catalog-acc__caption Слесарно-монтажный<br> инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item.catalog-acc__panel-item_active
+                                        a(href="#") Ключи гаечные
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Головки торцевые с принадлежностями
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Шарнирно-губцевый инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Электромонтажный инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Электроизолированный инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Сантехнический инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Ножницы, болторезы
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Отвёртки
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Молотки и ударнорежущий инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Мерительный инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Инструменты для электроники
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Дополнительный ручной инструмент
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Инструменты для работы на высоте
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Наборы инструментов
+                
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Пневматический инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Пневматические инструменты и аксессуары
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Промышленные съемники
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Nexus
+                                    
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Мебель и средства хранения
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Оборудование для мастерских
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") HEPCO&BECKER
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Динамометрический инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") TechnoGi
+                                    li.catalog-acc__panel-item
+                                        a(href="#") CWatler
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Гидравлический инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") TechnoGi
+                                    li.catalog-acc__panel-item
+                                        a(href="#") CWatler
+                        
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Искробезопасный инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") TechnoGi
+                                    li.catalog-acc__panel-item
+                                        a(href="#") CWatler
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Резьбонарезной инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") TechnoGi
+                                    li.catalog-acc__panel-item
+                                        a(href="#") CWatler
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Абразивный инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Unior
+                                    li.catalog-acc__panel-item
+                                        a(href="#") TechnoGi
+                                    li.catalog-acc__panel-item
+                                        a(href="#") CWatler
+
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Сервисный инструмент
+                                        svg(width="15" height="15")
+                                            use(xlink:href="assets/images/sprite.svg#arrow-smal")
+
+                            .ac-panel
+                                ul.catalog-acc__panel
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Автомобильные инструменты
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Инструментыдля обслуживания велосипедов
+                                    li.catalog-acc__panel-item
+                                        a(href="#") Инструментыдля обслуживания мотоциклов
+                                    
+                        .catalog-acc__item.ac
+                            .ac-header
+                                .ac-trigger
+                                    .catalog-acc__btn
+                                        a(href="#").catalog-acc__caption Наши возможности
+                            .ac-panel
+
+                .catalog-block__right
+                    section.catalog
+                        .cont-block__header
+                            h1.cont-block__h.catalog__title.main-color_yellow Ключ рожковый 110/2
+
+                        .catalog-item__top
+                            .catalog-item__slider
+                                .slider-thumbs
+                                    .swiper-container
+                                        .swiper-wrapper 
+                                            .swiper-slide
+                                                .catalog-item__img-wrap
+                                                    img(src="assets/images/key.jpg", alt="")
+                                            .swiper-slide
+                                                .catalog-item__img-wrap
+                                                    img(src="assets/images/key-map.jpg", alt="")
+                                .slider-main
+                                    .swiper-container
+                                        .swiper-wrapper 
+                                            .swiper-slide
+                                                .catalog-item__img-wrap
+                                                    img(src="assets/images/key.jpg", alt="")
+                                            .swiper-slide
+                                                .catalog-item__img-wrap
+                                                    img(src="assets/images/key-map.jpg", alt="")
+
+                            .catalog-item__desc
+                                .catalog-item__name
+                                    span.catalog-item__caption Ключ рожковый - 110/2
+                                    button.catalog-item__share-btn
+                                        svg(width="20" height="20")
+                                            use(xlink:href="assets/images/sprite.svg#share")
+                                ul.catalog-item__desc-list
+                                    li.catalog-item__desc-item Материал: хромованадиевая сталь
+                                    li.catalog-item__desc-item кованый, целиком подвергнут закалке и отпуску, хромированный в соответствии с EN 12540
+                                    li.catalog-item__desc-item Стандарт: изготовлен в соответствии со стандартом ISO 10102 (для метрических размеров)
+                                .catalog-item__add
+                                    label.input-switch
+                                        input(type="checkbox" name="checkbox").input-switch__input
+                                        .input-switch__wrap
+                                            .input-switch__mimic
+                                            .input-switch__text Добавить в список покупок
+
+                        .catalog-item__tab-container
+                            .catalog-item__tab-wrap.tab-top
+                                .catalog-item__tab-nav.tab-nav
+                                    label.tab-nav__item.tab-nav__item_yellow
+                                        input.visually-hidden(type="radio" name="sort-video" value="learn" checked data-tab-id="tabIdDesc" data-tab-control="tab1")
+                                        span Описание
+                                    label.tab-nav__item.tab-nav__item_yellow
+                                        input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="tabIdDesc" data-tab-control="tab2")
+                                        span Характеристики
+                                    label.tab-nav__item.tab-nav__item_yellow
+                                        input.visually-hidden(type="radio" name="sort-video" value="about" data-tab-id="tabIdDesc" data-tab-control="tab3")
+                                        span Упаковка
+
+                        .catalog-item__tab-content(data-tab-id="tabIdDesc" data-tab-block="tab1")
+                            p Ключи UNIOR изготовлены из качественной хромованадиевой стали. Они поставляются двух видов отделки поверхности: хромированные с полированными головками или только хромированные. Функциональные ключи с высокой стойкостью и длительным сроком эксплуатации.
+                        
+                        .catalog-item__tab-content(data-tab-id="tabIdDesc" data-tab-block="tab2")
+                            p Характеристики. Ключи UNIOR изготовлены из качественной хромованадиевой стали. Они поставляются двух видов отделки поверхности: хромированные с полированными головками или только хромированные. Функциональные ключи с высокой стойкостью и длительным сроком эксплуатации.
+
+                        .catalog-item__tab-content(data-tab-id="tabIdDesc" data-tab-block="tab3")
+                            p Ключи UNIOR изготовлены из качественной хромованадиевой стали.
+
+                        .catalog-item__bot
+                            .catalog-item__table-container
+                                .catalog-item__table-overflow
+                                    .catalog-item__table-wrap
+                                        table.catalog-item__table.catalog-table
+                                            thead.catalog-table__head
+                                                tr.catalog-table__head-row
+                                                    th.catalog-table__cell Код
+                                                    th.catalog-table__cell Диаметр
+                                                    th.catalog-table__cell L
+                                                    th.catalog-table__cell B2
+                                                    th.catalog-table__cell B1
+                                                    th.catalog-table__cell A1
+                                                    th.catalog-table__cell A2
+                                                    th.catalog-table__cell Вес
+                                                    th.catalog-table__cell.catalog-table__cell_add Заказ
+                                            tbody.catalog-table__body
+                                                tr.catalog-table__row
+                                                    td.catalog-table__cell 602081
+                                                    td.catalog-table__cell 6 х 7
+                                                    td.catalog-table__cell 97
+                                                    td.catalog-table__cell 17
+                                                    td.catalog-table__cell 15
+                                                    td.catalog-table__cell 3
+                                                    td.catalog-table__cell 3.2
+                                                    td.catalog-table__cell 11
+                                                    td.catalog-table__cell.catalog-table__cell_add
+                                                        .add-group
+                                                            button.add-group__btn.add-group__btn_minus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                            input(type="number")
+                                                            button.add-group__btn.add-group__btn_plus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                tr.catalog-table__row
+                                                    td.catalog-table__cell 602081
+                                                    td.catalog-table__cell 6 х 7
+                                                    td.catalog-table__cell 97
+                                                    td.catalog-table__cell 17
+                                                    td.catalog-table__cell 15
+                                                    td.catalog-table__cell 3
+                                                    td.catalog-table__cell 3.2
+                                                    td.catalog-table__cell 11
+                                                    td.catalog-table__cell.catalog-table__cell_add
+                                                        .add-group
+                                                            button.add-group__btn.add-group__btn_minus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                            input(type="number")
+                                                            button.add-group__btn.add-group__btn_plus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                tr.catalog-table__row
+                                                    td.catalog-table__cell 602081
+                                                    td.catalog-table__cell 6 х 7
+                                                    td.catalog-table__cell 97
+                                                    td.catalog-table__cell 17
+                                                    td.catalog-table__cell 15
+                                                    td.catalog-table__cell 3
+                                                    td.catalog-table__cell 3.2
+                                                    td.catalog-table__cell 11
+                                                    td.catalog-table__cell.catalog-table__cell_add
+                                                        .add-group
+                                                            button.add-group__btn.add-group__btn_minus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                            input(type="number")
+                                                            button.add-group__btn.add-group__btn_plus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                tr.catalog-table__row
+                                                    td.catalog-table__cell 602081
+                                                    td.catalog-table__cell 6 х 7
+                                                    td.catalog-table__cell 97
+                                                    td.catalog-table__cell 17
+                                                    td.catalog-table__cell 15
+                                                    td.catalog-table__cell 3
+                                                    td.catalog-table__cell 3.2
+                                                    td.catalog-table__cell 11
+                                                    td.catalog-table__cell.catalog-table__cell_add
+                                                        .add-group
+                                                            button.add-group__btn.add-group__btn_minus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                            input(type="number")
+                                                            button.add-group__btn.add-group__btn_plus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                tr.catalog-table__row
+                                                    td.catalog-table__cell 602081
+                                                    td.catalog-table__cell 6 х 7
+                                                    td.catalog-table__cell 97
+                                                    td.catalog-table__cell 17
+                                                    td.catalog-table__cell 15
+                                                    td.catalog-table__cell 3
+                                                    td.catalog-table__cell 3.2
+                                                    td.catalog-table__cell 11
+                                                    td.catalog-table__cell.catalog-table__cell_add
+                                                        .add-group
+                                                            button.add-group__btn.add-group__btn_minus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+                                                            input(type="number")
+                                                            button.add-group__btn.add-group__btn_plus.add-group__btn_yellow
+                                                                svg(width="12" height="12")
+                                                                    use(xlink:href="assets/images/sprite.svg#plus-minus")
+
+                            p.catalog-item__small * Все размеры указаны в миллиметрах, вес в граммах
+                            
+                            .catalog-item__buttons
+                                button.catalog-item__btn.button.button_ghost.main-color_yellow Создать PDF
+                                button.catalog-item__btn.button.main-color_yellow Добавить в заказ
+
+        //- Сопутствующие товары
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.cont-block__h_noline Сопутствующие товары
+                .goods-list
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Шарнирно-губцевый<br> инструмент
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                    .swiper-button-prev.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+        //- Похожие товары
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .cont-block__header
+                    h2.cont-block__h.cont-block__h_noline Похожие товары
+                .goods-list
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Шарнирно-губцевый<br> инструмент
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                            .swiper-slide
+                                a.goods-list__item(href="#")
+                                    img(src="assets/images/catalog-1-min.png" alt="")
+                                    span.goods-list__caption Ключи гаечные
+                    .swiper-button-prev.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+                    .swiper-button-next.swiper-button_orange
+                        svg(width="22" height="22")
+                            use(xlink:href="assets/images/sprite.svg#long-arrow")
+
+        //- Contact form
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block.contact-form
+                .contact-form__left
+                    h2.cont-block__h.contact-form__title Заказать звонок
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus vulputate amet, phasellus. Ultrices arcu nec scelerisque convallis eu. Tellus sed vel sem vel vestibulum nunc tincidunt. 
+
+                    form.contact-form__form(action="#" method="#")
+                        label.input
+                            input(type="text" name="name" placeholder="Ваше имя" required).input__input
+                            .input__error Поле введено не верно
+                        label.input
+                            input(type="tel" name="name" placeholder="Ваш телефон" required).input__input
+                            .input__error Поле введено не верно
+                        button.contact-form__btn.button.main-color_orange(type="submit") Перезвонить мне
+                    p.contact-form__bot Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с 
+                        a(href="#") Пользовательским соглашением
+
+                .contact-form__right
+                    img(src="assets/images/make-call.jpg", alt="")
+
+        //- block с текстом в 2 колонки
+        section.cont-block__wrap.cont-block_mb120
+            .cont-block
+                .about__text-wrap
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.
+                    p Unior - европейский производитель промышленного слесарно-монтажного инструмента, кованых деталей, изделий порошковой металлургии и специальных металлообрабатывающих станков.

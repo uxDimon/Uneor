@@ -2,6 +2,14 @@
     display: grid;
     grid-template-columns: 1fr minmax(auto, 470px);
     column-gap: 30px;
+
+    &_catalog {
+        grid-template-columns: 1fr minmax(auto, 270px);
+
+        .warranty__img-wrap {
+            row-gap: 20px;
+        }
+    }
 }
 .warranty__text-wrap {
     p {
@@ -31,10 +39,14 @@
         margin: 0;
     }
 }
+.warranty__icon_green {
+    --icon-color: #{$color-Green};
+}
 
 .warranty__img-wrap {
     display: grid;
     grid-template-columns: 1fr;
+    align-content: flex-start;
     row-gap: 30px;
 }
 .warranty__img-item {
@@ -46,6 +58,7 @@
 
     img {
         max-height: 100%;
+        border-radius: 10px;
     }
 }
 
@@ -69,7 +82,13 @@
     }
     .warranty__img-item {
         height: 150px;
-        background-color: $color-White;
+        // background-color: $color-White;
         padding: 21px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .warranty__text-wrap {
+        margin-top: -20px;
     }
 }

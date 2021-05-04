@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Элемент каталога</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -169,18 +169,36 @@
                 <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
               </svg>
             </li>
-            <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_current">Каталог</span></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
+              <svg width="10" height="10">
+                <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Слесарно-монтажный инструмент</a>
+              <svg width="10" height="10">
+                <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Ключи гаечные</a>
+              <svg width="10" height="10">
+                <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item_mobile">
+              <button class="breadcrumbs__btn" aria-label="open"><span></span></button>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item_current"><span class="breadcrumbs__link breadcrumbs__link_current">Ключ рожковый 110/2</span></li>
           </ul>
         </div>
       </section>
-      <section class="cont-block__wrap cont-block_mb120 cont-block_mt50">
+      <section class="cont-block__wrap cont-block_mb60 cont-block_mt50">
         <div class="cont-block catalog-block">
           <div class="catalog-block__left">
             <div class="catalog-acc">
               <div class="catalog-acc__item ac">
                 <div class="ac-header">
                   <div class="ac-trigger">
-                    <div class="catalog-acc__btn"><a class="catalog-acc__caption" href="#">Слесарно-монтажный<br> инструмент</a>
+                    <div class="catalog-acc__btn catalog-acc__btn_active"><a class="catalog-acc__caption" href="#">Слесарно-монтажный<br> инструмент</a>
                       <svg width="15" height="15">
                         <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
                       </svg>
@@ -189,7 +207,7 @@
                 </div>
                 <div class="ac-panel">
                   <ul class="catalog-acc__panel">
-                    <li class="catalog-acc__panel-item"><a href="#">Ключи гаечные</a></li>
+                    <li class="catalog-acc__panel-item catalog-acc__panel-item_active"><a href="#">Ключи гаечные</a></li>
                     <li class="catalog-acc__panel-item"><a href="#">Головки торцевые с принадлежностями</a></li>
                     <li class="catalog-acc__panel-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
                     <li class="catalog-acc__panel-item"><a href="#">Электромонтажный инструмент</a></li>
@@ -376,215 +394,300 @@
             </div>
           </div>
           <div class="catalog-block__right">
-            <section class="catalog cont-block_mb120">
+            <section class="catalog">
               <div class="cont-block__header">
-                <h1 class="cont-block__h catalog__title main-color_yellow">Каталог продукции</h1>
+                <h1 class="cont-block__h catalog__title main-color_yellow">Ключ рожковый 110/2</h1>
               </div>
-              <div class="catalog__filter catalog-filter"><span>Сортировать по:</span>
-                <div class="catalog-filter__select-wrap">
-                  <select class="catalog-filter__select" name="sort">
-                    <option value="">Популярности</option>
-                    <option value="">Наименованию</option>
-                  </select>
-                  <svg width="15" height="15">
-                    <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
-                  </svg>
-                </div>
-                <button class="catalog-filter__btn">
-                  <svg width="20" height="20">
-                    <use xlink:href="assets/images/sprite.svg#filter"></use>
-                  </svg>
-                </button>
-              </div>
-              <ul class="catalog__list catalog-production">
-                <li class="catalog-production__item">
-                  <div class="catalog-production__img-wrap"><img src="assets/images/main-catalog/catalog-1-min.png" alt=""></div>
-                  <div class="catalog-production__wrap">
-                    <div class="catalog-production__caption">Слесарно-монтажный инструмент</div>
-                    <ul class="catalog-production__inner-list">
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item catalog-production__inner-item_more">
-                        <button class="catalog-production__inner-btn"><span>+ 9 категорий</span>
-                          <svg width="10" height="10">
-                            <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
+              <div class="catalog-item__top">
+                <div class="catalog-item__slider">
+                  <div class="slider-thumbs">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper"> 
+                        <div class="swiper-slide">
+                          <div class="catalog-item__img-wrap"><img src="assets/images/key.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="catalog-item__img-wrap"><img src="assets/images/key-map.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </li>
-                <li class="catalog-production__item">
-                  <div class="catalog-production__img-wrap"><img src="assets/images/main-catalog/catalog-1-min.png" alt=""></div>
-                  <div class="catalog-production__wrap">
-                    <div class="catalog-production__caption">Слесарно-монтажный инструмент</div>
-                    <ul class="catalog-production__inner-list">
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item catalog-production__inner-item_more">
-                        <button class="catalog-production__inner-btn catalog-production__inner-btn_green"><span>+ 9 категорий</span>
-                          <svg width="10" height="10">
-                            <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="catalog-production__item">
-                  <div class="catalog-production__img-wrap"><img src="assets/images/main-catalog/catalog-1-min.png" alt=""></div>
-                  <div class="catalog-production__wrap">
-                    <div class="catalog-production__caption">Слесарно-монтажный инструмент</div>
-                    <ul class="catalog-production__inner-list">
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item catalog-production__inner-item_more">
-                        <button class="catalog-production__inner-btn catalog-production__inner-btn_green"><span>+ 9 категорий</span>
-                          <svg width="10" height="10">
-                            <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="catalog-production__item">
-                  <div class="catalog-production__img-wrap"><img src="assets/images/main-catalog/catalog-1-min.png" alt=""></div>
-                  <div class="catalog-production__wrap">
-                    <div class="catalog-production__caption">Слесарно-монтажный инструмент</div>
-                    <ul class="catalog-production__inner-list">
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Ключи гаечные</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Головки торцевые с принадлежностями</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Шарнирно-губцевый инструмент</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item"><a href="#">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</a></li>
-                      <li class="catalog-production__inner-item catalog-production__inner-item_more">
-                        <button class="catalog-production__inner-btn catalog-production__inner-btn_green"><span>+ 9 категорий</span>
-                          <svg width="10" height="10">
-                            <use xlink:href="assets/images/sprite.svg#arrow-smal"></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section class="catalog-warranty">
-              <div class="cont-block__header">
-                <h2 class="cont-block__h main-color_yellow">Гарантийные обязательства</h2>
-              </div>
-              <div class="warranty warranty_catalog">
-                <div class="warranty__text-wrap">
-                  <p>Весь ассортимент инструмента UNIOR предназначен для профессионального использования и <span>удовлетворяет требованиям международных стандартов ISO и немецких стандартов DIN.</span></p>
-                  <div class="warranty__desc">
-                    <p>UNIOR предоставляет бессрочную гарантию от брака, обусловленного дефектами материала или изготовления, на весь инструмент.</p>
-                    <p>В случае выхода инструмента из строя по вине изготовителя официальный представитель UNIOR обеспечит его бесплатный ремонт или замену.</p>
-                  </div>
-                  <div class="warranty__list-wrap">
-                    <p>Бессрочная гарантия <span>не распространяется:</span></p>
-                    <ul class="warranty__list">
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На инструмент, утративший свою работоспособность в результате естественного износа;</p>
-                      </li>
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На инструмент, получивший механические повреждения в результате его использования не по назначению;</p>
-                      </li>
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На инструмент, подвергшийся воздействию ударных нагрузок (для инструмента, не рассчитанного на такие нагрузки);</p>
-                      </li>
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На пневматический инструмент (см. специальные гарантийные обязательства);</p>
-                      </li>
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На динамометрический и реверсивный инструмент (см. специальные гарантийные обязательства);</p>
-                      </li>
-                      <li class="warranty__item">
-                        <svg class="warranty__icon warranty__icon_green" width="20" height="20">
-                          <use xlink:href="assets/images/sprite.svg#circle-ok"></use>
-                        </svg>
-                        <p>На инструментальную мебель и средства хранения инструмента.</p>
-                      </li>
-                    </ul>
-                    <p>Подробно с гарантийными обязательствами UNIOR можно ознакомиться <a href="#">здесь.</a></p>
+                  <div class="slider-main">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper"> 
+                        <div class="swiper-slide">
+                          <div class="catalog-item__img-wrap"><img src="assets/images/key.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="catalog-item__img-wrap"><img src="assets/images/key-map.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <ul class="warranty__img-wrap">
-                  <li class="warranty__img-item"><img src="assets/images/iso-logo.png" alt=""></li>
-                  <li class="warranty__img-item"><img src="assets/images/din-logo.png" alt=""></li>
-                </ul>
+                <div class="catalog-item__desc">
+                  <div class="catalog-item__name"><span class="catalog-item__caption">Ключ рожковый - 110/2</span>
+                    <button class="catalog-item__share-btn">
+                      <svg width="20" height="20">
+                        <use xlink:href="assets/images/sprite.svg#share"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="catalog-item__desc-list">
+                    <li class="catalog-item__desc-item">Материал: хромованадиевая сталь</li>
+                    <li class="catalog-item__desc-item">кованый, целиком подвергнут закалке и отпуску, хромированный в соответствии с EN 12540</li>
+                    <li class="catalog-item__desc-item">Стандарт: изготовлен в соответствии со стандартом ISO 10102 (для метрических размеров)</li>
+                  </ul>
+                  <div class="catalog-item__add">
+                    <label class="input-switch">
+                      <input class="input-switch__input" type="checkbox" name="checkbox">
+                      <div class="input-switch__wrap">
+                        <div class="input-switch__mimic"></div>
+                        <div class="input-switch__text">Добавить в список покупок</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item__tab-container">
+                <div class="catalog-item__tab-wrap tab-top">
+                  <div class="catalog-item__tab-nav tab-nav">
+                    <label class="tab-nav__item tab-nav__item_yellow">
+                      <input class="visually-hidden" type="radio" name="sort-video" value="learn" checked data-tab-id="tabIdDesc" data-tab-control="tab1"><span>Описание</span>
+                    </label>
+                    <label class="tab-nav__item tab-nav__item_yellow">
+                      <input class="visually-hidden" type="radio" name="sort-video" value="about" data-tab-id="tabIdDesc" data-tab-control="tab2"><span>Характеристики</span>
+                    </label>
+                    <label class="tab-nav__item tab-nav__item_yellow">
+                      <input class="visually-hidden" type="radio" name="sort-video" value="about" data-tab-id="tabIdDesc" data-tab-control="tab3"><span>Упаковка</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item__tab-content" data-tab-id="tabIdDesc" data-tab-block="tab1">
+                <p>Ключи UNIOR изготовлены из качественной хромованадиевой стали. Они поставляются двух видов отделки поверхности: хромированные с полированными головками или только хромированные. Функциональные ключи с высокой стойкостью и длительным сроком эксплуатации.</p>
+              </div>
+              <div class="catalog-item__tab-content" data-tab-id="tabIdDesc" data-tab-block="tab2">
+                <p>Характеристики. Ключи UNIOR изготовлены из качественной хромованадиевой стали. Они поставляются двух видов отделки поверхности: хромированные с полированными головками или только хромированные. Функциональные ключи с высокой стойкостью и длительным сроком эксплуатации.</p>
+              </div>
+              <div class="catalog-item__tab-content" data-tab-id="tabIdDesc" data-tab-block="tab3">
+                <p>Ключи UNIOR изготовлены из качественной хромованадиевой стали.</p>
+              </div>
+              <div class="catalog-item__bot">
+                <div class="catalog-item__table-container">
+                  <div class="catalog-item__table-overflow">
+                    <div class="catalog-item__table-wrap">
+                      <table class="catalog-item__table catalog-table">
+                        <thead class="catalog-table__head">
+                          <tr class="catalog-table__head-row">
+                            <th class="catalog-table__cell">Код</th>
+                            <th class="catalog-table__cell">Диаметр</th>
+                            <th class="catalog-table__cell">L</th>
+                            <th class="catalog-table__cell">B2</th>
+                            <th class="catalog-table__cell">B1</th>
+                            <th class="catalog-table__cell">A1</th>
+                            <th class="catalog-table__cell">A2</th>
+                            <th class="catalog-table__cell">Вес</th>
+                            <th class="catalog-table__cell catalog-table__cell_add">Заказ</th>
+                          </tr>
+                        </thead>
+                        <tbody class="catalog-table__body">
+                          <tr class="catalog-table__row">
+                            <td class="catalog-table__cell">602081</td>
+                            <td class="catalog-table__cell">6 х 7</td>
+                            <td class="catalog-table__cell">97</td>
+                            <td class="catalog-table__cell">17</td>
+                            <td class="catalog-table__cell">15</td>
+                            <td class="catalog-table__cell">3</td>
+                            <td class="catalog-table__cell">3.2</td>
+                            <td class="catalog-table__cell">11</td>
+                            <td class="catalog-table__cell catalog-table__cell_add">
+                              <div class="add-group">
+                                <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="number">
+                                <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="catalog-table__row">
+                            <td class="catalog-table__cell">602081</td>
+                            <td class="catalog-table__cell">6 х 7</td>
+                            <td class="catalog-table__cell">97</td>
+                            <td class="catalog-table__cell">17</td>
+                            <td class="catalog-table__cell">15</td>
+                            <td class="catalog-table__cell">3</td>
+                            <td class="catalog-table__cell">3.2</td>
+                            <td class="catalog-table__cell">11</td>
+                            <td class="catalog-table__cell catalog-table__cell_add">
+                              <div class="add-group">
+                                <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="number">
+                                <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="catalog-table__row">
+                            <td class="catalog-table__cell">602081</td>
+                            <td class="catalog-table__cell">6 х 7</td>
+                            <td class="catalog-table__cell">97</td>
+                            <td class="catalog-table__cell">17</td>
+                            <td class="catalog-table__cell">15</td>
+                            <td class="catalog-table__cell">3</td>
+                            <td class="catalog-table__cell">3.2</td>
+                            <td class="catalog-table__cell">11</td>
+                            <td class="catalog-table__cell catalog-table__cell_add">
+                              <div class="add-group">
+                                <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="number">
+                                <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="catalog-table__row">
+                            <td class="catalog-table__cell">602081</td>
+                            <td class="catalog-table__cell">6 х 7</td>
+                            <td class="catalog-table__cell">97</td>
+                            <td class="catalog-table__cell">17</td>
+                            <td class="catalog-table__cell">15</td>
+                            <td class="catalog-table__cell">3</td>
+                            <td class="catalog-table__cell">3.2</td>
+                            <td class="catalog-table__cell">11</td>
+                            <td class="catalog-table__cell catalog-table__cell_add">
+                              <div class="add-group">
+                                <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="number">
+                                <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="catalog-table__row">
+                            <td class="catalog-table__cell">602081</td>
+                            <td class="catalog-table__cell">6 х 7</td>
+                            <td class="catalog-table__cell">97</td>
+                            <td class="catalog-table__cell">17</td>
+                            <td class="catalog-table__cell">15</td>
+                            <td class="catalog-table__cell">3</td>
+                            <td class="catalog-table__cell">3.2</td>
+                            <td class="catalog-table__cell">11</td>
+                            <td class="catalog-table__cell catalog-table__cell_add">
+                              <div class="add-group">
+                                <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="number">
+                                <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
+                                  <svg width="12" height="12">
+                                    <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <p class="catalog-item__small">* Все размеры указаны в миллиметрах, вес в граммах</p>
+                <div class="catalog-item__buttons">
+                  <button class="catalog-item__btn button button_ghost main-color_yellow">Создать PDF</button>
+                  <button class="catalog-item__btn button main-color_yellow">Добавить в заказ</button>
+                </div>
               </div>
             </section>
           </div>
         </div>
       </section>
-      <section class="cont-block__wrap cont-block_mb60">
+      <section class="cont-block__wrap cont-block_mb120">
         <div class="cont-block">
           <div class="cont-block__header">
-            <h2 class="cont-block__h main-color_yellow">Презентации,  каталоги продукции</h2>
+            <h2 class="cont-block__h cont-block__h_noline">Сопутствующие товары</h2>
           </div>
-          <div class="files-top tab-top">
-            <div class="files-nav tab-nav">
-              <label class="tab-nav__item tab-nav__item_orange">
-                <input class="visually-hidden" type="radio" name="files" value="presentation" checked data-tab-id="tabId2" data-tab-control="tab1"><span>Презентации</span>
-              </label>
-              <label class="tab-nav__item tab-nav__item_orange">
-                <input class="visually-hidden" type="radio" name="files" value="catalog" data-tab-id="tabId2" data-tab-control="tab2"><span>Каталоги продукции</span>
-              </label>
+          <div class="goods-list">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
             </div>
           </div>
-          <ul class="files-list" data-tab-id="tabId2" data-tab-block="tab1">
-            <li class="files-list__item files-list__item_head"><span class="files-list__head">Наименование</span><span class="files-list__head">Файл / формат</span></li>
-            <li class="files-list__item"><span class="files-list__caption">О компании Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Ножницы FELCO</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Искробезопасный инструмент METALMINOTTI</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Динамометрический инструмент TECNOGI</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Технические чемоданы HEPCO & BECKER</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Абразивные круги «SwatyComet»</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Тележка с набором инструментов из 94 предметов</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Тележка с набором инструментов из 187 предметов</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-          </ul>
-          <ul class="files-list" data-tab-id="tabId2" data-tab-block="tab2">
-            <li class="files-list__item files-list__item_head"><span class="files-list__head">Наименование</span><span class="files-list__head">Файл / формат</span></li>
-            <li class="files-list__item"><span class="files-list__caption">Каталог Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-            <li class="files-list__item"><span class="files-list__caption">Каталог Униор Профешнл Тулз</span><a class="files-list__link" href="#" download>Загрузить (PDF, 11.40 Мб)</a></li>
-          </ul>
+        </div>
+      </section>
+      <section class="cont-block__wrap cont-block_mb120">
+        <div class="cont-block">
+          <div class="cont-block__header">
+            <h2 class="cont-block__h cont-block__h_noline">Похожие товары</h2>
+          </div>
+          <div class="goods-list">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button_orange">
+              <svg width="22" height="22">
+                <use xlink:href="assets/images/sprite.svg#long-arrow"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
       <section class="cont-block__wrap cont-block_mb120">

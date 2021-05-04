@@ -98,3 +98,15 @@ $color-b-grey: #868686;
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .catalog-block {
+        grid-template-columns: 100%;
+    }
+    .catalog-block__left {
+        display: none;
+    }
+    .catalog__title {
+        font-size: 20px;
+    }
+}

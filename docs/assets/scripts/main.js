@@ -1,5 +1,7 @@
+new Accordion(".catalog-acc", {
+	showMultiple: true,
+});
 
-new Accordion(".catalog-acc");
 const activeClass = "active";
 
 // Переключение табов
@@ -273,14 +275,19 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 }
 
 //zoom
-mediumZoom(document.querySelectorAll('[data-zoom-src]'));
+const zoomButton = document.querySelectorAll('[data-action="zoom"]')
+const zoom = mediumZoom('[data-zoomable]')
+
+zoomButton.forEach((item) => {
+	item.addEventListener('click', () => zoom.open())
+})
 
 //sert slider
 if (document.querySelector(".tech-information__slider")) {
 	const swiper = new Swiper(".tech-information__slider .swiper-container", {
 		// Optional parameters
-		slidesPerView: 6,
-		spaceBetween: 30,
+		// slidesPerView: 6,
+		// spaceBetween: 30,
 
 		breakpoints: {
 			0: {
@@ -289,12 +296,15 @@ if (document.querySelector(".tech-information__slider")) {
 			},
 			500: {
 				slidesPerView: 2,
+				spaceBetween: 20,
 			},
 			768: {
 				slidesPerView: 4,
+				spaceBetween: 20,
 			},
 			1024: {
 				slidesPerView: 6,
+				spaceBetween: 30,
 			},
 		},
 
@@ -322,6 +332,40 @@ if (document.querySelector(".news-item__slider")) {
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+
+//catalog slider with thumbs
+if (document.querySelector(".catalog-item__slider")) {
+	const sliderThumbs = new Swiper(".slider-thumbs .swiper-container", {
+		spaceBetween: 20,
+		slidesPerView: 3.5,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		// observer: true,
+		// observeParents: true,
+		direction: 'vertical',
+
+		breakpoints: {
+			0: {
+				direction: 'horizontal',
+				spaceBetween: 20,
+			},
+			1024: {
+				direction: 'vertical',
+				spaceBetween: 20,
+			},
+		},
+	});
+	const galleryTop = new Swiper(".slider-main .swiper-container", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		// observer: true,
+		// observeParents: true,
+
+		thumbs: {
+			swiper: sliderThumbs,
 		},
 	});
 }

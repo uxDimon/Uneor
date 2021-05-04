@@ -49,6 +49,12 @@ $color-grey: #7d7d7d;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+
+    &_orange {
+        svg {
+            --button-color: #{$color-Orange};
+        }
+    }
 }
 .video-list__caption {
     display: block;
