@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="assets/images/fav.png">
     <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/spotlight.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
@@ -125,7 +126,7 @@
               <div class="login-popup__error-text">Неверный логин или пароль</div>
               <form class="login-popup__form">
                 <label class="input login-popup__form--input">
-                  <input class="input__input" type="text" name="name" placeholder="Лгин" required>
+                  <input class="input__input" type="text" name="name" placeholder="Логин" required>
                   <div class="input__error">Поле введено не верно</div>
                 </label>
                 <label class="input login-popup__form--input">
@@ -169,13 +170,12 @@
             </div>
             <div class="main-page__right"><img src="assets/images/capacity-banner-min.jpg" alt=""></div>
           </div>
-          <label class="input search">
-            <input class="input__input" type="search" name="search" placeholder="Введите свой запрос">
-            <div class="input__error">Поле введено не верно</div>
-            <svg class="search__icon" width="20" height="20">
-              <use xlink:href="assets/images/sprite.svg#search-alt"></use>
-            </svg>
-          </label>
+          <form class="main-page__search-field">
+            <label class="input search">
+              <input class="input__input" type="search" name="search" placeholder="Введите свой запрос">
+            </label>
+            <button class="button" type="submit">Поиск</button>
+          </form>
         </div>
       </section>
       <section class="cont-block__wrap cont-block_mb85">
@@ -190,32 +190,32 @@
                   <div class="main-catalog__caption">Слесарно-монтажный инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Пневматический инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-2-min.png" alt="Пневматический инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Пневматический инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Промышленные съемники"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-3-min.png" alt="Промышленные съемники"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Промышленные<br> съемники</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Инструментальная мебель и средства хранения"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-4-min.png" alt="Инструментальная мебель и средства хранения"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Инструментальная мебель<br> и средства хранения</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Динамометрический инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-5-min.png" alt="Динамометрический инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Динамометрический<br> инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Гидравлический инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-6-min.png" alt="Гидравлический инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Гидравлический<br> инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Искробезопасный инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-7-min.png" alt="Искробезопасный инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Искробезопасный<br> инструмент</div>
                   <svg class="main-catalog__ex" width="30" height="26">
@@ -223,22 +223,22 @@
                   </svg>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Резьбонарезной инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-8-min.png" alt="Резьбонарезной инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Резьбонарезной<br> инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Абразивный инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-9-min.png" alt="Абразивный инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Абразивный<br> инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Сервисный инструмент"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-10-min.png" alt="Сервисный инструмент"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Сервисный<br> инструмент</div>
                 </div></a></li>
             <li class="main-catalog__item"><a class="main-catalog__link" href="#">
-                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-1-min.png" alt="Наши возможности"></div>
+                <div class="main-catalog__img-wrap"><img class="main-catalog__img" src="assets/images/main-catalog/catalog-11-min.png" alt="Наши возможности"></div>
                 <div class="main-catalog__text-wrap">
                   <div class="main-catalog__caption">Наши<br> возможности</div>
                 </div></a></li>
@@ -318,8 +318,7 @@
           <div class="cont-block__header">
             <h2 class="cont-block__h main-color_red">Hytorc</h2>
           </div>
-          <div class="cont-block__content manufact">
-            <div class="manufact__img-wrap"><img src="assets/images/hytorc.png" alt="hytorc logo"></div>
+          <div class="cont-block__content manufact"><a class="manufact__img-wrap" href="https://www.hytorc-ru.ru/"><img src="assets/images/hytorc.png" alt="hytorc logo"></a>
             <div class="manufact__text-wrap">
               <p>Lorem 1 ipsum dolor 123 sit amet, consectetur adipiscing elit. Consequat ipsum eu diam est facilisi. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices</p>
               <p>Integer ultrices magnis odio suspendisse ultrices aliquam natoque maecenas justo. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices.</p><a class="manufact__btn button main-color_red" href="#" download>Скачать каталог</a>
@@ -596,7 +595,7 @@
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/spotlight.bundle.js"></script>
     <script src="assets/scripts/focus-visible.min.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>

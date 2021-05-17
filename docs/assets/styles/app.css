@@ -564,7 +564,7 @@ textarea.input__input {
     background-color: #d71130; }
 
 .header__head-wrap {
-  background-color: #eaf2f7; }
+  background-color: #d7e9f4; }
   .header__head-wrap > .cont-block {
     position: relative; }
 
@@ -1014,6 +1014,8 @@ textarea.input__input {
     display: none; } }
 
 @media screen and (max-width: 960px) {
+  .header__body-wrap {
+    background-color: #d7e9f4; }
   .header__head {
     position: absolute;
     top: 0;
@@ -1334,9 +1336,17 @@ textarea.input__input {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.main-page__search-field {
+  display: flex;
+  margin-top: 20px; }
+  .main-page__search-field .button {
+    width: 140px;
+    justify-content: center; }
+
 .search {
   position: relative;
-  margin-top: 20px; }
+  flex: 1;
+  margin-right: 20px; }
   .search__icon {
     position: absolute;
     top: 50%;
@@ -1361,7 +1371,14 @@ textarea.input__input {
     padding: 43px 15px;
     padding-right: 8px; }
   .main-page__right {
-    height: 190px; } }
+    height: 190px; }
+  .main-page__search-field {
+    flex-direction: column; }
+    .main-page__search-field .button {
+      width: 100%;
+      margin-top: 15px; }
+  .search {
+    margin: 0; } }
 
 .news-list {
   display: grid;
@@ -1371,7 +1388,14 @@ textarea.input__input {
   row-gap: 70px; }
 
 .news-list__link {
-  text-decoration: none; }
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: box-shadow 150ms ease-in-out; }
+  .news-list__link:hover {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); }
+    .news-list__link:hover .news-list__caption {
+      color: #0077c1; }
 
 .news-list__img-wrap {
   width: 100%;
@@ -1396,7 +1420,8 @@ textarea.input__input {
   font-size: 14px;
   line-height: 140%;
   color: #252525;
-  margin: 10px 0 15px; }
+  margin: 10px 0 15px;
+  transition: color 150ms ease-in-out; }
 
 .news-list__text {
   line-height: 140%;
@@ -1658,9 +1683,12 @@ textarea.input__input {
   align-items: center;
   background-color: #222325;
   border-radius: 10px;
-  padding: 37px 50px; }
+  padding: 37px 50px;
+  transition: box-shadow 150ms ease-in-out; }
   .manufact__img-wrap img {
     max-width: 100%; }
+  .manufact__img-wrap:hover {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); }
 
 .manufact__text-wrap p {
   color: #616161;
@@ -2579,18 +2607,19 @@ textarea.input__input {
        column-gap: 30px;
   row-gap: 30px; }
 
-.brands-list__item {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 30px 20px;
-  padding-top: 10px; }
-  .brands-list__item p {
-    margin: 0; }
-
 .brands-list__link {
   display: block;
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  padding-top: 10px;
+  transition: box-shadow 150ms ease-in-out 0ms; }
+  .brands-list__link:hover {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); }
+  .brands-list__link p {
+    margin: 0; }
 
 .brands-list__img-wrap {
   min-height: 128px;
@@ -2720,6 +2749,7 @@ textarea.input__input {
   font-size: 12px;
   color: #ffffff;
   background: linear-gradient(0deg, rgba(0, 119, 193, 0.85), rgba(0, 119, 193, 0.85));
+  border-radius: 0;
   padding: 20px 15px 40px;
   z-index: 2;
   opacity: 0;
@@ -3192,6 +3222,13 @@ th.cart-table__cell {
   .capacity-list__link {
     width: 100%; } }
 
+.dealers__map {
+  width: 100%;
+  margin-bottom: 120px; }
+  .dealers__map polyline:hover,
+  .dealers__map polygon:hover {
+    fill: #72c7f0; }
+
 .dealer__bot {
   width: 100%;
   color: #ffffff;
@@ -3427,7 +3464,7 @@ th.cart-table__cell {
 .catalog-acc__panel-item_active a {
   color: #f7941e; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .catalog-block {
     grid-template-columns: 100%; }
   .catalog-block__left {
@@ -3747,11 +3784,12 @@ th.catalog-table__cell_add {
 
 @media screen and (max-width: 1023px) {
   .catalog-item__top {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     row-gap: 40px; }
   .catalog-item__name {
     justify-content: space-between; }
   .catalog-item__slider {
+    min-width: 0;
     grid-template-columns: 100%;
     row-gap: 20px; }
   .slider-main {
@@ -3787,7 +3825,7 @@ th.catalog-table__cell_add {
       content: '';
       padding-right: 15px; }
   .catalog-item__table-wrap {
-    width: 870px;
+    min-width: 830px;
     padding: 0 20px;
     padding-bottom: 40px; }
   .catalog-item__buttons {

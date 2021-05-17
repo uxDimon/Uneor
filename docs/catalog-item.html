@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="assets/images/fav.png">
     <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/spotlight.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
@@ -125,7 +126,7 @@
               <div class="login-popup__error-text">Неверный логин или пароль</div>
               <form class="login-popup__form">
                 <label class="input login-popup__form--input">
-                  <input class="input__input" type="text" name="name" placeholder="Лгин" required>
+                  <input class="input__input" type="text" name="name" placeholder="Логин" required>
                   <div class="input__error">Поле введено не верно</div>
                 </label>
                 <label class="input login-popup__form--input">
@@ -194,7 +195,7 @@
       <section class="cont-block__wrap cont-block_mb60 cont-block_mt50">
         <div class="cont-block catalog-block">
           <div class="catalog-block__left">
-            <div class="catalog-acc">
+            <div class="catalog-ac">
               <div class="catalog-acc__item ac">
                 <div class="ac-header">
                   <div class="ac-trigger">
@@ -502,13 +503,13 @@
                             <td class="catalog-table__cell">3.2</td>
                             <td class="catalog-table__cell">11</td>
                             <td class="catalog-table__cell catalog-table__cell_add">
-                              <div class="add-group">
+                              <div class="add-group" data-add-order>
                                 <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                                   </svg>
                                 </button>
-                                <input type="number">
+                                <input type="number" step="1" value="1" min="1" max="100">
                                 <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -527,13 +528,13 @@
                             <td class="catalog-table__cell">3.2</td>
                             <td class="catalog-table__cell">11</td>
                             <td class="catalog-table__cell catalog-table__cell_add">
-                              <div class="add-group">
+                              <div class="add-group" data-add-order>
                                 <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                                   </svg>
                                 </button>
-                                <input type="number">
+                                <input type="number" step="1" value="1" min="1" max="100">
                                 <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -552,13 +553,13 @@
                             <td class="catalog-table__cell">3.2</td>
                             <td class="catalog-table__cell">11</td>
                             <td class="catalog-table__cell catalog-table__cell_add">
-                              <div class="add-group">
+                              <div class="add-group" data-add-order>
                                 <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                                   </svg>
                                 </button>
-                                <input type="number">
+                                <input type="number" step="1" value="1" min="1" max="100">
                                 <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -577,13 +578,13 @@
                             <td class="catalog-table__cell">3.2</td>
                             <td class="catalog-table__cell">11</td>
                             <td class="catalog-table__cell catalog-table__cell_add">
-                              <div class="add-group">
+                              <div class="add-group" data-add-order>
                                 <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                                   </svg>
                                 </button>
-                                <input type="number">
+                                <input type="number" step="1" value="1" min="1" max="100">
                                 <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -602,13 +603,13 @@
                             <td class="catalog-table__cell">3.2</td>
                             <td class="catalog-table__cell">11</td>
                             <td class="catalog-table__cell catalog-table__cell_add">
-                              <div class="add-group">
+                              <div class="add-group" data-add-order>
                                 <button class="add-group__btn add-group__btn_minus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                                   </svg>
                                 </button>
-                                <input type="number">
+                                <input type="number" step="1" value="1" min="1" max="100">
                                 <button class="add-group__btn add-group__btn_plus add-group__btn_yellow">
                                   <svg width="12" height="12">
                                     <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -640,12 +641,12 @@
           <div class="goods-list">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
               </div>
             </div>
             <div class="swiper-button-prev swiper-button_orange">
@@ -669,12 +670,12 @@
           <div class="goods-list">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
-                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/catalog-1-min.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Шарнирно-губцевый<br> инструмент</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Кусачки, бокорезы, плоскогубцы обжимные, съёмники изоляции</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
+                <div class="swiper-slide"><a class="goods-list__item" href="#"><img src="assets/images/goods-img.png" alt=""><span class="goods-list__caption">Ключи гаечные</span></a></div>
               </div>
             </div>
             <div class="swiper-button-prev swiper-button_orange">
@@ -808,7 +809,7 @@
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/spotlight.bundle.js"></script>
     <script src="assets/scripts/focus-visible.min.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>

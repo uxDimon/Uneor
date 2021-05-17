@@ -1,7 +1,3 @@
-new Accordion(".catalog-acc", {
-	showMultiple: true,
-});
-
 const activeClass = "active";
 
 // Переключение табов
@@ -16,23 +12,25 @@ if (tabIdList) {
 	for (const tabId of tabIdList) {
 		tabGroupList.add(tabId.dataset.tabId);
 	}
+
+	function tabSwith(name, tab, tabGroup) {
+		for (const control of tab.controlList) control.classList.remove(activeClass);
+		for (const block of tab.blockList) block.style.display = "none";
+		document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-control="${name}"]`).classList.add(activeClass);
+		document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-block="${name}"]`).style.display = "";
+	}
+
 	for (const tabGroup of tabGroupList) {
 		const tab = {
 			controlList: document.querySelectorAll(`[data-tab-id="${tabGroup}"][data-tab-control]`),
 			blockList: document.querySelectorAll(`[data-tab-id="${tabGroup}"][data-tab-block]`),
 		};
-
-		function tabSwith(name) {
-			for (const control of tab.controlList) control.classList.remove(activeClass);
-			for (const block of tab.blockList) block.style.display = "none";
-			document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-control="${name}"]`).classList.add(activeClass);
-			document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-block="${name}"]`).style.display = "";
-		}
-		tabSwith(tab.controlList[0].dataset.tabControl);
+		console.log(tab);
+		tabSwith(tab.controlList[0].dataset.tabControl, tab, tabGroup);
 
 		for (const control of tab.controlList) {
 			control.addEventListener("click", () => {
-				tabSwith(control.dataset.tabControl);
+				tabSwith(control.dataset.tabControl, tab, tabGroup);
 			});
 		}
 	}
@@ -195,6 +193,7 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 		// Optional parameters
 		slidesPerView: 1,
 		spaceBetween: 20,
+		loop: true,
 
 		breakpoints: {
 			0: {
@@ -214,7 +213,7 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 }
 
 //goods slider
-if(document.querySelectorAll('.goods-list')) {
+if (document.querySelectorAll('.goods-list')) {
 	let styleProjects;
 	let sliderOn = false;
 
@@ -225,7 +224,7 @@ if(document.querySelectorAll('.goods-list')) {
 		}
 		if (document.body.clientWidth >= 768 && !sliderOn) {
 			styleProjects = new Swiper(".goods-list .swiper-container", {
-				
+
 				spaceBetween: 30,
 				breakpoints: {
 					1240: {
@@ -275,12 +274,12 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 }
 
 //zoom
-const zoomButton = document.querySelectorAll('[data-action="zoom"]')
-const zoom = mediumZoom('[data-zoomable]')
+// const zoomButton = document.querySelectorAll('[data-action="zoom"]')
+// const zoom = mediumZoom('[data-zoomable]')
 
-zoomButton.forEach((item) => {
-	item.addEventListener('click', () => zoom.open())
-})
+// zoomButton.forEach((item) => {
+// 	item.addEventListener('click', () => zoom.open())
+// })
 
 //sert slider
 if (document.querySelector(".tech-information__slider")) {
@@ -339,6 +338,7 @@ if (document.querySelector(".news-item__slider")) {
 //catalog slider with thumbs
 if (document.querySelector(".catalog-item__slider")) {
 	const sliderThumbs = new Swiper(".slider-thumbs .swiper-container", {
+		width: 'auto',
 		spaceBetween: 20,
 		slidesPerView: 3.5,
 		watchSlidesVisibility: true,
@@ -371,16 +371,52 @@ if (document.querySelector(".catalog-item__slider")) {
 }
 
 //popup close
-if(document.querySelectorAll('.popup').length) {
+if (document.querySelectorAll('.popup').length) {
 	let popups = document.querySelectorAll('.popup');
 
 	popups.forEach((item) => {
 		item.querySelectorAll('[data-close-popup]').forEach((closeBtn) => {
-			closeBtn.addEventListener('click', function(){
+			closeBtn.addEventListener('click', function () {
 				item.style.display = 'none';
 			});
 		});
 	})
 }
 
-new Accordion(".vacancy-ac");
+//добавить товар +1 -1 кнопка
+let orderBtns = document.querySelectorAll('[data-add-order]');
+
+orderBtns.forEach((item) => {
+	let input = item.querySelector('input');
+	let inputValue = parseInt(item.querySelector("input").value, 10);
+
+	item.querySelector(".add-group__btn_plus").addEventListener('click', function() {
+		input.value = ++inputValue;
+	});
+
+	item.querySelector(".add-group__btn_minus").addEventListener('click', function() {
+		if (inputValue > 1) {
+			input.value = --inputValue;
+		}
+	});
+})
+
+//acc
+if (document.querySelector('.vacancy-ac')) {
+	const vacAcc = new Accordion(".vacancy-ac");
+}
+
+if (document.querySelectorAll('.catalog-ac').length) {
+	const accordions = Array.from(document.querySelectorAll('.catalog-ac'));
+	new Accordion(accordions, {
+		showMultiple: true,
+	});
+}
+
+
+Spotlight.init();
+
+var button = Spotlight.addControl(".tech-information__hover-zoom", function(event){
+    // handle click event
+    // console.log("button clicked");
+});

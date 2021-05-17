@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="assets/images/fav.png">
     <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/spotlight.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
@@ -125,7 +126,7 @@
               <div class="login-popup__error-text">Неверный логин или пароль</div>
               <form class="login-popup__form">
                 <label class="input login-popup__form--input">
-                  <input class="input__input" type="text" name="name" placeholder="Лгин" required>
+                  <input class="input__input" type="text" name="name" placeholder="Логин" required>
                   <div class="input__error">Поле введено не верно</div>
                 </label>
                 <label class="input login-popup__form--input">
@@ -195,13 +196,13 @@
                       <td class="cart-table__cell cart-table__cell_article">602081</td>
                       <td class="cart-table__cell cart-table__cell_name">Ключ рожковый - 110/2</td>
                       <td class="cart-table__cell cart-table__cell_order">
-                        <div class="add-group">
+                        <div class="add-group" data-add-order>
                           <button class="add-group__btn add-group__btn_minus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                             </svg>
                           </button>
-                          <input type="number">
+                          <input type="number" step="1" value="1" min="1" max="100">
                           <button class="add-group__btn add-group__btn_plus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -214,13 +215,13 @@
                       <td class="cart-table__cell cart-table__cell_article">602081</td>
                       <td class="cart-table__cell cart-table__cell_name">Ключ с профилем TORX с Т-образной рукояткой - 193TX</td>
                       <td class="cart-table__cell cart-table__cell_order">
-                        <div class="add-group">
+                        <div class="add-group" data-add-order>
                           <button class="add-group__btn add-group__btn_minus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                             </svg>
                           </button>
-                          <input type="number">
+                          <input type="number" step="1" value="1" min="1" max="100">
                           <button class="add-group__btn add-group__btn_plus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -233,13 +234,13 @@
                       <td class="cart-table__cell cart-table__cell_article">602081</td>
                       <td class="cart-table__cell cart-table__cell_name">Ключ динамометрический шкальный 1/4" - 260</td>
                       <td class="cart-table__cell cart-table__cell_order">
-                        <div class="add-group">
+                        <div class="add-group" data-add-order>
                           <button class="add-group__btn add-group__btn_minus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                             </svg>
                           </button>
-                          <input type="number">
+                          <input type="number" step="1" value="1" min="1" max="100">
                           <button class="add-group__btn add-group__btn_plus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -252,13 +253,13 @@
                       <td class="cart-table__cell cart-table__cell_article">602081</td>
                       <td class="cart-table__cell cart-table__cell_name">Набор головок для снятия масляных фильтров в пластиковом кейсе - 1977PB12</td>
                       <td class="cart-table__cell cart-table__cell_order">
-                        <div class="add-group">
+                        <div class="add-group" data-add-order>
                           <button class="add-group__btn add-group__btn_minus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
                             </svg>
                           </button>
-                          <input type="number">
+                          <input type="number" step="1" value="1" min="1" max="100">
                           <button class="add-group__btn add-group__btn_plus">
                             <svg width="12" height="12">
                               <use xlink:href="assets/images/sprite.svg#plus-minus"></use>
@@ -364,7 +365,7 @@
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>
     <script src="assets/scripts/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/spotlight.bundle.js"></script>
     <script src="assets/scripts/focus-visible.min.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
