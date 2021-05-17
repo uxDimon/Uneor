@@ -15,14 +15,17 @@ block content
                         a.breadcrumbs__link(href="#") Главная
                         svg(width="10" height="10")
                             use(xlink:href="assets/images/sprite.svg#arrow-smal")
-                    li.breadcrumbs__item
+                    li.breadcrumbs__item.breadcrumbs__item_mobile
+                        button.breadcrumbs__btn(aria-label="open")
+                            span
+                    li.breadcrumbs__item.breadcrumbs__item_current
                         span.breadcrumbs__link.breadcrumbs__link_current Каталог
 
         //- catalog accordion
         section.cont-block__wrap.cont-block_mb120.cont-block_mt50
             .cont-block.catalog-block
                 .catalog-block__left
-                    .catalog-acc
+                    .catalog-ac
                         .catalog-acc__item.ac
                             .ac-header
                                 .ac-trigger

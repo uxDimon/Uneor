@@ -17,6 +17,16 @@ $color-Text-grey: #616161;
 $color-grey: #7d7d7d;
 $color-b-grey: #868686;
 
+.dealers__map {
+    width: 100%;
+    margin-bottom: 120px;
+
+    polyline:hover,
+    polygon:hover {
+        fill: $color-Blue_2;
+    }
+}
+
 .dealer__bot {
     width: 100%;
     color: $color-White;

@@ -12,23 +12,25 @@ if (tabIdList) {
 	for (const tabId of tabIdList) {
 		tabGroupList.add(tabId.dataset.tabId);
 	}
+
+	function tabSwith(name, tab, tabGroup) {
+		for (const control of tab.controlList) control.classList.remove(activeClass);
+		for (const block of tab.blockList) block.style.display = "none";
+		document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-control="${name}"]`).classList.add(activeClass);
+		document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-block="${name}"]`).style.display = "";
+	}
+
 	for (const tabGroup of tabGroupList) {
 		const tab = {
 			controlList: document.querySelectorAll(`[data-tab-id="${tabGroup}"][data-tab-control]`),
 			blockList: document.querySelectorAll(`[data-tab-id="${tabGroup}"][data-tab-block]`),
 		};
-
-		function tabSwith(name) {
-			for (const control of tab.controlList) control.classList.remove(activeClass);
-			for (const block of tab.blockList) block.style.display = "none";
-			document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-control="${name}"]`).classList.add(activeClass);
-			document.querySelector(`[data-tab-id="${tabGroup}"][data-tab-block="${name}"]`).style.display = "";
-		}
-		tabSwith(tab.controlList[0].dataset.tabControl);
+		console.log(tab);
+		tabSwith(tab.controlList[0].dataset.tabControl, tab, tabGroup);
 
 		for (const control of tab.controlList) {
 			control.addEventListener("click", () => {
-				tabSwith(control.dataset.tabControl);
+				tabSwith(control.dataset.tabControl, tab, tabGroup);
 			});
 		}
 	}
@@ -272,12 +274,12 @@ for (const wrap of document.querySelectorAll(".input_file")) {
 }
 
 //zoom
-const zoomButton = document.querySelectorAll('[data-action="zoom"]')
-const zoom = mediumZoom('[data-zoomable]')
+// const zoomButton = document.querySelectorAll('[data-action="zoom"]')
+// const zoom = mediumZoom('[data-zoomable]')
 
-zoomButton.forEach((item) => {
-	item.addEventListener('click', () => zoom.open())
-})
+// zoomButton.forEach((item) => {
+// 	item.addEventListener('click', () => zoom.open())
+// })
 
 //sert slider
 if (document.querySelector(".tech-information__slider")) {
@@ -336,6 +338,7 @@ if (document.querySelector(".news-item__slider")) {
 //catalog slider with thumbs
 if (document.querySelector(".catalog-item__slider")) {
 	const sliderThumbs = new Swiper(".slider-thumbs .swiper-container", {
+		width: 'auto',
 		spaceBetween: 20,
 		slidesPerView: 3.5,
 		watchSlidesVisibility: true,
@@ -403,9 +406,17 @@ if (document.querySelector('.vacancy-ac')) {
 	const vacAcc = new Accordion(".vacancy-ac");
 }
 
-if (document.querySelector('.catalog-ac')) {
-	const catAcc = new Accordion(".catalog-ac", {
+if (document.querySelectorAll('.catalog-ac').length) {
+	const accordions = Array.from(document.querySelectorAll('.catalog-ac'));
+	new Accordion(accordions, {
 		showMultiple: true,
 	});
 }
 
+
+Spotlight.init();
+
+var button = Spotlight.addControl(".tech-information__hover-zoom", function(event){
+    // handle click event
+    // console.log("button clicked");
+});

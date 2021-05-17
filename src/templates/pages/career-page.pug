@@ -15,8 +15,11 @@ block content
                         a.breadcrumbs__link(href="#") Главная
                         svg(width="10" height="10")
                             use(xlink:href="assets/images/sprite.svg#arrow-smal")
-                    li.breadcrumbs__item
-                        span.breadcrumbs__link.breadcrumbs__link_current О компании
+                    li.breadcrumbs__item.breadcrumbs__item_mobile
+                        button.breadcrumbs__btn(aria-label="open")
+                            span
+                    li.breadcrumbs__item.breadcrumbs__item_current
+                        span.breadcrumbs__link.breadcrumbs__link_current Карьера
         
         //- career banner
         section.cont-block__wrap.cont-block_mb50.cont-block_mt28
