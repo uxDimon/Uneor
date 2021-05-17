@@ -1,7 +1,3 @@
-new Accordion(".catalog-acc", {
-	showMultiple: true,
-});
-
 const activeClass = "active";
 
 // Переключение табов
@@ -195,6 +191,7 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 		// Optional parameters
 		slidesPerView: 1,
 		spaceBetween: 20,
+		loop: true,
 
 		breakpoints: {
 			0: {
@@ -214,7 +211,7 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 }
 
 //goods slider
-if(document.querySelectorAll('.goods-list')) {
+if (document.querySelectorAll('.goods-list')) {
 	let styleProjects;
 	let sliderOn = false;
 
@@ -225,7 +222,7 @@ if(document.querySelectorAll('.goods-list')) {
 		}
 		if (document.body.clientWidth >= 768 && !sliderOn) {
 			styleProjects = new Swiper(".goods-list .swiper-container", {
-				
+
 				spaceBetween: 30,
 				breakpoints: {
 					1240: {
@@ -371,16 +368,44 @@ if (document.querySelector(".catalog-item__slider")) {
 }
 
 //popup close
-if(document.querySelectorAll('.popup').length) {
+if (document.querySelectorAll('.popup').length) {
 	let popups = document.querySelectorAll('.popup');
 
 	popups.forEach((item) => {
 		item.querySelectorAll('[data-close-popup]').forEach((closeBtn) => {
-			closeBtn.addEventListener('click', function(){
+			closeBtn.addEventListener('click', function () {
 				item.style.display = 'none';
 			});
 		});
 	})
 }
 
-new Accordion(".vacancy-ac");
+//добавить товар +1 -1 кнопка
+let orderBtns = document.querySelectorAll('[data-add-order]');
+
+orderBtns.forEach((item) => {
+	let input = item.querySelector('input');
+	let inputValue = parseInt(item.querySelector("input").value, 10);
+
+	item.querySelector(".add-group__btn_plus").addEventListener('click', function() {
+		input.value = ++inputValue;
+	});
+
+	item.querySelector(".add-group__btn_minus").addEventListener('click', function() {
+		if (inputValue > 1) {
+			input.value = --inputValue;
+		}
+	});
+})
+
+//acc
+if (document.querySelector('.vacancy-ac')) {
+	const vacAcc = new Accordion(".vacancy-ac");
+}
+
+if (document.querySelector('.catalog-ac')) {
+	const catAcc = new Accordion(".catalog-ac", {
+		showMultiple: true,
+	});
+}
+

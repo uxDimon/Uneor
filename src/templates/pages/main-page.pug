@@ -18,11 +18,13 @@ block content
                     .main-page__right
                         img(src="assets/images/capacity-banner-min.jpg", alt="")
                 
-                label.input.search
-                    input(type="search" name="search" placeholder="Введите свой запрос").input__input
-                    .input__error Поле введено не верно
-                    svg.search__icon(width="20" height="20")
-                        use(xlink:href="assets/images/sprite.svg#search-alt")
+                form.main-page__search-field
+                    label.input.search
+                        input(type="search" name="search" placeholder="Введите свой запрос").input__input
+                        //- .input__error Поле введено не верно
+                        //- svg.search__icon(width="20" height="20")
+                        //-     use(xlink:href="assets/images/sprite.svg#search-alt")
+                    button.button(type="submit") Поиск
 
         //- main catalog block
         section.cont-block__wrap.cont-block_mb85
@@ -40,37 +42,37 @@ block content
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Пневматический инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-2-min.png" alt="Пневматический инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Пневматический инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Промышленные съемники")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-3-min.png" alt="Промышленные съемники")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Промышленные<br> съемники
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Инструментальная мебель и средства хранения")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-4-min.png" alt="Инструментальная мебель и средства хранения")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Инструментальная мебель<br> и средства хранения
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Динамометрический инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-5-min.png" alt="Динамометрический инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Динамометрический<br> инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Гидравлический инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-6-min.png" alt="Гидравлический инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Гидравлический<br> инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Искробезопасный инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-7-min.png" alt="Искробезопасный инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Искробезопасный<br> инструмент
                                 svg(width="30" height="26").main-catalog__ex
@@ -78,25 +80,25 @@ block content
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Резьбонарезной инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-8-min.png" alt="Резьбонарезной инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Резьбонарезной<br> инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Абразивный инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-9-min.png" alt="Абразивный инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Абразивный<br> инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Сервисный инструмент")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-10-min.png" alt="Сервисный инструмент")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Сервисный<br> инструмент
                     li.main-catalog__item
                         a.main-catalog__link(href="#")
                             .main-catalog__img-wrap
-                                img.main-catalog__img(src="assets/images/main-catalog/catalog-1-min.png" alt="Наши возможности")
+                                img.main-catalog__img(src="assets/images/main-catalog/catalog-11-min.png" alt="Наши возможности")
                             .main-catalog__text-wrap
                                 .main-catalog__caption Наши<br> возможности
 
@@ -178,7 +180,7 @@ block content
                     h2.cont-block__h.main-color_red Hytorc
 
                 .cont-block__content.manufact
-                    .manufact__img-wrap
+                    a(href="https://www.hytorc-ru.ru/").manufact__img-wrap
                         img(src="assets/images/hytorc.png" alt="hytorc logo")
                     .manufact__text-wrap
                         p Lorem 1 ipsum dolor 123 sit amet, consectetur adipiscing elit. Consequat ipsum eu diam est facilisi. Eleifend posuere sed urna nunc, non nec nisl. Sit sit fringilla amet interdum euismod viverra morbi ultrices

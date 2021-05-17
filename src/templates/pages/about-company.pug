@@ -15,7 +15,10 @@ block content
                         a.breadcrumbs__link(href="#") Главная
                         svg(width="10" height="10")
                             use(xlink:href="assets/images/sprite.svg#arrow-smal")
-                    li.breadcrumbs__item
+                    li.breadcrumbs__item.breadcrumbs__item_mobile
+                        button.breadcrumbs__btn(aria-label="open")
+                            span
+                    li.breadcrumbs__item.breadcrumbs__item_current
                         span.breadcrumbs__link.breadcrumbs__link_current О компании
 
         //- about company блок о компании

@@ -54,9 +54,19 @@ $color-b-grey: #868686;
     }
 }
 
+.main-page__search-field {
+    display: flex;
+    margin-top: 20px;
+
+    .button {
+        width: 140px;
+        justify-content: center;
+    }
+}
 .search {
     position: relative;
-    margin-top: 20px;
+    flex: 1;
+    margin-right: 20px;
 
     &__icon {
         position: absolute;
@@ -94,5 +104,16 @@ $color-b-grey: #868686;
     }
     .main-page__right {
         height: 190px;
+    }
+    .main-page__search-field {
+        flex-direction: column;
+
+        .button {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    .search {
+        margin: 0;
     }
 }

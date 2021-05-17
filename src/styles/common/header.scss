@@ -22,7 +22,8 @@ $color-grey: #7d7d7d;
 
 // header__head
 .header__head-wrap {
-	background-color: $color-Blue_3;
+	// background-color: $color-Blue_3;
+	background-color: #d7e9f4;
 
 	> .cont-block {
 		position: relative;
@@ -602,6 +603,10 @@ $color-grey: #7d7d7d;
 }
 
 @media screen and (max-width: 960px) {
+	.header__body-wrap {
+		background-color: #d7e9f4;
+	}
+
 	.header__head {
 		position: absolute;
 		top: 0;

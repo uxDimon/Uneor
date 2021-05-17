@@ -27,10 +27,15 @@ $color-grey: #7d7d7d;
     background-color: $color-dark-grey-2;
     border-radius: 10px;
     padding: 37px 50px;
+    transition: box-shadow 150ms ease-in-out;
 
     img {
         max-width: 100%;
     }
+
+    &:hover {
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+	}
 }
 .manufact__text-wrap {
     p {

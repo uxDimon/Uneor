@@ -4,20 +4,23 @@
     column-gap: 30px;
     row-gap: 30px;
 }
-.brands-list__item {
-    background-color: $color-White;
-    border-radius: 10px;
-    padding: 30px 20px;
-    padding-top: 10px;
-
-    p {
-        margin: 0;
-    }
-}
 .brands-list__link {
     display: block;
     color: inherit;
     text-decoration: none;
+    background-color: $color-White;
+    border-radius: 10px;
+    padding: 30px 20px;
+    padding-top: 10px;
+	transition: box-shadow 150ms ease-in-out 0ms;
+
+    &:hover {
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    p {
+        margin: 0;
+    }
 }
 .brands-list__img-wrap {
     min-height: 128px;

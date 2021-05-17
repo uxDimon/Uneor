@@ -20,7 +20,18 @@ $color-grey: #7D7D7D;
     row-gap: 70px;
 }
 .news-list__link {
+    display: block;
     text-decoration: none;
+    border-radius: 10px;
+    transition: box-shadow 150ms ease-in-out;
+
+    &:hover {
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+
+        .news-list__caption {
+            color: $color-Blue_1;
+        }
+	}
 }
 .news-list__img-wrap {
     width: 100%;
@@ -47,6 +58,7 @@ $color-grey: #7D7D7D;
     line-height: 140%;
     color: $color-dark-grey;
     margin: 10px 0 15px;
+    transition: color 150ms ease-in-out;
 }
 .news-list__text {
     line-height: 140%;
