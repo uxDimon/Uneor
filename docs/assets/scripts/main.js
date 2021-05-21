@@ -213,7 +213,7 @@ if (document.querySelector(".career-slider__slider-wrap")) {
 }
 
 //goods slider
-if (document.querySelectorAll('.goods-list')) {
+if (document.querySelectorAll(".goods-list")) {
 	let styleProjects;
 	let sliderOn = false;
 
@@ -224,7 +224,6 @@ if (document.querySelectorAll('.goods-list')) {
 		}
 		if (document.body.clientWidth >= 768 && !sliderOn) {
 			styleProjects = new Swiper(".goods-list .swiper-container", {
-
 				spaceBetween: 30,
 				breakpoints: {
 					1240: {
@@ -232,7 +231,7 @@ if (document.querySelectorAll('.goods-list')) {
 					},
 					768: {
 						slidesPerView: 3,
-					}
+					},
 				},
 
 				// Navigation arrows
@@ -323,8 +322,8 @@ if (document.querySelector(".news-item__slider")) {
 		spaceBetween: 30,
 
 		pagination: {
-			el: '.swiper-pagination',
-			type: 'fraction',
+			el: ".swiper-pagination",
+			type: "fraction",
 		},
 
 		// Navigation arrows
@@ -338,22 +337,22 @@ if (document.querySelector(".news-item__slider")) {
 //catalog slider with thumbs
 if (document.querySelector(".catalog-item__slider")) {
 	const sliderThumbs = new Swiper(".slider-thumbs .swiper-container", {
-		width: 'auto',
+		width: "auto",
 		spaceBetween: 20,
 		slidesPerView: 3.5,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		// observer: true,
 		// observeParents: true,
-		direction: 'vertical',
+		direction: "vertical",
 
 		breakpoints: {
 			0: {
-				direction: 'horizontal',
+				direction: "horizontal",
 				spaceBetween: 20,
 			},
 			1024: {
-				direction: 'vertical',
+				direction: "vertical",
 				spaceBetween: 20,
 			},
 		},
@@ -371,52 +370,90 @@ if (document.querySelector(".catalog-item__slider")) {
 }
 
 //popup close
-if (document.querySelectorAll('.popup').length) {
-	let popups = document.querySelectorAll('.popup');
+if (document.querySelectorAll(".popup").length) {
+	let popups = document.querySelectorAll(".popup");
 
 	popups.forEach((item) => {
-		item.querySelectorAll('[data-close-popup]').forEach((closeBtn) => {
-			closeBtn.addEventListener('click', function () {
-				item.style.display = 'none';
+		item.querySelectorAll("[data-close-popup]").forEach((closeBtn) => {
+			closeBtn.addEventListener("click", function () {
+				item.style.display = "none";
 			});
 		});
-	})
+	});
 }
 
 //добавить товар +1 -1 кнопка
-let orderBtns = document.querySelectorAll('[data-add-order]');
+let orderBtns = document.querySelectorAll("[data-add-order]");
 
 orderBtns.forEach((item) => {
-	let input = item.querySelector('input');
+	let input = item.querySelector("input");
 	let inputValue = parseInt(item.querySelector("input").value, 10);
 
-	item.querySelector(".add-group__btn_plus").addEventListener('click', function() {
+	item.querySelector(".add-group__btn_plus").addEventListener("click", function () {
 		input.value = ++inputValue;
 	});
 
-	item.querySelector(".add-group__btn_minus").addEventListener('click', function() {
+	item.querySelector(".add-group__btn_minus").addEventListener("click", function () {
 		if (inputValue > 1) {
 			input.value = --inputValue;
 		}
 	});
-})
+});
 
 //acc
-if (document.querySelector('.vacancy-ac')) {
+if (document.querySelector(".vacancy-ac")) {
 	const vacAcc = new Accordion(".vacancy-ac");
 }
 
-if (document.querySelectorAll('.catalog-ac').length) {
-	const accordions = Array.from(document.querySelectorAll('.catalog-ac'));
+if (document.querySelectorAll(".catalog-ac").length) {
+	const accordions = Array.from(document.querySelectorAll(".catalog-ac"));
 	new Accordion(accordions, {
 		showMultiple: true,
 	});
 }
 
-
 Spotlight.init();
 
-var button = Spotlight.addControl(".tech-information__hover-zoom", function(event){
-    // handle click event
-    // console.log("button clicked");
+var button = Spotlight.addControl(".tech-information__hover-zoom", function (event) {
+	// handle click event
+	// console.log("button clicked");
 });
+
+// Дилеры Карта
+const dealerMap = document.querySelector("#mother-russia"),
+	dealerSelectList = document.querySelector("[data-region-select]");
+if (dealerMap) {
+	const mapActiveItem = {},
+		tabActiveItem = {},
+		dealerSelectOptions = dealerSelectList.querySelectorAll("option");
+
+	function changeMapItem(listItem, item, listTab, tab) {
+		for (const key in listItem) {
+			if (Object.hasOwnProperty.call(listItem, key)) {
+				listItem[key].style.fill = "";
+				listTab[key].classList.remove(activeClass);
+			}
+		}
+		item.style.fill = "#0077c1";
+		tab.classList.add(activeClass);
+	}
+
+	for (const item of dealerSelectOptions) {
+		mapActiveItem[item.value] = dealerMap.querySelector(`[data-region="${item.value}"]`);
+		tabActiveItem[item.value] = document.querySelector(`[data-region-tab="${item.value}"]`);
+
+		mapActiveItem[item.value].addEventListener("click", () => {
+			changeMapItem(mapActiveItem, mapActiveItem[item.value], tabActiveItem, tabActiveItem[item.value]);
+			dealerSelectList.value = item.value;
+		});
+
+		mapActiveItem[item.value].classList.add(activeClass);
+		tabActiveItem[item.value].classList.add(activeClass);
+	}
+
+	dealerSelectList.addEventListener("change", () => {
+		changeMapItem(mapActiveItem, mapActiveItem[dealerSelectList.value], tabActiveItem, tabActiveItem[dealerSelectList.value]);
+	});
+
+	changeMapItem(mapActiveItem, mapActiveItem[dealerSelectList.value], tabActiveItem, tabActiveItem[dealerSelectList.value]);
+}

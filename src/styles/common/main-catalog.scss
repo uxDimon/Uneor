@@ -238,6 +238,19 @@ $color-grey: #7d7d7d;
 	.main-catalog__img-wrap {
 		height: 120px;
 	}
+	.main-catalog__text-wrap {
+		padding: 20px;
+		padding-top: 16px;
+	}
+	.main-catalog__item_catalog {
+		.main-catalog__img-wrap {
+			height: 148px;
+		}
+		.main-catalog__text-wrap {
+			padding: 25px 40px;
+			padding-bottom: 5px;
+		}
+	}
 	.catalog-addition__top {
 		flex-direction: column-reverse;
 	}
